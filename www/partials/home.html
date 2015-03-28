@@ -1,0 +1,4 @@
+<h4 class="page-heading" ng-bind="category"></h4>
+<div class="thumbnail" ng-repeat="item in picList | orderBy:'bumps':true">
+  <img ng-src="{{ENDPOINT}}/thumb_{{item.key}}" height="100%" ng-click="openPreview(item)" />
+</div>

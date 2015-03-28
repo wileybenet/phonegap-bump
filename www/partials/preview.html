@@ -1,0 +1,23 @@
+<div class="preview">
+  <div class="close" ng-click="closePreview()">
+    <i class="fa fa-times"></i>
+  </div>
+  <div class="actions">
+    <div class="owner" ng-bind="focusImage.username"></div>
+    <div class="bump btn" ng-click="!focusImage.bumped && bump(focusImage)" ng-class="{checked: focusImage.bumped}">
+      <div class="v-center v-small"><small>Bump</small><small ng-show="focusImage.bumped">ed</small></div>
+      <div class="v-center"><i class="fa fa-arrow-up"></i></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="image">
+    <img ng-src="{{ENDPOINT}}/{{focusImage.key}}" width="100%" />
+  </div>
+  <div class="bumps">
+    <span ng-bind="focusImage.bumps | commas"></span> <small class="subdue">Bump{{focusImage.bumps == 1 ? '' : 's'}}</small>
+  </div>
+  <div class="report btn warn" ng-click="report(focusImage)">
+    <div class="v-center"><i class="fa fa-exclamation-circle"></i></div>
+    <div class="v-center v-small"><small>Report image</small></div>
+  </div>
+</div>

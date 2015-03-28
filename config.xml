@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pikbump.bump" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Bump</name>
+    <description>
+        Image Popularity
+    </description>
+    <author email="npinto91@gmail.com" href="http://www.example.com/">
+      Nicole Pinto
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <feature name="Facebook Connect">
+        <param name="id" value="com.pikbump.bump" />
+        <param name="APP_ID" value="554449381361750" />
+        <param name="APP_NAME" value="Bump" />
+    </feature>
+    <feature name="Facebook Connect">
+        <param name="id" value="com.phonegap.plugins.facebookconnect" />
+        <param name="installPath" value="plugins/fb" />
+        <param name="APP_ID" value="554449381361750" />
+        <param name="APP_NAME" value="Bump" />
+    </feature>
+</widget>

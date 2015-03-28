@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="alert" ng-show="alert" ng-bind="alert"></div>
+  <data ng-include="'partials/home.html'"></data>
+  <data ng-show="focusImage" ng-include="'partials/preview.html'"></data>
+
+</div>
+<div class="header">
+  <a class="categories left">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a class="notifications right">
+    <i class="fa fa-bell"></i>
+  </a>
+  <div class="clear"></div>
+</div>
+<div class="footer">
+  <div class="title">
+    <img src="images/logo.png" width="54" />
+  </div>
+  <a class="camera left" ng-click="camera()">
+    <i class="fa fa-camera"></i>
+  </a>
+  <a class="profile right">
+    <i class="fa fa-user"></i>
+  </a>
+  <div class="clear"></div>
+</div>
