@@ -14,7 +14,16 @@
     <script type="text/javascript" src="js/aws-sdk-2.1.12.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-pullrefresh.js"></script>
-    <script type="text/javascript" src="js/fb.min.js"></script>
+    <script>
+      console.log = function(args) {
+        args = [].slice.call(arguments).map(function(arg) {
+          arg = typeof arg == 'object' ? JSON.stringify(arg) : arg;
+          return arg;
+        }).join(' ');
+
+        $.get('http://localhost:8081/debug', { data: args });
+      };
+    </script>
 
 
     <script type="text/javascript" src="js/aws-sdk.min.js"></script>
@@ -25,7 +34,7 @@
 
     <script type="text/javascript" src="cordova.js"></script>
   </head>
-  <body ng-app="bump" ng-controller="HomeController" ng-class="{logging: !authd}">
+  <body ng-app="bump" ng-controller="HomeController" ng-class="{logging: !authd}" data-ng-show="loaded">
     <div class="headliner" ng-class="{logging: !authd}"></div>
     <div data-ng-show="authd" ng-include="'partials/main.html'"></div>
     <div class="login-container" data-ng-hide="authd">

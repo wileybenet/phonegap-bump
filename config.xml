@@ -27,4 +27,13 @@
         <param name="APP_ID" value="554449381361750" />
         <param name="APP_NAME" value="Bump" />
     </feature>
+    <feature name="File">
+        <param name="ios-package" value="CDVFile" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="ios-package" value="CDVFileTransfer" />
+    </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
 </widget>

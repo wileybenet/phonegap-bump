@@ -19,54 +19,42 @@ angular.module('bump', ['auth'])
         }
       });
 
+      function authRequest(res) {
+        if (res.status === 'connected') {
+          $http.post(HOST + '/api/v1.0/login', { user: res.authResponse.userID, accessToken: res.authResponse.accessToken })
+            .success(function(data) {
+              console.log('user:', data);
+            }); 
 
-      FB.getLoginStatus(function (response) {
-        alert(JSON.stringify(response));
-      }, function (response) {
-        alert(JSON.stringify(response)) 
-      });
+          $scope.$apply(function() {
+            $scope.authd = true;
+          });
+        } 
+        console.log('fb status', res);
+      }
+
+      function bootstrap() {
+        console.log('device loaded');
+
+        FB.getLoginStatus(authRequest, function (res) {
+          console.log('fb err', res); 
+        });
+
+        $scope.$apply(function() {
+          $scope.loaded = true;
+        });
+      }
+
+      document.addEventListener("deviceready", bootstrap, false);
+
 
       $scope.loginWithFB = function() {
-
-        FB.login([], function (response) {
-          alert(JSON.stringify(response));
-        }, function (response) {
-          alert(JSON.stringify(response)) 
+        FB.login(['email'], authRequest, function (res) {
+          console.log(JSON.stringify(res)) 
+        }, function(res) {
+          console.log('login err', res);
         });
       };
-
-      document.addEventListener('deviceready', function() {
-
-        FB.init({
-          appId: appId,
-          nativeInterface: CDV.FB,
-          useCachedDialogs: false
-        });
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-            // the user is logged in and has authenticated your
-            // app, and response.authResponse supplies
-            // the user's ID, a valid access token, a signed
-            // request, and the time the access token 
-            // and signed request each expire
-            var uid = response.authResponse.userID;
-            var accessToken = response.authResponse.accessToken;
-            // alert(uid, accessToken);
-            $scope.$apply(function() {
-              $scope.authd = uid;
-            });
-          } else if (response.status === 'not_authorized') {
-            // the user is logged in to Facebook, 
-            // but has not authenticated your app
-            alert('not-auth');
-          } else {
-            // the user isn't logged in to Facebook.
-          }
-        }, function(err) {
-          alert(err);
-        });
-
-      }, false); 
 
       $scope.openPreview = function(image) {
         $scope.focusImage = image;
@@ -81,13 +69,14 @@ angular.module('bump', ['auth'])
           image.bumps += 1;
           image.bumped = true;
         }
-        $http.post(HOST + '/api/v1.0/bump', { image: image.id, user: 1 }, { headers: { 'Content-Type': 'application/json' } })
+        $http.post(HOST + '/api/v1.0/bump', { image: image.id, user: 1 })
           .success(function(data) {
             console.log(data);
           });
       }
 
       $scope.camera = function() {
+        console.log('camera:', navigator.camera);
         navigator.camera.getPicture(uploadPhoto, function(message) {
           console.log('get picture cancelled'); 
         },{

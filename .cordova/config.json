@@ -1,0 +1,10 @@
+{
+    "lib": {
+        "www": {
+            "id": "Bump",
+            "version": "master",
+            "uri": "https://github.com/wileybenet/phonegap-bump",
+            "link": false
+        }
+    }
+}
