@@ -1,12 +1,8 @@
-var HOST = !!~document.URL.indexOf('Simulator') ?
-  'http://localhost:8081' :
-  'http://app.pikbump.com';
+angular.module('bump', ['ngResource', 'auth'])
 
-
-angular.module('bump', ['auth'])
-
-  .controller('HomeController', ['$scope', '$http', '$timeout', 'FB',
-    function($scope, $http, $timeout, FB) {
+  .controller('HomeController', ['$scope', '$http', '$timeout', 'HOST', 'FB', 'image', 'platform',
+    function($scope, $http, $timeout, HOST, FB, image, platform) {
+      var currentFbUserId, currentFbAccessToken;
 
       $scope.ENDPOINT = 'https://s3.amazonaws.com/bump-pictures';
 
@@ -14,14 +10,19 @@ angular.module('bump', ['auth'])
       $scope.category = 'Architecture';
 
       $scope.$watch('alert', function(state) {
-        if (state) {
+        if (state && !~state.indexOf('...')) {
           $timeout(function() {
             $scope.alert = false;
           }, 2500);
         }
       });
 
+      if (platform == 'browser')
+        $scope.authd = true;
+
       function authRequest(res) {
+        currentFbUserId = res.authResponse.userID;
+        currentFbAccessToken = res.authResponse.accessToken;
         if (res.status === 'connected') {
           $http.post(HOST + '/api/v1.0/login', { user: res.authResponse.userID, accessToken: res.authResponse.accessToken })
             .success(function(data) {
@@ -68,11 +69,19 @@ angular.module('bump', ['auth'])
       };
 
       $scope.openPreview = function(image) {
+        image.images = $scope.picList;
         $scope.imagePreview = image;
+        $scope.imagePreview.profilePic = 'http://graph.facebook.com/' + image.fb_id + '/picture';
       };
 
       $scope.closePreview = function() {
+        $scope.catPreview = false;
         $scope.imagePreview = false;
+        $scope.uploadPreview = false;
+      };
+
+      $scope.getIconWidth = function() {
+        return $(window).width() / 10;
       };
 
       $scope.bump = function(image) {
@@ -87,7 +96,7 @@ angular.module('bump', ['auth'])
       }
 
       $scope.camera = function() {
-        navigator.camera.getPicture(uploadPhoto, function(message) {
+        navigator.camera.getPicture(loadPhoto, function(message) {
           console.log('get picture cancelled'); 
         },{
           quality: 50, 
@@ -96,36 +105,43 @@ angular.module('bump', ['auth'])
         });
       };
 
+      function loadPhoto(imageURI) {
+        $scope.$apply(function() {
+          $scope.uploadPreview = true;
+          $scope.uploadParams = {
+            category: 'Category'
+          };
+          $scope.pendingUploadImage = imageURI;
+        });
 
+        // uploadPhotoToServer(imageURI);
+      }
 
-      function uploadPhoto(imageURI) {
+      $scope.uploadPhotoToServer = function() {
+        var imageURI = $scope.pendingUploadImage;
+        var ft = new FileTransfer();
         var options = {};
         options.fileKey = "file";
         options.fileName = imageURI.substr(imageURI.lastIndexOf('/')+1);
         options.mimeType = "image/jpeg";
-
-        var params = new Object();
-        params.value1 = "test";
-        params.value2 = "param";
-
-        options.params = params;
+        options.params = $scope.uploadParams;
         options.chunkedMode = false;
-
-        var ft = new FileTransfer();
-        ft.upload(imageURI, HOST + "/api/v1.0/upload", success, fail, options);
-      }
-
-      function success(r) {
-        $scope.$apply(function() {
-          $scope.alert = 'Upload successful';
-          loadImages();
+        $timeout(function() {
+          $scope.alert = 'Uploading...';
+          $scope.uploadPreview = false;
         });
+        ft.upload(imageURI, HOST + "/api/v1.0/upload", function(res) {
+          $scope.$apply(function() {
+            var imageList = JSON.parse(res.response);
+            $scope.alert = 'Uploaded successfully';
+            $scope.openPreview(imageList[0]);
+          });
+        }, function(error) {
+          console.log("An error has occurred: Code = " + error.code);
+        }, options);
       }
  
-      function fail(error) {
-        alert("An error has occurred: Code = " + error.code);
-      }
-
+    
       $http.get(HOST + '/api/v1.0/category')
         .success(function(data) {
           $scope.catList = data;   
@@ -135,19 +151,34 @@ angular.module('bump', ['auth'])
         });
 
 
-      function loadImages() {
-        $http.get(HOST + '/api/v1.0/image')
-          .success(function(data) {
-            $scope.picList = data;   
-          })
-          .error(function(err) {
-            console.log('failed to load images');
-          });
-      }
-      loadImages();
+      $scope.picList = image.query();
 
     }
   ])
+
+  .factory('platform', [function() {
+    var platform;
+    if (!!~document.URL.indexOf('Simulator')) {
+      platform = 'simulator';
+    } else if (!window.cordova) {
+      platform = 'browser';
+    } else {
+      platform = 'ios';
+    }
+    return platform;
+  }])
+
+  .factory('HOST', ['platform', function(platform) {
+    if (platform == 'simulator' || platform == 'browser')
+      return 'http://localhost:8081';
+    else
+      return 'http://app.pikbump.com';
+  }])
+
+  .factory('image', ['$resource', 'HOST', function($resource, HOST) {
+    var image = $resource(HOST + '/api/v1.0/image/:id/:action', {}, {});
+    return image;
+  }])
 
   .filter('commas', function() {
     return function(item) {

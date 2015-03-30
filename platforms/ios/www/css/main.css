@@ -1,7 +1,7 @@
 
 
 html, body {
-  background: #D9DAD4;
+  background: #525C5B;
   padding: 0;
   margin: 0;
   font-size: 30px;
@@ -25,7 +25,7 @@ html, body {
   position: fixed;
   width: 100%;
   top: 0;
-  background: #D9DAD4;
+  background: #525C5B;
   z-index: 1;
 }
 
@@ -65,15 +65,16 @@ html, body {
 }
 .footer .title {
   font-size: .5em;
-  margin-top: 12px;
+  margin-top: 15px;
   display: inline-block;
 }
 
 .header a, .footer a {
   background: #5EABA2;
   padding: 8px 12px;
-  width: 40px;
-  color: rgba(255, 255, 255, 0.75);
+  width: 38px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.85);
   display: block;
 }
 .profile {
@@ -84,22 +85,25 @@ html, body {
 }
 .categories {
   border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .notifications {
   border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .main {
-  margin-top: 74px;
+  margin-top: 88px;
   padding-bottom: 52px;
 }
 .page-heading {
+  font-weight: normal;
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 7px;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
-  font-size: .8em;
+  font-size: .7em;
 }
 
 .thumbnail {
@@ -107,11 +111,13 @@ html, body {
   vertical-align: top;
   width: 33.3333%;
   text-align: center;
-  height: 120px;
   overflow: hidden;
-  font-size: 8px;
+  margin: 0;
 }
-.thumbnail img {
+img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
 .preview {
@@ -123,54 +129,110 @@ html, body {
   background: rgba(0,0,0,0.9);
   z-index: 10;
   color: #FFF;
+  text-transform: none;
 }
   .preview .close {
     position: fixed;
-    top: 30px;
-    right: 25px;
+    top: 12px;
+    right: 0;
+    font-size: 24px;
+    padding: 10px 16px;
   }
-  .preview .bumps {
-    float: right;
-    margin-top: 10px;
-    margin-right: 30px;
-    z-index: 10;
-    position: relative;
+  .preview .title {
+    margin-top: 78px;
     font-size: 18px;
+    text-align: center;
   }
-  .preview .image {
-    margin-top: 10px;
+  .preview .owner {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
   }
-  .preview .actions {
-    margin-top: 130px;
+  .preview .owner img {
+    border-radius: 20px;
+    width: 22px;
+    vertical-align: -12%;
+  }
+  .preview .owner-reel {
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .preview .cat-dropdown {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .preview .image.upload {
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+    max-height: 50%;
+  }
+  .preview .inputs * {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-left: 0px;
+  }
+  .preview .inputs textarea {
+    background: transparent;
+    border: 0;
+    font-size: 14px;
     color: #FFF;
-    padding: 0 20px;
+    height: 50px;
   }
-    .preview .actions .owner {
-      float: left;
-      margin-top: 8px;
-      font-size: 20px;
+
+  ::-webkit-input-placeholder {
+    color: #49E2B4;
+  }
+
+  .preview .actions {
+    color: #FFF;
+    position: relative;
+  }
+    .preview .actions .bumps {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      font-size: 18px;
     }
     .preview .actions .bump {
-      float: right;
-      margin-right: 5px;
-      z-index: 10;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 18px;
     }
 
+  .preview .caption {
+    font-size: 14px;
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
   .preview .report {
     position: fixed;
-    bottom: 60px;
-    left: 20px;
+    bottom: 10px;
+    left: 10px;
     color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+  }
+  .preview .report small {
+    font-size: 12px;
+  }
+  .preview .report i {
+    font-size: 14px;
   }
 
-.v-center {
-  display: inline-block;
-  vertical-align: middle;
+.preview .footer-btn {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  font-size: 16px;
 }
-.v-small {
-  margin-top: -9px;
-}
+
 .left {
   float: left;
 }

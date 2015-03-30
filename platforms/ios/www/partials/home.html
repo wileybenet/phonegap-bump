@@ -1,4 +1,6 @@
-<h4 class="page-heading" ng-bind="category"></h4>
-<div class="thumbnail" ng-repeat="item in picList | orderBy:'bumps':true">
-  <img ng-src="{{ENDPOINT}}/thumb_{{item.key}}" height="100%" ng-click="openPreview(item)" />
+<h4 class="page-heading">
+  {{category}} <i class="fa fa-layout"></i>
+</h4>
+<div class="thumbnail" ng-repeat="image in picList | orderBy:'bumps':true track by image.id">
+  <img ng-src="{{ENDPOINT}}/360_{{image.key}}" width="100%" ng-click="openPreview(image)" />
 </div>

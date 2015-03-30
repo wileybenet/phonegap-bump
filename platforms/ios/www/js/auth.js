@@ -8,9 +8,14 @@ var fbUserId;
 
 angular.module('auth', [])
 
-  .factory('FB', [function() {
-    return {
-
+  .factory('FB', ['platform', function(platform) {
+    var cordova = window.cordova || { exec: function () {}, browser: true };
+    setTimeout(function() {
+      if (platform === 'browser')
+        document.dispatchEvent(new Event('deviceready'))
+    });
+    
+    var FB = {
       getLoginStatus: function (s, f) {
         cordova.exec(s, f, "FacebookConnectPlugin", "getLoginStatus", []);
       },
@@ -37,22 +42,25 @@ angular.module('auth', [])
       },
 
       logPurchase: function(value, currency, s, f) {
-          cordova.exec(s, f, "FacebookConnectPlugin", "logPurchase", [value, currency]);
+        cordova.exec(s, f, "FacebookConnectPlugin", "logPurchase", [value, currency]);
       },
 
       getAccessToken: function(s, f) {
-          cordova.exec(s, f, "FacebookConnectPlugin", "getAccessToken", []);
+        cordova.exec(s, f, "FacebookConnectPlugin", "getAccessToken", []);
       },
 
       logout: function (s, f) {
-          cordova.exec(s, f, "FacebookConnectPlugin", "logout", []);
+        cordova.exec(s, f, "FacebookConnectPlugin", "logout", []);
       },
 
       api: function (graphPath, permissions, s, f) {
-          if (!permissions) { permissions = []; }
-          cordova.exec(s, f, "FacebookConnectPlugin", "graphApi", [graphPath, permissions]);
+        if (!permissions)
+          permissions = [];
+        cordova.exec(s, f, "FacebookConnectPlugin", "graphApi", [graphPath, permissions]);
       }
     };
+
+    return FB;
   }]);
 
 
