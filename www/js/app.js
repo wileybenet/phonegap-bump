@@ -1,13 +1,15 @@
 angular.module('bump', ['ngResource', 'auth'])
 
-  .controller('HomeController', ['$scope', '$http', '$timeout', 'HOST', 'FB', 'image', 'platform',
-    function($scope, $http, $timeout, HOST, FB, image, platform) {
-      var currentFbUserId, currentFbAccessToken;
+  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'image', 'platform',
+    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, image, platform) {
+      var currentUser, currentFbUserId, currentFbAccessToken;
 
-      $scope.ENDPOINT = 'https://s3.amazonaws.com/bump-pictures';
+      $scope.ENDPOINT = 'http://s3.amazonaws.com/bump-pictures';
 
       $scope.title = 'Bump';
       $scope.category = 'Architecture';
+      $scope.grid = 3;
+      $scope.order = 'bumps';
 
       $scope.$watch('alert', function(state) {
         if (state && !~state.indexOf('...')) {
@@ -17,7 +19,22 @@ angular.module('bump', ['ngResource', 'auth'])
         }
       });
 
-      if (platform == 'browser')
+      $rootScope.refresh = function(list) {
+        var deferred = $q.defer();
+        ({
+          'image-list': function() {
+            image.query(function(data) {
+              $scope.picList = data;
+              deferred.resolve(null);
+            });
+          }
+        })[list]();
+        return deferred.promise;
+      };
+
+      $scope.picList = image.query();
+
+      if (platform == 'browser' || platform == 'phone-simulator')
         $scope.authd = true;
 
       function authRequest(res) {
@@ -26,7 +43,7 @@ angular.module('bump', ['ngResource', 'auth'])
         if (res.status === 'connected') {
           $http.post(HOST + '/api/v1.0/login', { user: res.authResponse.userID, accessToken: res.authResponse.accessToken })
             .success(function(data) {
-              console.log('user:', data);
+              currentUser = data;
             }); 
 
           $scope.$apply(function() {
@@ -59,25 +76,53 @@ angular.module('bump', ['ngResource', 'auth'])
         });
       };
 
+      $scope.toggleView = function() {
+        switch ($scope.grid) {
+          case 3:
+            $scope.grid = 2;
+            break;
+          case 2:
+            $scope.grid = 1;
+            break;
+          case 1:
+            $scope.grid = 3;
+            break;
+        }
+      };
+
+      $scope.toggleOrder = function() {
+        if ($scope.order === 'bumps') {
+          $scope.order = 'added';
+        } else {
+          $scope.order = 'bumps';
+        }
+      };
+
+      $scope.getImageSize = [null, 720, 360, 360];
+
       $scope.categories = function() {
-        $scope.catPreview = true;
+        $rootScope.preview = 'category';
       };
 
       $scope.catSelect = function(category) {
         $scope.category = category.name;
-        $scope.catPreview = false;
+        $rootScope.preview = false;
       };
 
       $scope.openPreview = function(image) {
         image.images = $scope.picList;
-        $scope.imagePreview = image;
-        $scope.imagePreview.profilePic = 'http://graph.facebook.com/' + image.fb_id + '/picture';
+        $rootScope.preview = 'image';
+        $scope.focusedImage = image;
       };
 
-      $scope.closePreview = function() {
-        $scope.catPreview = false;
-        $scope.imagePreview = false;
-        $scope.uploadPreview = false;
+      $scope.closePreview = function(newPreview) {
+        $rootScope.preview = newPreview || false;
+      };
+
+      $scope.openProfile = function() {
+        $rootScope.preview = 'profile';
+        $scope.profile = currentUser;
+        $scope.profile.token = currentFbAccessToken;
       };
 
       $scope.getIconWidth = function() {
@@ -95,9 +140,17 @@ angular.module('bump', ['ngResource', 'auth'])
           });
       }
 
-      $scope.camera = function() {
+      $scope.openCamera = function() {
+        $timeout(function() {
+          $rootScope.preview = 'upload';
+          $scope.uploadParams = {};
+          $scope.pendingUploadCategory = 'Category';
+        }, 500);
         navigator.camera.getPicture(loadPhoto, function(message) {
           console.log('get picture cancelled'); 
+          $scope.$apply(function() {
+            $rootScope.preview = false;
+          });
         },{
           quality: 50, 
           destinationType: navigator.camera.DestinationType.FILE_URI,
@@ -106,16 +159,22 @@ angular.module('bump', ['ngResource', 'auth'])
       };
 
       function loadPhoto(imageURI) {
+        console.log(imageURI);
         $scope.$apply(function() {
-          $scope.uploadPreview = true;
-          $scope.uploadParams = {
-            category: 'Category'
-          };
           $scope.pendingUploadImage = imageURI;
         });
-
         // uploadPhotoToServer(imageURI);
       }
+
+      $scope.selectUploadCategory = function() {
+        $rootScope.preview = 'select-category-for-upload';
+      };
+
+      $scope.submitUploadCategory = function(cat) {
+        $scope.uploadParams.category = cat.id;
+        $scope.pendingUploadCategory = cat.name;
+        $rootScope.preview = 'upload';
+      };
 
       $scope.uploadPhotoToServer = function() {
         var imageURI = $scope.pendingUploadImage;
@@ -128,7 +187,7 @@ angular.module('bump', ['ngResource', 'auth'])
         options.chunkedMode = false;
         $timeout(function() {
           $scope.alert = 'Uploading...';
-          $scope.uploadPreview = false;
+          $rootScope.preview = false;
         });
         ft.upload(imageURI, HOST + "/api/v1.0/upload", function(res) {
           $scope.$apply(function() {
@@ -150,17 +209,53 @@ angular.module('bump', ['ngResource', 'auth'])
           console.log('failed to load images');
         });
 
-
-      $scope.picList = image.query();
-
     }
   ])
 
+  .directive('animate', ['$rootScope', function($rootScope) {
+    return {
+      link: function(scope, element, attrs) {
+        // var h = $(window).height();
+        // $rootScope.$watch('preview', function(state) {
+        //   element.css({ 'margin-top': h + 'px' })
+        //     .animate({ 'margin-top': '0' }, 300)
+        // });
+      }
+    };
+  }])
+
+  .directive('triggerRefresh', ['$rootScope', function($rootScope) {
+    return {
+      scope: {
+        list: '=triggerRefresh'
+      },
+      link: function(scope, element, attrs) {
+        WebPullToRefresh.init({
+          loadingFunction: function() {
+            return new Promise(function(resolve, reject) {
+              $rootScope.refresh(scope.list).then(function(err) {
+                if (err) {
+                  reject();
+                } else {
+                  resolve();
+                }
+              });
+            });
+          }
+        });
+      }
+    };
+  }])
+
   .factory('platform', [function() {
     var platform;
+    console.log(document.URL);
     if (!!~document.URL.indexOf('Simulator')) {
-      platform = 'simulator';
+      platform = 'desktop-simulator';
+    } else if (!!~document.URL.indexOf(':3000')) {
+      platform = 'phone-simulator';
     } else if (!window.cordova) {
+      console.log = console._log;
       platform = 'browser';
     } else {
       platform = 'ios';
@@ -169,7 +264,7 @@ angular.module('bump', ['ngResource', 'auth'])
   }])
 
   .factory('HOST', ['platform', function(platform) {
-    if (platform == 'simulator' || platform == 'browser')
+    if (platform == 'desktop-simulator' || platform == 'browser' || platform == 'phone-simulator')
       return 'http://localhost:8081';
     else
       return 'http://app.pikbump.com';

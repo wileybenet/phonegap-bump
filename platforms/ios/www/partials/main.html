@@ -1,10 +1,16 @@
-<div class="main">
-  <div class="alert" ng-show="alert" ng-bind="alert"></div>
-  <data ng-include="'partials/home.html'"></data>
-  <data ng-show="imagePreview" ng-include="'partials/preview.html'"></data>
-  <data ng-show="catPreview" ng-include="'partials/categories.html'"></data>
-  <data ng-show="uploadPreview" ng-include="'partials/upload.html'"></data>
+<div id="ptr" class="main" ng-class="{'disable-flow': $root.preview}" trigger-refresh="'image-list'">
+  <div id="ptr-arrow" class="genericon genericon-next"></div>
+  <div class="loading">
+    <span id="l1"></span>
+    <span id="l2"></span>
+    <span id="l3"></span>
+  </div>
+  <div id="content" class="image-wrapper">
+    <div ng-include="'partials/home.html'"></div>
+  </div>
 </div>
+<div class="alert" ng-show="alert" ng-bind="alert"></div>
+<div ng-if="$root.preview" ng-include="'partials/' + $root.preview + '.html'"></div>
 <div class="header">
   <a class="categories left" ng-click="categories()">
     <i class="fa fa-bars"></i>
@@ -12,17 +18,26 @@
   <a class="notifications right">
     <i class="fa fa-bell"></i>
   </a>
+  <h4 class="page-heading">
+    {{category}} <i class="fa fa-layout"></i>
+  </h4>
   <div class="clear"></div>
 </div>
 <div class="footer">
   <div class="title">
     <img src="images/logo.png" width="54" />
   </div>
-  <a class="camera left" ng-click="camera()">
+  <a class="camera left" ng-click="openCamera()">
     <i class="fa fa-camera"></i>
   </a>
-  <a class="profile right">
+  <a class="profile right" ng-click="openProfile()">
     <i class="fa fa-user"></i>
   </a>
+  <div class="toggle-view" ng-click="toggleView()">
+    <i class="fa" ng-class="{'fa-th': grid == 1, 'fa-th-large': grid == 3, 'fa-ellipsis-v': grid == 2}"></i>
+  </div>
+  <div class="toggle-order" ng-click="toggleOrder()">
+    <i class="fa" ng-class="{'fa-clock-o': order == 'bumps', 'fa-trophy': order == 'added'}"></i>
+  </div>
   <div class="clear"></div>
 </div>

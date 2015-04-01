@@ -6,7 +6,7 @@
     Photo Upload
   </div>
   <div class="cat-dropdown btn" ng-click="selectUploadCategory()">
-    <i class="fa fa-angle-down"></i> <span ng-bind="uploadParams.category"></span>
+    <i class="fa fa-angle-down"></i> <span ng-bind="pendingUploadCategory"></span>
   </div>
   <div class="image upload">
     <img ng-src="{{pendingUploadImage}}" width="100%" />

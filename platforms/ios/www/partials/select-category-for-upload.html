@@ -1,0 +1,12 @@
+<div class="preview" animate>
+  <div class="close" ng-click="closePreview('upload')">
+    &times;
+  </div>
+  <div class="scroller">
+    <div class="wrapper">
+      <div class="btn" ng-class="{selected: cat.id = uploadParams.category}" ng-repeat="cat in catList | orderBy:'name'" ng-click="submitUploadCategory(cat)">
+        {{cat.name}}
+      </div>
+    </div>
+  </div>
+</div>

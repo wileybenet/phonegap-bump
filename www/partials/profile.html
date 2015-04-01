@@ -1,1 +1,16 @@
-Profile!
+<div class="preview" animate>
+  <div class="close" ng-click="closePreview()">
+    &times;
+  </div>
+  <div class="profile-pic">
+    <img width="100" ng-src="https://graph.facebook.com/me/picture?width=240&height=240&access_token={{profile.token}}" />
+    <div class="profile-info">
+      <p class="big">nicole</p>
+      <p>{{502034 | commas}} bumps</p>
+      <p>
+        <span class="trophy"><i class="fa fa-trophy gold"></i> 2</span>
+        <span class="trophy"><i class="fa fa-trophy silver"></i> 5</span>
+        <span class="trophy"><i class="fa fa-trophy bronze"></i> 12</p></span>
+    </div>
+  </div>
+</div>

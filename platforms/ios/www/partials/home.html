@@ -1,6 +1,10 @@
-<h4 class="page-heading">
-  {{category}} <i class="fa fa-layout"></i>
-</h4>
-<div class="thumbnail" ng-repeat="image in picList | orderBy:'bumps':true track by image.id">
-  <img ng-src="{{ENDPOINT}}/360_{{image.key}}" width="100%" ng-click="openPreview(image)" />
+<div class="thumbnail" ng-class="{w3: grid == 3, w2: grid == 2, w1: grid == 1}" ng-repeat="image in picList | orderBy:order:true track by image.key">
+  <img ng-src="{{ENDPOINT}}/{{getImageSize[grid]}}_{{image.key}}" width="100%" ng-click="openPreview(image)" />
+  <div class="grid-details" ng-show="grid == 1">
+    <div class="btn left" ng-bind="image.username" ng-click="viewUser(image.user_id)"></div>
+    <div class="right">
+      <span ng-bind="image.bumps | commas"></span> <small class="subdue">bump{{image.bumps == 1 ? '' : 's'}}</small>
+    </div>
+    <div class="clear"></div>
+  </div>
 </div>

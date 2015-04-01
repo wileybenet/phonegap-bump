@@ -1,0 +1,145 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #333;
+	margin: 0;
+}
+
+#ptr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	height: 78px;
+}
+
+#ptr .genericon {
+	opacity: .6;
+	font-size: 34px;
+	width: auto;
+	height: auto;
+	transition: all .25s ease;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 87px;
+	margin-left: -0.5em;
+	position: absolute;
+	transition: all .5s ease;
+
+	color: rgba(48, 110, 110, 1);
+}
+.ptr-refresh #ptr .genericon {
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+.ptr-loading #ptr .genericon,
+.ptr-reset #ptr .genericon {
+	display: none;
+}
+
+.loading {
+	text-align: center;
+	opacity: .4;
+	width: 100%;
+	height: 0px;
+	margin-top: 0px;
+	visibility: hidden;
+}
+.ptr-loading .loading {
+	height: 50px;
+	padding-top: 10px;
+	margin-top: 78px;
+	visibility: visible;
+}
+.ptr-collapse .loading {
+	height: 0;
+	padding-top: 0;
+	transition: all .3s ease;
+}
+.ptr-reset .loading {
+	height: 0px;
+	margin-top: 78px;
+}
+
+.ptr-loading .image-wrapper {
+	margin-top: 0;
+}
+.ptr-reset .image-wrapper {
+	margin-top: 0;
+}
+
+.loading span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+	border-radius: 50%;
+	-webkit-animation: ptr-loading 0.4s infinite alternate;
+	animation: ptr-loading 0.4s infinite alternate;
+	background: rgba(48, 110, 110, 1);
+}
+
+#content {
+	min-height: 100%;
+}
+
+/*.ptr-loading #content,
+.ptr-loading #ptr {
+	transition: margin-top .5s ease;
+}*/
+.ptr-abort #content,
+.ptr-abort #ptr {
+	transition: all .5s;
+}
+
+
+
+#l1 {
+	-webkit-animation-delay: 0;
+	animation-delay: 0;
+}
+
+#l2 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+#l3 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+@-webkit-keyframes ptr-loading {
+	0% {
+		-webkit-transform: translateY(0) scale(0.3);
+		transform: translateY(0) scale(0.3);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background-color: rgba(48, 110, 110, 1);
+		opacity: 1;
+	}
+}
+
+@keyframes ptr-loading {
+	0% {
+		-webkit-transform: translateY(0) scale(0.3);
+		transform: translateY(0) scale(0.3);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background-color: rgba(48, 110, 110, 1);
+		opacity: 1;
+	}
+}

@@ -1,0 +1,12 @@
+<div class="preview" animate>
+  <div class="close" ng-click="closePreview()">
+    &times;
+  </div>
+  <div class="scroller">
+    <div class="wrapper">
+      <div class="btn" ng-repeat="cat in catList | orderBy:'name'" ng-click="catSelect(cat)">
+        {{cat.name}}
+      </div>
+    </div>
+  </div>
+</div>

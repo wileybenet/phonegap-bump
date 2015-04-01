@@ -1,7 +1,7 @@
 
 
 html, body {
-  background: #525C5B;
+  background: #D6DFDE;
   padding: 0;
   margin: 0;
   font-size: 30px;
@@ -25,7 +25,7 @@ html, body {
   position: fixed;
   width: 100%;
   top: 0;
-  background: #525C5B;
+  background: rgba(48, 110, 110, 1);
   z-index: 1;
 }
 
@@ -36,7 +36,7 @@ html, body {
 .alert {
   position: fixed;
   width: 100%;
-  bottom: 120px;
+  bottom: 70px;
   text-align: center;
   font-size: 15px;
   z-index: 50;
@@ -55,6 +55,7 @@ html, body {
 .header {
   top: 0;
   padding-top: 22px;
+  background: rgba(255,255,255,0.5);
 }
 .footer {
   background: rgba(48, 110, 110, 1);
@@ -63,9 +64,23 @@ html, body {
   bottom: 0;
   color: #FFF;
 }
+  .footer .toggle-view, .footer .toggle-order {
+    position: absolute;
+    top: 17px;
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+  }
+  .footer .toggle-order {
+    left: 28%;
+  }
+  .footer .toggle-view {
+    right: 28%;
+  }
+
 .footer .title {
   font-size: .5em;
-  margin-top: 15px;
+  margin-top: 16px;
   display: inline-block;
 }
 
@@ -76,6 +91,7 @@ html, body {
   height: 40px;
   color: rgba(255, 255, 255, 0.85);
   display: block;
+  z-index: 5;
 }
 .profile {
   border-top-left-radius: 20px;
@@ -93,26 +109,48 @@ html, body {
 }
 
 .main {
-  margin-top: 88px;
-  padding-bottom: 52px;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+.image-wrapper {
+  margin-top: 78px;
+  min-height: 100%;
+  padding-bottom: 1px;
+  -webkit-transform: translateZ(0);
 }
 .page-heading {
   font-weight: normal;
   position: fixed;
   width: 100%;
-  top: 7px;
+  top: 15px;
+  color: #000;
   text-align: center;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: .7em;
+  font-size: .6em;
 }
 
 .thumbnail {
   display: inline-block;
   vertical-align: top;
-  width: 33.3333%;
   text-align: center;
   overflow: hidden;
   margin: 0;
+}
+.w3 {
+  width: 33.3333%;
+}
+.w2 {
+  width: 50%;
+}
+.w1 {
+  width: 100%;
+}
+.grid-details {
+  font-size: 16px;
+  padding: 6px 10px 18px 10px;
+  text-transform: none;
+  background: #3F3F3F;
+  color: #FFF;
 }
 img {
   margin: 0;
@@ -136,19 +174,53 @@ img {
     top: 12px;
     right: 0;
     font-size: 24px;
-    padding: 10px 16px;
+    padding: 10px 16px 14px 20px;
+    z-index: 10;
   }
+  .preview .scroller {
+    padding: 0 20px;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+  }
+    .preview .scroller .wrapper {
+      padding: 50px 0;
+    }
+    .preview .scroller .btn {
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 8px;
+    }
   .preview .title {
     margin-top: 78px;
     font-size: 18px;
     text-align: center;
   }
+  .preview .sub-title {
+    margin-top: 48px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .preview .profile-pic {
+    margin: 50px 20px 0 30px;
+  }
+    .preview .profile-pic img {
+      border-radius: 500px;
+    }
+  .preview .profile-info {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+    .preview .profile-info .trophy {
+      margin-right: 8px;
+    }
   .preview .owner {
     margin-top: 50px;
     width: 100%;
     text-align: center;
     font-size: 20px;
-    text-transform: capitalize;
   }
   .preview .owner img {
     border-radius: 20px;
@@ -243,6 +315,33 @@ img {
   clear: both;
 }
 
+.gold {
+  color: #DFC12B;
+}
+.silver {
+  color: #A9A998;
+}
+.bronze {
+  color: #7E6013;
+}
+
+
+.hide {
+  display: none;
+}
+
+.disable-flow {
+  -webkit-overflow-scrolling: auto;
+  overflow: hidden;
+}
+
+.big {
+  font-size: 2em;
+}
+
+.selected {
+  color: #FFF;
+}
 
 .subdue {
   opacity: 0.5;
@@ -262,3 +361,14 @@ small {
   font-size: 14px;
 }
 
+p {
+  -webkit-margin-before: 6px;
+  -webkit-margin-after: 2px;
+}
+
+
+.filler {
+  width: 100%;
+  height: 1200px;
+  background: #333;
+}
