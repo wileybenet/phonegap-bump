@@ -1,4 +1,4 @@
-<div class="thumbnail" ng-class="{w3: grid == 3, w2: grid == 2, w1: grid == 1}" ng-repeat="image in picList | orderBy:order:true track by image.key">
+<div class="thumbnail" ng-class="{w3: grid == 3, w2: grid == 2, w1: grid == 1}" ng-repeat="image in picList | orderBy:order:true track by image.key" ng-style="{ top: getTop($index), left: getLeft($index), 'z-index': 1 / ($index + 1) }">
   <img ng-src="{{ENDPOINT}}/{{getImageSize[grid]}}_{{image.key}}" width="100%" ng-click="openPreview(image)" />
   <div class="grid-details" ng-show="grid == 1">
     <div class="btn left" ng-bind="image.username" ng-click="viewUser(image.user_id)"></div>

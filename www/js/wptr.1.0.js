@@ -15,7 +15,7 @@ var WebPullToRefresh = (function () {
 		ptrArrow: 'ptr-arrow',
 
 		// Number of pixels of dragging until refresh 
-		distanceToRefresh: 50, 
+		distanceToRefresh: 40, 
 
 		// Pointer to function that does the loading and returns a promise
 		loadingFunction: false 
@@ -77,10 +77,11 @@ var WebPullToRefresh = (function () {
 	var _dragStart = function(e) {
 		drag.startingPositionY = options.ptrEl.scrollTop;
 
-		if ( drag.startingPositionY === 0 )
+		if ( drag.startingPositionY === 0 ) {
 			drag.enabled = true;
+			bodyClass.add( 'ptr-pull' );
+		}
 
-		console.log('start', drag.startingPositionY);
 	};
 
 	/**
@@ -99,11 +100,7 @@ var WebPullToRefresh = (function () {
 		// options.contentEl.style.transform = options.contentEl.style.webkitTransform = 'translate3d( 0, ' + drag.distance + 'px, 0 )';
 		// options.ptrEl.style.transform = options.ptrEl.style.webkitTransform = 'translate3d( 0, ' + ( drag.distance - options.ptrEl.offsetHeight ) + 'px, 0 )';
 
-		if ( drag.distance > 15 ) {
-			options.ptrArrow.style.visibility = 'visible';
-		} else {
-			options.ptrArrow.style.visibility = 'hidden';
-		}
+		options.ptrArrow.style.opacity = (drag.distance / 30) / 1;
 
 		if ( drag.distance > options.distanceToRefresh ) {
 			bodyClass.add( 'ptr-refresh' );
@@ -120,6 +117,9 @@ var WebPullToRefresh = (function () {
 	var _dragEnd = function(e) {
 		if ( ! drag.enabled )
 			return;
+
+
+		bodyClass.remove( 'ptr-pull' );
 
 		// e.gesture.preventDefault();
 
@@ -139,7 +139,7 @@ var WebPullToRefresh = (function () {
 		if ( document.body.classList.contains( 'ptr-refresh' ) ) {
 			_doLoading();
 		} else {
-			_doAbort();
+
 		}
 
 		drag.enabled = false;
@@ -165,28 +165,31 @@ var WebPullToRefresh = (function () {
 		var loadingPromise = options.loadingFunction();
 
 		// For UX continuity, make sure we show loading for at least one second before resetting
-		setTimeout( function() {
-			// Once actual loading is complete, reset pull to refresh
-			loadingPromise.then( _doReset );
-		}, 1000);
+
+		// Once actual loading is complete, reset pull to refresh
+		loadingPromise.then( function() {
+			setTimeout( function() {
+				_doReset();
+			}, 1000 );
+		} );
 	};
 
 	/**
 	 * Reset all elements to their starting positions before any dragging took place.
 	 */
 	var _doReset = function() {
-		// var bodyClassRemove = function() {
-		// 	bodyClass.remove( 'ptr-reset' );
-		// 	bodyClass.remove( 'ptr-loading' );
-		// 	bodyClass.remove( 'ptr-collapse' );
-		// 	document.body.removeEventListener( 'transitionend', bodyClassRemove, false );
-		// };
+		var bodyClassRemove = function() {
+			bodyClass.remove( 'ptr-reset' );
+			bodyClass.remove( 'ptr-loading' );
+			bodyClass.remove( 'ptr-collapse' );
+			document.body.removeEventListener( 'transitionend', bodyClassRemove, false );
+		};
 
-		// document.body.addEventListener( 'transitionend', bodyClassRemove, false );
+		document.body.addEventListener( 'transitionend', bodyClassRemove, false );
 
-		// bodyClass.add( 'ptr-reset' );
+		bodyClass.add( 'ptr-reset' );
 		bodyClass.remove( 'ptr-refresh' );
-		// bodyClass.add( 'ptr-collapse' );
+		bodyClass.add( 'ptr-collapse' );
 
 		h.on( 'dragstart', _dragStart );
 		h.on( 'dragdown', _dragDown );

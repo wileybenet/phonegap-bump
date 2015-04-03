@@ -36,7 +36,7 @@
     <script type="text/javascript" src="js/auth.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
   </head>
-  <body ng-app="bump" ng-controller="HomeController" ng-class="{logging: !authd}" data-ng-show="loaded" class="platform-ios platform-cordova platform-webview">
+  <body ng-app="bump" ng-controller="HomeController" ng-class="{logging: !authd, 'ptr-loading': $root.loading, 'ptr-collapse': $root.loaded}" data-ng-show="loaded" class="platform-ios platform-cordova platform-webview">
     <div class="headliner" ng-class="{logging: !authd}"></div>
     <div data-ng-show="authd" class="disable-flow" ng-include="'partials/main.html'"></div>
     <div class="login-container" data-ng-hide="authd">

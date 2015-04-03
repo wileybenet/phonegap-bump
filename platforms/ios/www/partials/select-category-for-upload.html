@@ -4,7 +4,7 @@
   </div>
   <div class="scroller">
     <div class="wrapper">
-      <div class="btn" ng-class="{selected: cat.id = uploadParams.category}" ng-repeat="cat in catList | orderBy:'name'" ng-click="submitUploadCategory(cat)">
+      <div class="btn" ng-class="{selected: cat.id == uploadParams.category}" ng-repeat="cat in categories | orderBy:'name'" ng-click="submitUploadCategory(cat)">
         {{cat.name}}
       </div>
     </div>

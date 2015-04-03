@@ -1,0 +1,42 @@
+<div class="preview" animate ng-init="state = 0">
+  <div class="title">
+    Hello {{newUser.name}},
+  </div>
+  <div class="sub-title">
+    Welcome to Bump!
+  </div>
+  <div class="info" toggle="state == 0">
+    Bump is a photo sharing space where users can post photos and people can bump up their ratings!
+  </div>
+  <div class="wizard">
+    <div class="label element title" ng-class="{ active: state > 0 && !pickedUsername }">
+      Start by choosing a username:
+    </div>
+    <div class="input element" ng-class="{ active: state > 0 && !pickedUsername }">
+      <input ng-model="newUsername" placeholder="Username" />
+    </div>
+    <p class="error" ng-class="{ 'error-show': usernameTaken && !pickedUsername }">
+      "{{usernameTaken}}" is already taken
+    </p>
+    <p ng-show="pickedUsername">
+      Username:
+      <span class="btn" ng-click="newUsername = newUsername; pickedUsername = false;">
+        {{pickedUsername}} <i class="fa fa-check"></i>
+      </span>
+    </p>
+
+    <div class="wizard-loading" ng-show="wizardLoading">
+      <div class="loading">
+        <span id="l1"></span>
+        <span id="l2"></span>
+        <span id="l3"></span>
+      </div>
+    </div>
+  </div>
+  <div class="btn footer-btn" ng-click="state = state + 1" ng-show="state == 0">
+    Continue <i class="fa fa-angle-right"></i>
+  </div>
+  <div class="btn footer-btn" ng-click="submitUsername(newUsername)" ng-show="state == 1">
+    Submit <i class="fa fa-angle-right"></i>
+  </div>
+</div>

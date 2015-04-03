@@ -4,7 +4,7 @@
   </div>
   <div class="scroller">
     <div class="wrapper">
-      <div class="btn" ng-repeat="cat in catList | orderBy:'name'" ng-click="catSelect(cat)">
+      <div class="btn" ng-repeat="cat in categories | orderBy:'name'" ng-click="catSelect(cat)">
         {{cat.name}}
       </div>
     </div>

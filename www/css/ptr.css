@@ -25,12 +25,15 @@ body {
 	transition: all .25s ease;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-	top: 87px;
+	top: 38px;
 	margin-left: -0.5em;
 	position: absolute;
-	transition: all .5s ease;
-
+	visibility: hidden;
 	color: rgba(48, 110, 110, 1);
+	opacity: 0;
+}
+.ptr-pull #ptr .genericon {
+	visibility: visible;
 }
 .ptr-refresh #ptr .genericon {
 	-webkit-transform: rotate(270deg);
@@ -41,7 +44,7 @@ body {
 	display: none;
 }
 
-.loading {
+#ptr .loading {
 	text-align: center;
 	opacity: .4;
 	width: 100%;
@@ -50,26 +53,17 @@ body {
 	visibility: hidden;
 }
 .ptr-loading .loading {
-	height: 50px;
-	padding-top: 10px;
-	margin-top: 78px;
+	height: 44px;
 	visibility: visible;
 }
 .ptr-collapse .loading {
 	height: 0;
 	padding-top: 0;
-	transition: all .3s ease;
+	overflow: hidden;
+	transition: all 0.4s ease;
 }
 .ptr-reset .loading {
 	height: 0px;
-	margin-top: 78px;
-}
-
-.ptr-loading .image-wrapper {
-	margin-top: 0;
-}
-.ptr-reset .image-wrapper {
-	margin-top: 0;
 }
 
 .loading span {
@@ -92,11 +86,6 @@ body {
 .ptr-loading #ptr {
 	transition: margin-top .5s ease;
 }*/
-.ptr-abort #content,
-.ptr-abort #ptr {
-	transition: all .5s;
-}
-
 
 
 #l1 {
