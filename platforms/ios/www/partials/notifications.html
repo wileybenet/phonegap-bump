@@ -1,0 +1,18 @@
+<div class="preview">
+  <div class="close" ng-click="closePreview()">
+    &times;
+  </div>
+  <div class="tabs notification-tabs">
+    <div class="btn tab">
+      <i class="fa fa-trophy" ng-class="{ selected: notifTab == 'trophies' }" ng-click="notifTabSelect('trophies')"></i>
+    </div>
+    <div class="btn tab" ng-class="{ selected: notifTab == 'bumps' }" ng-click="notifTabSelect('bumps')">
+      <i class="fa fa-angle-double-up"></i>
+    </div>
+  </div>
+  <div class="notif-wrapper">
+    <div class="notif">
+      
+    </div>
+  </div>
+</div>

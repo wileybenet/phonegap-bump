@@ -36,5 +36,5 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
-    <icon src="logo-2.png" platform="ios" width="57" height="57" />
+    <icon src="renders/logo-2.png" platform="ios" width="57" height="57" />
 </widget>
