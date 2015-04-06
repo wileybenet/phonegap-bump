@@ -1,42 +1,46 @@
-<div class="preview" animate ng-init="state = 0">
-  <div class="title">
-    Hello {{newUser.name}},
+<div class="preview-background" ng-style="{ 'background-image': 'url(\'images/splash/path.jpg\')', '-webkit-filter': 'brightness(38%)' }"></div>
+<div class="preview" style="background: transparent;">
+  <div class="title" style="position: absolute; text-align: center; width: 100%;">
+    Hi {{newUser.first_name}}
   </div>
-  <div class="sub-title">
-    Welcome to Bump!
-  </div>
-  <div class="info" toggle="state == 0">
-    Bump is a photo sharing space where users can post photos and people can bump up their ratings!
-  </div>
-  <div class="wizard">
-    <div class="label element title" ng-class="{ active: state > 0 && !pickedUsername }">
+  <div class="wizard" style="margin-top: 100%">
+    <div class="sub-title element" ng-class="{ active: wizard == 0 }">
+      Welcome to Bump!
+    </div>
+    <div class="info element" ng-class="{ active: wizard == 0 }">
+      Bump is a photo sharing space where you can vote on your favorite photos and post your own!
+    </div>
+    <div class="label element title" ng-class="{ active: wizard == 1 }">
       Start by choosing a username:
     </div>
-    <div class="input element" ng-class="{ active: state > 0 && !pickedUsername }">
+    <div class="input element" ng-class="{ active: wizard == 1 }">
       <input ng-model="newUsername" placeholder="Username" />
-    </div>
-    <p class="error" ng-class="{ 'error-show': usernameTaken && !pickedUsername }">
-      "{{usernameTaken}}" is already taken
-    </p>
-    <p ng-show="pickedUsername">
-      Username:
-      <span class="btn" ng-click="newUsername = newUsername; pickedUsername = false;">
-        {{pickedUsername}} <i class="fa fa-check"></i>
+      <span class="error" ng-class="{ 'el-show': usernameTaken }" ng-if="!pickedUsername">
+        <i class="fa fa-times-circle"></i>
       </span>
-    </p>
+      <span class="success" ng-class="{ 'el-show': pickedUsername }">
+        <i class="fa fa-check-circle"></i>
+      </span>
+    </div>
+    <div class="sub-title element" ng-class="{ active: wizard == 2 }">
+      Thanks for joining Bump!
+    </div>
 
     <div class="wizard-loading" ng-show="wizardLoading">
       <div class="loading">
-        <span id="l1"></span>
-        <span id="l2"></span>
-        <span id="l3"></span>
+        <span class="l1"></span>
+        <span class="l2"></span>
+        <span class="l3"></span>
       </div>
     </div>
   </div>
-  <div class="btn footer-btn" ng-click="state = state + 1" ng-show="state == 0">
+  <div class="btn footer-btn" ng-click="wizardNext()" ng-show="wizard == 0">
     Continue <i class="fa fa-angle-right"></i>
   </div>
-  <div class="btn footer-btn" ng-click="submitUsername(newUsername)" ng-show="state == 1">
+  <div class="btn footer-btn" ng-click="submitUsername(newUsername)" ng-show="wizard == 1">
     Submit <i class="fa fa-angle-right"></i>
+  </div>
+  <div class="btn footer-btn" ng-click="$root.preview = null" ng-show="wizard == 2">
+    Enter <i class="fa fa-angle-right"></i>
   </div>
 </div>

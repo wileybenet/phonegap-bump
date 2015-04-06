@@ -1,21 +1,12 @@
-<div id="ptr" class="main" ng-class="{'disable-flow': $root.preview}" trigger-refresh="refreshMain()">
-  <div id="ptr-arrow" class="genericon genericon-next"></div>
-  <div id="content" class="image-wrapper">
-    <div class="loading">
-      <span id="l1"></span>
-      <span id="l2"></span>
-      <span id="l3"></span>
-    </div>
-    <div ng-include="'partials/thumbnail.html'"></div>
-  </div>
-</div>
+<div class="main" ng-class="{'disable-flow': $root.preview}" pull-refresh="refreshMain()" list="picList" template="'partials/thumbnail.html'" distance="40" list-class="'main-content'" config="list"></div>
 <div class="alert" ng-show="alert" ng-bind="alert"></div>
-<div ng-if="$root.preview" ng-include="'partials/' + $root.preview + '.html'"></div>
+<div pass="list.grid"></div>
+<div class="preview-wrapper" ng-repeat="preview in $root.previews" ng-include="'partials/' + preview + '.html'"></div>
 <div class="header">
   <a class="categories left" ng-click="openCategories()">
     <i class="fa fa-bars"></i>
   </a>
-  <a class="notifications right">
+  <a class="notifications right" ng-click="openNotifications()">
     <i class="fa fa-bell"></i>
   </a>
   <h4 class="page-heading">
@@ -30,14 +21,14 @@
   <a class="camera left" ng-click="openCamera()">
     <i class="fa fa-camera"></i>
   </a>
-  <a class="profile right" ng-click="openProfile()">
+  <a class="profile right" ng-click="$root.openProfile()">
     <i class="fa fa-user"></i>
   </a>
-  <div class="toggle-view" ng-click="toggleView()">
-    <i class="fa" ng-class="{'fa-th': grid == 1, 'fa-th-large': grid == 3, 'fa-ellipsis-v': grid == 2}"></i>
+  <div class="toggle-view" ng-click="toggleView(list)">
+    <i class="fa" ng-class="{'fa-th': list.grid == 1, 'fa-th-large': list.grid == 3, 'fa-ellipsis-v': list.grid == 2}"></i>
   </div>
-  <div class="toggle-order" ng-click="toggleOrder()">
-    <i class="fa" ng-class="{'fa-clock-o': order == 'bumps', 'fa-trophy': order == 'added'}"></i>
+  <div class="toggle-order" ng-click="toggleOrder(list)">
+    <i class="fa" ng-class="{'fa-clock-o': list.order == 'bumps', 'fa-trophy': list.order == 'added'}"></i>
   </div>
   <div class="clear"></div>
 </div>

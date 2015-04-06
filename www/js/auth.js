@@ -1,11 +1,3 @@
-var _login_status_ = false;
-var appId = '554449381361750';
-var roleArn = 'arn:aws:iam::074554520751:role/FacebookUsers';
-var bucketName = 'bump-uploads';
-var fbUserId;
-// var fbReady = false;
-// var deviceReady = false;
-
 angular.module('auth', [])
 
   .factory('FB', ['platform', function(platform) {
@@ -62,67 +54,3 @@ angular.module('auth', [])
 
     return FB;
   }]);
-
-
-
-
-// window.fbAsyncInit = function() {
-//   alert('fb');
-//   fbReady = true;
-//   ready();
-// };
-
-// Load the Facebook SDK asynchronously
-// (function (d, s, id) {
-//   var js, fjs = d.getElementsByTagName(s)[0];
-//   if (d.getElementById(id)) {
-//       return;
-//   }
-//   js = d.createElement(s);
-//   js.id = id;
-//   js.src = "//connect.facebook.net/en_US/all.js";
-//   fjs.parentNode.insertBefore(js, fjs);
-// }(document, 'script', 'facebook-jssdk'));
-
-
-    // button.addEventListener('click', function () {
-    //     var file = fileChooser.files[0];
-    //     if (file) {
-    //         results.innerHTML = '';
-    //         //Object key will be facebook-USERID#/FILE_NAME
-    //         var objKey = 'facebook-' + fbUserId + '/' + file.name;
-    //         var params = {
-    //             Key: objKey,
-    //             ContentType: file.type,
-    //             Body: file,
-    //             ACL: 'public-read'
-    //         };
-    //         bucket.putObject(params, function (err, data) {
-    //             if (err) {
-    //                 results.innerHTML = 'ERROR: ' + err;
-    //             } else {
-    //                 listObjs();
-    //             }
-    //         });
-    //     } else {
-    //         results.innerHTML = 'Nothing to upload.';
-    //     }
-    // }, false);
-
-    // function listObjs() {
-    //     var prefix = 'facebook-' + fbUserId;
-    //     bucket.listObjects({
-    //         Prefix: prefix
-    //     }, function (err, data) {
-    //         if (err) {
-    //             results.innerHTML = 'ERROR: ' + err;
-    //         } else {
-    //             var objKeys = "";
-    //             data.Contents.forEach(function (obj) {
-    //                 objKeys += obj.Key + "<br>";
-    //             });
-    //             results.innerHTML = objKeys;
-    //         }
-    //     });
-    // }
-

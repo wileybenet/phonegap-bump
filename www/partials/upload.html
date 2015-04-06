@@ -16,7 +16,7 @@
       <textarea ng-model="uploadParams.caption" placeholder="Add a caption"></textarea>
     </div>
   </div>
-  <div class="btn footer-btn" ng-click="uploadPhotoToServer()">
+  <div class="btn footer-btn" ng-click="readyToUpload() && uploadPhotoToServer()" ng-class="{ disabled: !readyToUpload() }">
     Upload
   </div>
 </div>

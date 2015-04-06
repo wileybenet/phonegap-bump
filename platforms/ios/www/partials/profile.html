@@ -3,17 +3,23 @@
     &times;
   </div>
   <div class="profile-pic">
-    <img width="100" ng-src="https://graph.facebook.com/me/picture?width=240&height=240&access_token={{profile.token}}" />
+    <img width="100" ng-src="http://graph.facebook.com/{{profile.fb_id}}/picture?width=240&height=240" />
     <div class="profile-info">
-      <p class="big">nicole</p>
-      <p>{{502034 | commas}} bumps</p>
+      <p class="big">{{profile.username}}</p>
+      <p>{{bumps | commas}} bumps</p>
       <p>
         <span class="trophy"><i class="fa fa-trophy gold"></i> 2</span>
         <span class="trophy"><i class="fa fa-trophy silver"></i> 5</span>
         <span class="trophy"><i class="fa fa-trophy bronze"></i> 12</p></span>
     </div>
   </div>
-  <div>
-    
+  <div class="profile-main" pull-refresh="profile.refresh()" list="profile.images" template="'partials/thumbnail.html'" distance="40" config="profile.list" fixed-height="-60"></div>
+  <div class="tabs profile-tabs">
+    <div class="tab toggle-view" ng-click="toggleView(profile.list)">
+      <i class="fa" ng-class="{'fa-th': profile.list.grid == 1, 'fa-th-large': profile.list.grid == 3, 'fa-ellipsis-v': profile.list.grid == 2}"></i>
+    </div>
+    <div class="tab toggle-order" ng-click="toggleOrder(profile.list)">
+      <i class="fa" ng-class="{'fa-clock-o': profile.list.order == 'bumps', 'fa-trophy': profile.list.order == 'added'}"></i>
+    </div>
   </div>
 </div>

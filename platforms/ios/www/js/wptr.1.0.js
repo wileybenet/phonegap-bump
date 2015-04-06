@@ -93,12 +93,7 @@ var WebPullToRefresh = (function () {
 		if ( ! drag.enabled && e.gesture.distance > 0)
 			return;
 
-		// e.gesture.preventDefault();
 		drag.distance = e.gesture.distance / 2.5; // Provide feeling of resistance
-
-		// Use transforms to smoothly animate elements on desktop and mobile devices
-		// options.contentEl.style.transform = options.contentEl.style.webkitTransform = 'translate3d( 0, ' + drag.distance + 'px, 0 )';
-		// options.ptrEl.style.transform = options.ptrEl.style.webkitTransform = 'translate3d( 0, ' + ( drag.distance - options.ptrEl.offsetHeight ) + 'px, 0 )';
 
 		options.ptrArrow.style.opacity = (drag.distance / 30) / 1;
 
@@ -120,21 +115,6 @@ var WebPullToRefresh = (function () {
 
 
 		bodyClass.remove( 'ptr-pull' );
-
-		// e.gesture.preventDefault();
-
-		// options.contentEl.style.transform = options.contentEl.style.webkitTransform = '';
-		// options.ptrEl.style.transform = options.ptrEl.style.webkitTransform = '';
-
-		// var delta = drag.distance - options.ptrEl.offsetHeight;
-		// var count = 0;
-		// var step = setInterval(function() {
-		// 	var dist = delta - (count / 30 * delta);
-		// 	options.contentEl.style.transform = options.contentEl.style.webkitTransform = 'translate3d( 0, ' + dist + 'px, 0 )';
-		// 	if (count == 30)
-		// 		clearInterval(step);
-		// 	count++;
-		// }, 10);
 
 		if ( document.body.classList.contains( 'ptr-refresh' ) ) {
 			_doLoading();
@@ -170,7 +150,7 @@ var WebPullToRefresh = (function () {
 		loadingPromise.then( function() {
 			setTimeout( function() {
 				_doReset();
-			}, 1000 );
+			}, 750 );
 		} );
 	};
 

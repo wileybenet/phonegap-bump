@@ -1,20 +1,35 @@
-angular.module('bump', ['ngResource', 'auth'])
+angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'])
 
   .value('IMG_ENDPOINT', 'http://s3.amazonaws.com/bump-pictures')
 
-  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'image', 'category', 'platform', 'IMG_ENDPOINT',
-    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, image, category, platform, IMG_ENDPOINT) {
+  .config([function() {
+    console._log = console.log;
+    console.log = function(args) {
+      args = [].slice.call(arguments).map(function(arg) {
+        arg = typeof arg == 'object' ? JSON.stringify(arg) : arg;
+        return arg;
+      }).join(' ');
+
+      $.get('http://localhost:8081/debug', { data: args });
+    };
+  }])
+
+  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'imageFactory', 'userFactory', 'categoryFactory', 'platform', 'IMG_ENDPOINT',
+    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, imageFactory, userFactory, categoryFactory, platform, IMG_ENDPOINT) {
       var currentUser = {};
       var currentFbUserId; 
-      var currentFbAccessToken;
 
       var defer = $q.defer();
-      $scope.categories = category.query();
+      $scope.categories = categoryFactory.query();
       $scope.categoryIdsByName = {};
+      $scope.list = {};
 
 
-      $scope.ENDPOINT = IMG_ENDPOINT;
-      $scope.category = 'Landscape';
+      $rootScope.previews = [];
+      $rootScope.ENDPOINT = IMG_ENDPOINT;
+      $rootScope.WW = $(window).width();
+      $rootScope.WH = $(window).height();
+      $scope.category = 'Children';
 
 
       function initializeApp() {
@@ -26,22 +41,24 @@ angular.module('bump', ['ngResource', 'auth'])
       }
 
       function authFB(res) {
-
-        currentFbUserId = res.authResponse.userID;
-        currentFbAccessToken = res.authResponse.accessToken;
         if (res.status === 'connected') {
-          $http.post(HOST + '/login', { user: res.authResponse.userID, access_token: res.authResponse.accessToken })
-            .success(function(data) {
-              if (data.active) {
-                currentUser = data;
-              } else {
-                $scope.newUser = data;
-                $scope.tempUserId = data.username;
-                $rootScope.preview = 'new-user';
-              }
-              $scope.authd = true;
-              defer.resolve();
-            }); 
+          FB.api('/me', [], function(r) { 
+            $http.post(HOST + '/login', { user: r.id, access_token: res.authResponse.accessToken })
+              .success(function(data) {
+                if (data.active) {
+                  currentUser = data;
+                } else {
+                  $scope.newUser = data;
+                  $rootScope.preview = 'new-user';
+                  $scope.wizard = 0;
+                }
+                $scope.authd = true;
+                defer.resolve();
+              })
+              .error(function() {
+                alert('Bump server is down');
+              }); 
+          }, function() { console.log('err', res) });
         } 
 
         console.log('fb status', res);
@@ -57,7 +74,6 @@ angular.module('bump', ['ngResource', 'auth'])
           $scope.loaded = true;
         });
 
-        console.log('device loaded');
       }
 
       document.addEventListener("deviceready", bootstrap, false);
@@ -77,14 +93,14 @@ angular.module('bump', ['ngResource', 'auth'])
       function getCategoryId() {
         if ($scope.categories.$resolved)
           return $scope.categoryIdsByName[$scope.category];
-        return 1;
+        return 5;
       }
 
       function forceLoadImages() {
         if (!$scope.authd)
           return false;
         $rootScope.loading = true;
-        $scope.picList = image.query({ category: getCategoryId(), current_user: currentUser.id }, function() {
+        $scope.picList = imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function() {
           $rootScope.loaded = true;
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
@@ -96,7 +112,7 @@ angular.module('bump', ['ngResource', 'auth'])
 
       $scope.refreshMain = function() {
         console.log('refreshing main');
-        return image.query({ category: getCategoryId(), current_user: currentUser.id }, function(data) {
+        return imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function(data) {
           $scope.picList = data;
         }).$promise;
       };
@@ -109,68 +125,84 @@ angular.module('bump', ['ngResource', 'auth'])
         });
       };
 
-      $scope.toggleView = function() {
-        switch ($scope.grid) {
+      $scope.toggleView = function(config) {
+        switch (config.grid) {
           case 3:
-            $scope.grid = 2;
+            config.grid = 2;
             break;
           case 2:
-            $scope.grid = 1;
+            config.grid = 1;
             break;
           case 1:
-            $scope.grid = 3;
+            config.grid = 3;
             break;
         }
       };
 
-      $scope.toggleOrder = function() {
-        if ($scope.order === 'bumps') {
-          $scope.order = 'added';
+      $scope.toggleOrder = function(config) {
+        if (config.order === 'bumps') {
+          config.order = 'added';
         } else {
-          $scope.order = 'bumps';
+          config.order = 'bumps';
         }
       };
 
-      $scope.getImageSize = [null, 720, 360, 360];
+      $rootScope.getImageSize = [null, 720, 360, 360];
 
       $scope.openCategories = function() {
-        $rootScope.preview = 'category';
+        $rootScope.previews.push('category');
       };
 
       $scope.catSelect = function(category) {
         $scope.category = category.name;
-        $rootScope.preview = false;
+        $rootScope.previews.pop();
       };
 
-      $scope.openPreview = function(img) {
-        img.images = image.query({ id: img.user_id, action: 'by_user', current_user: currentUser.id });
-        $rootScope.preview = 'image';
-        $scope.focusedImage = img;
+      $rootScope.openPreview = function(image) {
+        image.images = imageFactory.query({ id: image.uid, action: 'by_user', uid: currentUser.uid });
+        $rootScope.previews.push('image');
+        $scope.focusedImage = image;
       };
 
-      $scope.closePreview = function(newPreview) {
-        $rootScope.preview = newPreview || false;
+      $scope.closePreview = function() {
+        $rootScope.previews.pop();
       };
 
-      window.scope = $scope;
-
-      $scope.openProfile = function() {
-        $rootScope.preview = 'profile';
-        $scope.profile = currentUser;
-        $scope.profile.token = currentFbAccessToken;
+      $rootScope.openProfile = function(user) {
+        if (user) {
+          user = userFactory.get({ id: user.uid })
+        } else {
+          user = currentUser;
+        }
+        $rootScope.previews = ['profile'];
+        $scope.profile = user;
+        $scope.profile.refresh = function() {
+          $scope.profile.images = imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid });
+          return $scope.profile.images.$promise;
+        };
+        $scope.profile.refresh();
+        $scope.profile.list = {
+          grid: 1,
+          order: 'added'
+        };
       };
 
-      $scope.getIconWidth = function() {
-        return $(window).width() / 10;
+      $scope.openUserProfile = function(user) {
+        $rootScope.previews.push('profile');
+        $scope.profile = user;
+        $scope.profile.images = imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid });
       };
 
-      $scope.getTop = function(idx) {
-        var w = $(window).width();
-        return Math.floor(idx / $scope.grid) * (w / $scope.grid);
+      $scope.openNotifications = function() {
+        $rootScope.previews.push('notifications');
+        $scope.notifTab = 'trophies';
       };
-      $scope.getLeft = function(idx) {
-        var w = $(window).width();
-        return Math.floor(idx % $scope.grid) * (w / $scope.grid);
+      $scope.notifTabSelect = function(tab) {
+        $scope.notifTab = tab;
+      };
+
+      $rootScope.getImageSrc = function(image) {
+        return $scope.ENDPOINT + '/' + $scope.getImageSize[$scope.list.grid] + '_' + image;
       };
 
       $scope.bump = function(image) {
@@ -178,11 +210,18 @@ angular.module('bump', ['ngResource', 'auth'])
           image.bumps += 1;
           image.bumped = true;
         }
-        $http.post(HOST + '/bump', { image: image.id, user: 1 })
+        $http.post(HOST + '/bump', { image: image.id, uid: currentUser.uid, ownerUid: image.uid })
           .success(function(data) {
             console.log(data);
           });
       }
+
+      $scope.wizardNext = function() {
+        $scope.wizard++;
+      };
+      $scope.wizardPrev = function() {
+        $scope.wizard--;
+      };
 
 
       $scope.submitUsername = function(username) {
@@ -192,18 +231,21 @@ angular.module('bump', ['ngResource', 'auth'])
           .success(function(data) {
             if (data.available) {
               $scope.wizardLoading = true;
-              $http.post(HOST + '/username/', { temp: $scope.tempUserId, username: username })
-                .success(function(data) {
-                  if (data.available === false) {
-                    $scope.usernameTaken = username;
-                  } else {
-                    $scope.tempUserId = username;
-                    $scope.pickedUsername = username;
-                    $scope.usernameTaken = false;
-                    $scope.wizardLoading = false;
-                    currentUser = data;
-                  }
-                });
+              $scope.pickedUsername = username;
+              setTimeout(function() {
+                $http.post(HOST + '/username/', { uid: $scope.newUser.uid, username: username })
+                  .success(function(data) {
+                    if (data.available === false) {
+                      $scope.usernameTaken = username;
+                      $scope.pickedUsername = false;
+                    } else {
+                      $scope.usernameTaken = false;
+                      $scope.wizardLoading = false;
+                      $scope.wizard = 2;
+                      currentUser = data;
+                    }
+                  });
+              }, 1500);
             } else {
               $scope.usernameTaken = username;
             }
@@ -212,14 +254,17 @@ angular.module('bump', ['ngResource', 'auth'])
 
       $scope.openCamera = function() {
         $timeout(function() {
-          $rootScope.preview = 'upload';
-          $scope.uploadParams = {};
+          $rootScope.previews.push('upload');
+          $scope.uploadParams = {
+            uid: currentUser.uid
+          };
+          $scope.pendingUploadImage = null;
           $scope.pendingUploadCategory = 'Category';
         }, 500);
         navigator.camera.getPicture(loadPhoto, function(message) {
           console.log('get picture cancelled'); 
           $scope.$apply(function() {
-            $rootScope.preview = false;
+            $rootScope.previews.pop();
           });
         },{
           quality: 50, 
@@ -236,14 +281,18 @@ angular.module('bump', ['ngResource', 'auth'])
         // uploadPhotoToServer(imageURI);
       }
 
+      $scope.readyToUpload = function() {
+        return !!$scope.uploadParams.category;
+      };
+
       $scope.selectUploadCategory = function() {
-        $rootScope.preview = 'select-category-for-upload';
+        $rootScope.previews.push('select-category-for-upload');
       };
 
       $scope.submitUploadCategory = function(cat) {
         $scope.uploadParams.category = cat.id;
         $scope.pendingUploadCategory = cat.name;
-        $rootScope.preview = 'upload';
+        $rootScope.previews.pop();
       };
 
       $scope.uploadPhotoToServer = function() {
@@ -258,7 +307,7 @@ angular.module('bump', ['ngResource', 'auth'])
         options.chunkedMode = false;
         $timeout(function() {
           $scope.alert = 'Uploading...';
-          $rootScope.preview = false;
+          $rootScope.previews.pop();
         });
         ft.upload(imageURI, HOST + "/upload", function(res) {
           $scope.$apply(function() {
@@ -271,117 +320,16 @@ angular.module('bump', ['ngResource', 'auth'])
       }
  
 
-      $scope.grid = 3;
-      $scope.order = 'bumps';
+      $scope.list.grid = 1;
+      $scope.list.order = 'bumps';
 
       if (platform == 'browser' || platform == 'phone-simulator') {
-        $scope.authd = true; $scope.loaded = true;
-        $rootScope.preview = 'new-user';
+        $scope.loaded = true;
+        $scope.authd = true;
+        // $scope.newUser = { first_name: 'Wiley' };
+        // $rootScope.preview = 'new-user';
+        // $scope.wizard = 0;
       }
 
     }
-  ])
-
-  .directive('animate', ['$rootScope', function($rootScope) {
-    return {
-      link: function(scope, element, attrs) {
-        // var h = $(window).height();
-        // $rootScope.$watch('preview', function(state) {
-        //   element.css({ 'margin-top': h + 'px' })
-        //     .animate({ 'margin-top': '0' }, 300)
-        // });
-      }
-    };
-  }])
-
-  .directive('toggle', [function() {
-    return {
-      scope: {
-        toggle: '='
-      },
-      link: function(scope, element, attrs) {
-        function hide() {
-          var height = element.height();
-          element.height(height);
-          element.animate({ height: 0 }, 250, function() {
-            element.hide();
-            element.css({ height: 'auto' });
-          });
-        }
-
-        function show() {
-          element.show();
-          var height = element.height();
-          element.animate({ height: height + 'px' }, 250, function() {
-            element.css({ height: 'auto' });
-          });
-        }
-
-        scope.$watch('toggle', function(state) {
-          if (state) {
-            show();
-          } else {
-            hide();
-          }
-        });
-      }
-    };
-  }])
-
-  .directive('triggerRefresh', [function() {
-    return {
-      scope: {
-        refresh: '&triggerRefresh'
-      },
-      link: function(scope, element, attrs) {
-        WebPullToRefresh.init({
-          loadingFunction: function() {
-            return new Promise(function(resolve, reject) {
-              scope.refresh().then(function() {
-                resolve();
-              });
-            });
-          }
-        });
-      }
-    };
-  }])
-
-  .factory('platform', [function() {
-    var platform;
-    console.log(document.URL);
-    if (!!~document.URL.indexOf('Simulator')) {
-      platform = 'desktop-simulator';
-    } else if (!!~document.URL.indexOf(':3000')) {
-      platform = 'phone-simulator';
-    } else if (!window.cordova) {
-      console.log = console._log;
-      platform = 'browser';
-    } else {
-      platform = 'ios';
-    }
-    return platform;
-  }])
-
-  .factory('HOST', ['platform', function(platform) {
-    if (platform == 'desktop-simulator' || platform == 'browser' || platform == 'phone-simulator')
-      return 'http://localhost:8081/api/v1.0';
-    else
-      return 'http://app.pikbump.com/api/v1.0';
-  }])
-
-  .factory('image', ['$resource', 'HOST', function($resource, HOST) {
-    var image = $resource(HOST + '/image/:category/:id/:action', {}, {});
-    return image;
-  }])
-
-  .factory('category', ['$resource', 'HOST', function($resource, HOST) {
-    var category = $resource(HOST + '/category', {}, {});
-    return category;
-  }])
-
-  .filter('commas', function() {
-    return function(item) {
-      return (item+'').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    };
-  });
+  ]);

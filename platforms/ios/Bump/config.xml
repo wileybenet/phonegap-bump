@@ -51,4 +51,5 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
+    <icon height="57" platform="ios" src="logo-2.png" width="57" />
 </widget>

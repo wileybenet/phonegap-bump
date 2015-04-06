@@ -1,13 +1,13 @@
-<div class="preview" animate>
+<div class="preview">
   <div class="close" ng-click="closePreview()">
     &times;
   </div>
-  <div class="owner">
+  <div class="owner" ng-click="$root.openProfile(focusedImage)">
     <img ng-src="http://graph.facebook.com/{{focusedImage.fb_id}}/picture" />
     <span class="btn" ng-bind="focusedImage.username"></span>
   </div>
   <div class="owner-reel">
-    <img ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: getIconWidth()+'px' }" ng-repeat="img in focusedImage.images | limitTo:10" />
+    <img ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: (WW / 15) + 'px' }" ng-repeat="img in focusedImage.images | limitTo:10" />
   </div>
   <div class="image">
     <img ng-src="{{ENDPOINT}}/720_{{focusedImage.key}}" width="100%" />

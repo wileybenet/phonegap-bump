@@ -7,44 +7,42 @@ body {
 	margin: 0;
 }
 
-#ptr {
-	position: absolute;
-	top: 0;
-	left: 0;
+.ptr-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  text-align: center;
 	width: 100%;
-	color: #fff;
-	text-align: center;
-	height: 78px;
+}
+.ptr-repeat-wrapper {
+  position: relative;
 }
 
-#ptr .genericon {
-	opacity: .6;
+.ptr-wrapper .genericon {
 	font-size: 34px;
 	width: auto;
 	height: auto;
-	transition: all .25s ease;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-	top: 38px;
+	top: 8px;
 	margin-left: -0.5em;
 	position: absolute;
 	visibility: hidden;
 	color: rgba(48, 110, 110, 1);
-	opacity: 0;
 }
-.ptr-pull #ptr .genericon {
+.ptr-wrapper.ptr-pull .genericon {
 	visibility: visible;
 }
-.ptr-refresh #ptr .genericon {
+.ptr-wrapper.ptr-refresh .genericon {
+	transition: all .25s ease;
 	-webkit-transform: rotate(270deg);
 	transform: rotate(270deg);
 }
-.ptr-loading #ptr .genericon,
-.ptr-reset #ptr .genericon {
+.ptr-wrapper.ptr-loading .genericon,
+.ptr-wrapper.ptr-reset .genericon {
 	display: none;
 }
 
-#ptr .loading {
+.ptr-wrapper .loading {
 	text-align: center;
 	opacity: .4;
 	width: 100%;
@@ -52,18 +50,25 @@ body {
 	margin-top: 0px;
 	visibility: hidden;
 }
-.ptr-loading .loading {
+.ptr-wrapper.ptr-loading .loading {
 	height: 44px;
 	visibility: visible;
 }
-.ptr-collapse .loading {
+.ptr-wrapper.ptr-collapse .loading {
 	height: 0;
 	padding-top: 0;
 	overflow: hidden;
 	transition: all 0.4s ease;
 }
-.ptr-reset .loading {
+.ptr-wrapper.ptr-reset .loading {
 	height: 0px;
+}
+
+.ptr-content {
+	text-align: left;
+	padding-bottom: 1px;
+  -webkit-transform: translateZ(2);
+	z-index: 2;
 }
 
 .loading span {
@@ -78,27 +83,20 @@ body {
 	background: rgba(48, 110, 110, 1);
 }
 
-#content {
-	min-height: 100%;
-}
-
-/*.ptr-loading #content,
-.ptr-loading #ptr {
-	transition: margin-top .5s ease;
-}*/
 
 
-#l1 {
+
+.loading span.l1 {
 	-webkit-animation-delay: 0;
 	animation-delay: 0;
 }
 
-#l2 {
+.loading span.l2 {
 	-webkit-animation-delay: 0.2s;
 	animation-delay: 0.2s;
 }
 
-#l3 {
+.loading span.l3 {
 	-webkit-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
