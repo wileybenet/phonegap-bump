@@ -171,29 +171,27 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
         $rootScope.previews.pop();
       };
 
-      $rootScope.openProfile = function(user) {
-        if (user) {
-          user = userFactory.get({ id: user.uid })
-        } else {
-          user = currentUser;
-        }
-        $rootScope.previews = ['profile'];
+      function setUser(user) {
         $scope.profile = user;
         $scope.profile.refresh = function() {
-          $scope.profile.images = imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid });
-          return $scope.profile.images.$promise;
+          return imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid }, function(data) {
+            $scope.profile.images = data;
+          }).$promise;
         };
         $scope.profile.refresh();
         $scope.profile.list = {
           grid: 1,
           order: 'added'
         };
-      };
+      }
 
-      $scope.openUserProfile = function(user) {
-        $rootScope.previews.push('profile');
-        $scope.profile = user;
-        $scope.profile.images = imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid });
+      $rootScope.openProfile = function(user) {
+        $rootScope.previews = ['profile'];
+        if (user) {
+          userFactory.get({ id: user.uid }, setUser);
+        } else {
+          setUser(currentUser);
+        }
       };
 
       $scope.openNotifications = function() {
@@ -332,9 +330,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       if (platform == 'browser' || platform == 'phone-simulator') {
         $scope.loaded = true;
         $scope.authd = true;
-        $scope.newUser = {};
-        $rootScope.previews.push('new-user');
-        $scope.wizard = 0;
+        // $scope.newUser = {};
+        // $rootScope.previews.push('new-user');
+        // $scope.wizard = 0;
       }
 
     }

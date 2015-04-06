@@ -1,5 +1,4 @@
 <div class="thumbnail" ng-class="'w' + config.grid" ng-repeat="image in list | orderBy:config.order:true track by image.key" ng-style="{ top: (config.grid | gridTop:$index), left: (config.grid | gridLeft:$index), 'z-index': 1 / ($index + 1) }">
-  {{getImageSize}}
   <img ng-src="{{$root.ENDPOINT}}/{{$root.getImageSize[config.grid]}}_{{image.key}}" width="100%" ng-click="$root.openPreview(image)" />
   <div class="grid-details" ng-show="config.grid == 1">
     <div class="btn left" ng-bind="image.username" ng-click="$root.openProfile(image)"></div>

@@ -89,7 +89,7 @@ html, body {
 }
 
 .header a, .footer a {
-  background: #5EABA2;
+  background: #00BEA8;
   padding: 8px 12px;
   width: 38px;
   height: 40px;
@@ -99,9 +99,11 @@ html, body {
 }
 .profile {
   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .camera {
   border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .categories {
   border-bottom-right-radius: 20px;
