@@ -1,7 +1,7 @@
-<div class="main" ng-class="{'disable-flow': $root.preview}" pull-refresh="refreshMain()" list="picList" template="'partials/thumbnail.html'" distance="40" list-class="'main-content'" config="list"></div>
+<div class="main" ng-class="{'disable-flow': $root.previews.length}" pull-refresh="refreshMain()" list="picList" template="'partials/thumbnail.html'" distance="40" list-class="'main-content'" config="list"></div>
 <div class="alert" ng-show="alert" ng-bind="alert"></div>
 <div pass="list.grid"></div>
-<div class="preview-wrapper" ng-repeat="preview in $root.previews" ng-include="'partials/' + preview + '.html'"></div>
+<div class="preview-wrapper" ng-repeat="preview in $root.previews" ng-class="'preview-' + preview" ng-include="'partials/' + preview + '.html'"></div>
 <div class="header">
   <a class="categories left" ng-click="openCategories()">
     <i class="fa fa-bars"></i>

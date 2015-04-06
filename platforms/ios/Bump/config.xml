@@ -38,6 +38,8 @@
     <feature name="FileTransfer">
         <param name="ios-package" value="CDVFileTransfer" />
     </feature>
+    <icon height="57" src="renders/icon.png" width="57" />
+    <icon height="114" src="renders/icon@2x.png" width="114" />
     <name>Bump</name>
     <description>
         Image Popularity
@@ -51,5 +53,4 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
-    <icon height="57" platform="ios" src="logo-2.png" width="57" />
 </widget>

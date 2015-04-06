@@ -47,12 +47,15 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
               .success(function(data) {
                 if (data.active) {
                   currentUser = data;
+                  $scope.authd = true;
                 } else {
-                  $scope.newUser = data;
-                  $rootScope.preview = 'new-user';
-                  $scope.wizard = 0;
+                  $timeout(function() {
+                    $scope.newUser = data;
+                    $rootScope.previews.push('new-user');
+                    $scope.wizard = 0;
+                    $scope.authd = true;
+                  }, 500);
                 }
-                $scope.authd = true;
                 defer.resolve();
               })
               .error(function() {
@@ -225,31 +228,35 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
 
 
       $scope.submitUsername = function(username) {
-        $scope.usernameTaken = false;
-
-        $http.get(HOST + '/name_available/' + username)
-          .success(function(data) {
-            if (data.available) {
-              $scope.wizardLoading = true;
-              $scope.pickedUsername = username;
-              setTimeout(function() {
-                $http.post(HOST + '/username/', { uid: $scope.newUser.uid, username: username })
-                  .success(function(data) {
-                    if (data.available === false) {
-                      $scope.usernameTaken = username;
-                      $scope.pickedUsername = false;
-                    } else {
-                      $scope.usernameTaken = false;
-                      $scope.wizardLoading = false;
-                      $scope.wizard = 2;
-                      currentUser = data;
-                    }
-                  });
-              }, 1500);
-            } else {
-              $scope.usernameTaken = username;
-            }
-          });
+        $scope.pickedUsername = false;
+        if ((username || '').length <= 1) {
+          $scope.usernameError = 'too short';
+        } else {
+          $scope.usernameError = false;
+          $http.get(HOST + '/name_available/' + username)
+            .success(function(data) {
+              if (data.available) {
+                $scope.wizardLoading = true;
+                $scope.pickedUsername = username;
+                setTimeout(function() {
+                  $http.post(HOST + '/username/', { uid: $scope.newUser.uid, username: username })
+                    .success(function(data) {
+                      if (data.available === false) {
+                        $scope.usernameError = username;
+                      } else {
+                        $scope.usernameError = false;
+                        $scope.wizardLoading = false;
+                        $scope.wizard = 2;
+                        currentUser = data;
+                        $scope.refreshMain();
+                      }
+                    });
+                }, 1500);
+              } else {
+                $scope.usernameError = ' ';
+              }
+            });
+          }
       };
 
       $scope.openCamera = function() {
@@ -278,7 +285,6 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
         $scope.$apply(function() {
           $scope.pendingUploadImage = imageURI;
         });
-        // uploadPhotoToServer(imageURI);
       }
 
       $scope.readyToUpload = function() {
@@ -326,9 +332,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       if (platform == 'browser' || platform == 'phone-simulator') {
         $scope.loaded = true;
         $scope.authd = true;
-        // $scope.newUser = { first_name: 'Wiley' };
-        // $rootScope.preview = 'new-user';
-        // $scope.wizard = 0;
+        $scope.newUser = {};
+        $rootScope.previews.push('new-user');
+        $scope.wizard = 0;
       }
 
     }

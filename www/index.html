@@ -30,11 +30,10 @@
     <div class="background" ng-hide="authd" ng-style="{ 'background-image': 'url(\'images/splash/lake.jpg\')' }"></div>
     <div data-ng-show="authd" class="full disable-flow" ng-include="'partials/main.html'"></div>
     <div class="login-container" data-ng-hide="authd">
-      <img src="images/logo.png" width="300" />
+      <i class="fa fa-angle-double-up"></i>
       <div class="login btn" ng-click="loginWithFB()">
         <i class="fa fa-facebook-official"></i> Log In
       </div>
     </div>
-    <script type="text/javascript" src="js/wptr.1.0.js"></script>
   </body>
 </html>

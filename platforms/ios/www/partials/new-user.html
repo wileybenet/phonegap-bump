@@ -15,8 +15,8 @@
     </div>
     <div class="input element" ng-class="{ active: wizard == 1 }">
       <input ng-model="newUsername" placeholder="Username" />
-      <span class="error" ng-class="{ 'el-show': usernameTaken }" ng-if="!pickedUsername">
-        <i class="fa fa-times-circle"></i>
+      <span class="error level" ng-class="{ 'el-show': usernameError }" ng-if="!pickedUsername">
+        <i class="fa fa-times-circle"></i> <small>{{usernameError}}</small>
       </span>
       <span class="success" ng-class="{ 'el-show': pickedUsername }">
         <i class="fa fa-check-circle"></i>
@@ -40,7 +40,7 @@
   <div class="btn footer-btn" ng-click="submitUsername(newUsername)" ng-show="wizard == 1">
     Submit <i class="fa fa-angle-right"></i>
   </div>
-  <div class="btn footer-btn" ng-click="$root.preview = null" ng-show="wizard == 2">
+  <div class="btn footer-btn" ng-click="$root.previews = []" ng-show="wizard == 2">
     Enter <i class="fa fa-angle-right"></i>
   </div>
 </div>
