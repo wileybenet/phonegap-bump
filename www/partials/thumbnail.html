@@ -7,4 +7,9 @@
     </div>
     <div class="clear"></div>
   </div>
+  <div class="grid-details grid-details-small" ng-show="config.grid == 2 && image.bumps > 0">
+    <div class="right">
+      <span ng-bind="image.bumps | round"></span> <small class="subdue"><i class="fa fa-angle-double-up"></i></small>
+    </div>
+  </div>
 </div>

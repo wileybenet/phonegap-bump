@@ -29,7 +29,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       $rootScope.ENDPOINT = IMG_ENDPOINT;
       $rootScope.WW = $(window).width();
       $rootScope.WH = $(window).height();
-      $scope.category = 'Children';
+      $scope.category = 'Landscape';
 
 
       function initializeApp() {
@@ -48,20 +48,21 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
                 if (data.active) {
                   currentUser = data;
                   $scope.authd = true;
+                  defer.resolve();
                 } else {
                   $timeout(function() {
                     $scope.newUser = data;
                     $rootScope.previews.push('new-user');
                     $scope.wizard = 0;
                     $scope.authd = true;
+                    defer.resolve();
                   }, 500);
                 }
-                defer.resolve();
               })
               .error(function() {
                 alert('Bump server is down');
               }); 
-          }, function() { console.log('err', res) });
+          }, function(err) { console.log('err', err) });
         } 
 
         console.log('fb status', res);
@@ -103,8 +104,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
         if (!$scope.authd)
           return false;
         $rootScope.loading = true;
-        $scope.picList = imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function() {
+        imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function(data) {
           $rootScope.loaded = true;
+          $scope.picList = data;
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
           }, 300);
@@ -171,29 +173,24 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
         $rootScope.previews.pop();
       };
 
-      $rootScope.openProfile = function(user) {
-        var uid = user ? user.uid : currentUser.uid;
-        if (user) {
-          user = userFactory.get({ id: uid }, function(data) {
-            console.log(data);
-          });
-        } else {
-          user = currentUser;
-        }
-
-        $rootScope.previews = ['profile'];
+      function setUser(user) {
         $scope.profile = user;
         $scope.profile.refresh = function() {
-          return imageFactory.query({ id: uid, action: 'by_user', uid: currentUser.uid }, function(data) {
+          return imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid }, function(data) {
             $scope.profile.images = data;
           }).$promise;
         };
-        $scope.profile.images = [];
         $scope.profile.refresh();
         $scope.profile.list = {
           grid: 1,
           order: 'added'
         };
+      }
+
+      $rootScope.openProfile = function(user) {
+        var uid = user ? user.uid : currentUser.uid;
+        $rootScope.previews = ['profile'];
+        userFactory.get({ id: uid }, setUser);
       };
 
       $scope.openNotifications = function() {

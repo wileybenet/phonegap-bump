@@ -15,7 +15,6 @@
   </div>
   <div class="profile-main" pull-refresh="profile.refresh()" list="profile.images" template="'partials/thumbnail.html'" distance="40" config="profile.list" fixed-height="-60"></div>
   <div class="tabs profile-tabs">
-    {{profile}}
     <div class="tab toggle-order" ng-click="toggleOrder(profile.list)">
       <i class="fa" ng-class="{'fa-clock-o': profile.list.order == 'bumps', 'fa-trophy': profile.list.order == 'added'}"></i>
     </div>

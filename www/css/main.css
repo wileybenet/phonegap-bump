@@ -170,10 +170,21 @@ html, body {
   font-size: 16px;
   padding: 6px 10px;
   text-transform: none;
-  background: #3F3F3F;
+  background: rgba(63, 63, 63, 0.7);
+  width: 100%;
+  box-sizing: border-box;
   color: #FFF;
-  height: 30px;
+  position: absolute;
+  bottom: 0;
 }
+.grid-details-small {
+  padding: 2px 5px;
+  border-top-left-radius: 3px;
+  font-size: 12px;
+  width: auto;
+  right: 0;
+}
+
 img {
   margin: 0;
   padding: 0;

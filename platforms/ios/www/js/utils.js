@@ -49,10 +49,31 @@ angular.module('utils', [])
     return category;
   }])
 
+  .filter('round', [function() {
+    return function(total) {
+      total = (total+'').replace(/,/g, '');
+      var len = ((total || '')+'').split('.')[0].length,
+        suffix,
+        pow;
+      total = parseFloat(total) ? parseFloat(total) : 0;
+      if (len > 9) {
+        suffix = 'B';
+        pow = 8;
+      } else if (len > 6) {
+        suffix = 'M';
+        pow = 5;
+      } else if (len > 3) {
+        suffix = 'K';
+        pow = 2;
+      }
+      return suffix ? Math.round(total/Math.pow(10, pow))/10+' '+suffix : total+'' || '';
+    };
+  }])
+
   .filter('gridTop', [function() {
     return function(grid, idx) {
       var w = $(window).width();
-      return Math.floor(idx / grid) * (w / grid + (grid == 1 ? 42 : 0)) + 'px';
+      return Math.floor(idx / grid) * (w / grid) + 'px';
     }
   }])
 
