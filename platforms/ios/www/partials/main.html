@@ -1,4 +1,4 @@
-<div class="main" ng-class="{'disable-flow': $root.previews.length}" pull-refresh="refreshMain()" list="picList" template="'partials/thumbnail.html'" distance="40" list-class="'main-content'" config="list"></div>
+<div class="main" ng-class="{'disable-flow': $root.previews.length}" pull-refresh="refreshMain(reset)" list="picList" template="'partials/thumbnail.html'" distance="40" list-class="'main-content'" config="list" infinite="true"></div>
 <div class="alert" ng-show="alert" ng-bind="alert"></div>
 <div pass="list.grid"></div>
 <div class="preview-wrapper" ng-repeat="preview in $root.previews" ng-class="'preview-' + preview" ng-include="'partials/' + preview + '.html'"></div>
@@ -7,16 +7,16 @@
     <i class="fa fa-bars"></i>
   </a>
   <a class="notifications right" ng-click="openNotifications()">
-    <i class="fa fa-bell"></i>
+    <i class="fa fa-angle-double-up"></i>
   </a>
   <h4 class="page-heading">
-    {{category}} <i class="fa fa-layout"></i>
+    {{category}} {{list.count}}
   </h4>
   <div class="clear"></div>
 </div>
 <div class="footer">
   <div class="title">
-    <img src="images/logo.png" width="54" />
+    <img src="images/logo.png" width="48" />
   </div>
   <a class="camera left" ng-click="openCamera()">
     <i class="fa fa-camera"></i>
@@ -25,7 +25,7 @@
     <i class="fa fa-user"></i>
   </a>
   <div class="toggle-view" ng-click="toggleView(list)">
-    <i class="fa" ng-class="{'fa-th': list.grid == 1, 'fa-th-large': list.grid == 3, 'fa-ellipsis-v': list.grid == 2}"></i>
+    <i class="fa" ng-class="{'fa-th': list.grid == 1, 'fa-th-large': list.grid == 3, 'fa-square': list.grid == 2}"></i>
   </div>
   <div class="toggle-order" ng-click="toggleOrder(list)">
     <i class="fa" ng-class="{'fa-clock-o': list.order == 'bumps', 'fa-trophy': list.order == 'added'}"></i>

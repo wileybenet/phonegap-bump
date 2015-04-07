@@ -22,7 +22,12 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       var defer = $q.defer();
       $scope.categories = categoryFactory.query();
       $scope.categoryIdsByName = {};
-      $scope.list = {};
+      $scope.list = {
+        grid: 1,
+        order: 'bumps',
+        count: 3
+      };
+      $scope.list._count = $scope.list.count;
 
 
       $rootScope.previews = [];
@@ -97,27 +102,31 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       function getCategoryId() {
         if ($scope.categories.$resolved)
           return $scope.categoryIdsByName[$scope.category];
-        return 5;
+        return 1;
       }
 
       function forceLoadImages() {
         if (!$scope.authd)
           return false;
         $rootScope.loading = true;
-        imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function(data) {
+        $scope.picList = imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid }, function(data) {
           $rootScope.loaded = true;
-          $scope.picList = data;
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
           }, 300);
         });
       }
 
-      $scope.$watch('category', forceLoadImages);
+      $scope.$watch('category', function() {
+        $scope.list.count = $scope.list._count;
+        forceLoadImages();
+      });
 
-      $scope.refreshMain = function() {
-        console.log('refreshing main');
-        return imageFactory.query({ category: getCategoryId(), uid: currentUser.uid }, function(data) {
+      $scope.refreshMain = function(reset) {
+        if (reset)
+          $scope.list.count = $scope.list._count;
+
+        return imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid }, function(data) {
           $scope.picList = data;
         }).$promise;
       };
@@ -175,6 +184,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
 
       function setUser(user) {
         $scope.profile = user;
+        $scope.profile.$mine = currentUser.uid == user.uid;
         $scope.profile.refresh = function() {
           return imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid }, function(data) {
             $scope.profile.images = data;
@@ -323,12 +333,12 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       }
  
 
-      $scope.list.grid = 1;
-      $scope.list.order = 'bumps';
 
       if (platform == 'browser' || platform == 'phone-simulator') {
         $scope.loaded = true;
         $scope.authd = true;
+        currentUser = { uid: 'b3fd7d19-2117-43da-8b37-16df5e317d12' };
+        defer.resolve();
         // $scope.newUser = {};
         // $rootScope.previews.push('new-user');
         // $scope.wizard = 0;

@@ -84,8 +84,10 @@ html, body {
 
 .footer .title {
   font-size: .5em;
-  margin-top: 16px;
+  margin-top: 15px;
   display: inline-block;
+  text-align: center;
+  color: #0A372D;
 }
 
 .header a, .footer a {
@@ -154,7 +156,7 @@ html, body {
   text-align: center;
   overflow: hidden;
   margin: 0;
-  position: absolute;
+  position: relative;
   transition: all .25s ease;
 }
 .w3 {
@@ -210,13 +212,19 @@ img {
   color: #FFF;
   text-transform: none;
 }
-  .preview .close {
+  .preview .close, .preview .options {
     position: absolute;
     top: 12px;
+    width: 18px;
+    text-align: center;
     right: 0;
-    font-size: 24px;
+    font-size: 26px;
     padding: 10px 16px 14px 20px;
     z-index: 10;
+  }
+  .preview .options {
+    top: 85px;
+    font-size: 22px;
   }
   .preview .scroller {
     padding: 0 20px;
@@ -267,6 +275,7 @@ img {
   }
   .preview .profile-pic {
     margin: 30px 20px 20px 30px;
+    height: 100px;
   }
     .preview .profile-pic img {
       border-radius: 500px;

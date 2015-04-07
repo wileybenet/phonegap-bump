@@ -78,10 +78,36 @@ angular.module('directives', [])
           distance: 0,
           startingPositionY: 0
         };
+        var infiniteScroll = attrs.hasOwnProperty('infinite');
+        var moreInfiniteAvailable = false;
+        var loadingInfinite = false;
         var $wrapper = element;
         var $content = element.find('.ptr-content');
         var $arrow = element.find('.ptr-arrow');
         var h = new Hammer($content.context);
+
+        $wrapper.on('scroll', function() {
+          var diff = $content.height() - $wrapper.scrollTop() - $wrapper.height();
+
+          if (infiniteScroll && moreInfiniteAvailable && diff < 30) {
+            loadInfinite();
+          }
+        });
+
+        scope.$watch('list.more', function(state) {
+          moreInfiniteAvailable = state;
+        });
+
+        function loadInfinite() {
+          if (!loadingInfinite) {
+            loadingInfinite = true;
+            console.log('loading!');
+            scope.config.count += scope.config._count;
+            scope.refresh().then(function() {
+              loadingInfinite = false;
+            });
+          }
+        }
 
         function dragStart() {
           drag.startingPositionY = $wrapper.scrollTop();
@@ -125,7 +151,7 @@ angular.module('directives', [])
 
           $wrapper.addClass('ptr-loading');
 
-          scope.refresh().then(function() {
+          scope.refresh({ reset: true }).then(function() {
             setTimeout(reset, 750);
           });
         }

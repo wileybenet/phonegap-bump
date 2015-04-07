@@ -42,7 +42,7 @@ body {
 	display: none;
 }
 
-.ptr-wrapper .loading {
+.ptr-wrapper .loading, .infinte {
 	text-align: center;
 	opacity: .4;
 	width: 100%;
@@ -66,12 +66,11 @@ body {
 
 .ptr-content {
 	text-align: left;
-	padding-bottom: 1px;
   -webkit-transform: translateZ(2);
 	z-index: 2;
 }
 
-.loading span {
+.loading span, .infinite span {
 	display: inline-block;
 	vertical-align: middle;
 	width: 10px;
@@ -86,17 +85,17 @@ body {
 
 
 
-.loading span.l1 {
+.loading span.l1, .infinite span.l1 {
 	-webkit-animation-delay: 0;
 	animation-delay: 0;
 }
 
-.loading span.l2 {
+.loading span.l2, .infinite span.l2 {
 	-webkit-animation-delay: 0.2s;
 	animation-delay: 0.2s;
 }
 
-.loading span.l3 {
+.loading span.l3, .infinite span.l3 {
 	-webkit-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }

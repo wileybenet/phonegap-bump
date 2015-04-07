@@ -2,6 +2,9 @@
   <div class="close" ng-click="closePreview()">
     &times;
   </div>
+  <!--TODO <div class="options" ng-show="profile.$mine" ng-click="editProfile(profile)">
+    <i class="fa fa-ellipsis-v"></i>
+  </div> -->
   <div class="profile-pic">
     <img width="100" ng-src="http://graph.facebook.com/{{profile.fb_id}}/picture?width=240&height=240" />
     <div class="profile-info">
@@ -19,7 +22,7 @@
       <i class="fa" ng-class="{'fa-clock-o': profile.list.order == 'bumps', 'fa-trophy': profile.list.order == 'added'}"></i>
     </div>
     <div class="tab toggle-view" ng-click="toggleView(profile.list)">
-      <i class="fa" ng-class="{'fa-th': profile.list.grid == 1, 'fa-th-large': profile.list.grid == 3, 'fa-ellipsis-v': profile.list.grid == 2}"></i>
+      <i class="fa" ng-class="{'fa-th': profile.list.grid == 1, 'fa-th-large': profile.list.grid == 3, 'fa-square': profile.list.grid == 2}"></i>
     </div>
   </div>
 </div>
