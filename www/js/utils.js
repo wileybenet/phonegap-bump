@@ -44,9 +44,35 @@ angular.module('utils', [])
     return user;
   }])
 
+  .factory('notificationFactory', ['$resource', 'HOST', function($resource, HOST) {
+    var user = $resource(HOST + '/notification/:id/:action', {}, {});
+    return user;
+  }])
+
   .factory('categoryFactory', ['$resource', 'HOST', function($resource, HOST) {
     var category = $resource(HOST + '/category', {}, {});
     return category;
+  }])
+
+  .filter('timeAgo', ['$sce', function($sce) {
+    return function(item, now) {
+      now = now || new Date();
+      item = item || new Date().toString();
+
+      var str = item.replace(/\.[0-9]{3}Z/, '').replace('T', ' ').replace(/-/g, '/'),
+        date = new Date(str),
+        diff = now - +new Date(+date-date.getTimezoneOffset()*60000);
+        sec = Math.floor(diff / 1000),
+        min = Math.floor(diff / 60000),
+        hour = Math.floor(diff / 3600000),
+        day = Math.floor(diff / 86400000);
+
+      sec = sec ? (sec < 30 ? '<small>Just now</small>' : (sec + ' <small>Secs</small> ')) : 0;
+      min = min ? (min + ' <small>Min</small> ') : 0;
+      hour = hour ? (hour + ' <small>Hrs</small> ') : 0;
+      day = day ? (day + ' <small>Days</small> ') : 0;
+      return $sce.trustAsHtml(day || hour || min || sec || '');
+    };
   }])
 
   .filter('round', [function() {

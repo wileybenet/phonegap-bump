@@ -150,6 +150,11 @@ html, body {
   z-index: 1;
 }
 
+.notification-main .genericon {
+  top: 105px;
+  z-index: 1;
+}
+
 .thumbnail {
   display: inline-block;
   vertical-align: top;
@@ -262,10 +267,19 @@ img {
     text-align: center;
   }
   .preview .tabs .tab.selected {
-    color: #FFF;
+    color: #030303;
+    background: #49E2B4;
   }
   .preview .notification-tabs {
-    margin-top: 20px;
+    margin-top: 54px;
+    padding: 12px 0;
+  }
+  .preview .notification-info {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 16px;
   }
   .preview .info {
     margin-top: 10px;

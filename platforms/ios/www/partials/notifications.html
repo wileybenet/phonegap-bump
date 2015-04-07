@@ -3,16 +3,14 @@
     &times;
   </div>
   <div class="tabs notification-tabs">
-    <div class="btn tab">
-      <i class="fa fa-trophy" ng-class="{ selected: notifTab == 'trophies' }" ng-click="notifTabSelect('trophies')"></i>
-    </div>
-    <div class="btn tab" ng-class="{ selected: notifTab == 'bumps' }" ng-click="notifTabSelect('bumps')">
+    <div class="btn tab" ng-class="{ selected: notif.tab == 'bumps' }" ng-click="notif.tab = 'bumps'">
       <i class="fa fa-angle-double-up"></i>
+    </div>
+    <div class="btn tab" ng-class="{ selected: notif.tab == 'trophies' }" ng-click="notif.tab = 'trophies'">
+      <i class="fa fa-trophy"></i>
     </div>
   </div>
   <div class="notif-wrapper">
-    <div class="notif">
-      
-    </div>
+    <div class="notification-main" pull-refresh="notif.refresh()" list="notif.bumps" template="'partials/bump-notification.html'" distance="40" config="{}" fixed-height="0" infinite="true"></div>
   </div>
 </div>

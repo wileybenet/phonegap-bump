@@ -2,7 +2,7 @@
   <div class="close" ng-click="closePreview()">
     &times;
   </div>
-  <div class="owner" ng-click="$root.openProfile(focusedImage)">
+  <div class="owner" ng-click="$root.openProfile(focusedImage.uid)">
     <img ng-src="http://graph.facebook.com/{{focusedImage.fb_id}}/picture" />
     <span class="btn" ng-bind="focusedImage.username"></span>
   </div>

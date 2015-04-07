@@ -1,4 +1,4 @@
-angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'])
+angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', 'utils', 'auth'])
 
   .value('IMG_ENDPOINT', 'http://s3.amazonaws.com/bump-pictures')
 
@@ -14,8 +14,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
     };
   }])
 
-  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'imageFactory', 'userFactory', 'categoryFactory', 'platform', 'IMG_ENDPOINT',
-    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, imageFactory, userFactory, categoryFactory, platform, IMG_ENDPOINT) {
+  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'imageFactory', 'userFactory', 'categoryFactory', 'notificationFactory', 'platform', 'IMG_ENDPOINT',
+    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, imageFactory, userFactory, categoryFactory, notificationFactory, platform, IMG_ENDPOINT) {
       var currentUser = {};
       var currentFbUserId; 
 
@@ -34,6 +34,11 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       $rootScope.ENDPOINT = IMG_ENDPOINT;
       $rootScope.WW = $(window).width();
       $rootScope.WH = $(window).height();
+      // setInterval(function() {
+      //   $timeout(function() {
+      //     $rootScope.clock = new Date();
+      //   });
+      // }, 1000);
       $scope.category = 'Landscape';
 
 
@@ -198,18 +203,23 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
         $scope.profile.refresh();
       }
 
-      $rootScope.openProfile = function(user) {
-        var uid = user ? user.uid : currentUser.uid;
+      $rootScope.openProfile = function(uid) {
+        uid = uid || currentUser.uid;
         $rootScope.previews = ['profile'];
         userFactory.get({ id: uid }, setUser);
       };
 
       $scope.openNotifications = function() {
         $rootScope.previews.push('notifications');
-        $scope.notifTab = 'trophies';
-      };
-      $scope.notifTabSelect = function(tab) {
-        $scope.notifTab = tab;
+        $scope.notif = {
+          tab: 'bumps'
+        };
+        $scope.notif.refresh = function() {
+          return notificationFactory.query({ id: currentUser.uid, action: 'bumps' }, function(data) {
+            $scope.notif.bumps = data;
+          }).$promise;
+        };
+        $scope.notif.refresh();
       };
 
       $rootScope.getImageSrc = function(image) {
@@ -221,7 +231,18 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
           image.bumps += 1;
           image.bumped = true;
         }
-        $http.post(HOST + '/bump', { image: image.id, uid: currentUser.uid, ownerUid: image.uid })
+        $http.post(HOST + '/bump', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
+          .success(function(data) {
+            console.log(data);
+          });
+      }
+
+      $scope.report = function(image) {
+        if (!image.reported) {
+          image.reports += 1;
+          image.reported = true;
+        }
+        $http.post(HOST + '/report', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
           .success(function(data) {
             console.log(data);
           });
