@@ -173,7 +173,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
       };
 
       $rootScope.openPreview = function(image) {
-        image.images = imageFactory.query({ id: image.uid, action: 'by_user', uid: currentUser.uid });
+        image.images = imageFactory.get({ id: image.uid, action: 'by_user', uid: currentUser.uid, count: 12, order: 'bumps' });
         $rootScope.previews.push('image');
         $scope.focusedImage = image;
       };
@@ -184,17 +184,18 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'directives', 'utils', 'auth'
 
       function setUser(user) {
         $scope.profile = user;
-        $scope.profile.$mine = currentUser.uid == user.uid;
+        $scope.profile.list = {
+          grid: 1,
+          order: 'added',
+          count: 12,
+          $mine: currentUser.uid == user.uid
+        };
         $scope.profile.refresh = function() {
-          return imageFactory.query({ id: user.uid, action: 'by_user', uid: currentUser.uid }, function(data) {
+          return imageFactory.get({ id: user.uid, action: 'by_user', uid: currentUser.uid, order: $scope.profile.list.order, count: $scope.profile.list.count }, function(data) {
             $scope.profile.images = data;
           }).$promise;
         };
         $scope.profile.refresh();
-        $scope.profile.list = {
-          grid: 1,
-          order: 'added'
-        };
       }
 
       $rootScope.openProfile = function(user) {

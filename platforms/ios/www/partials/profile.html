@@ -16,7 +16,7 @@
         <span class="trophy"><i class="fa fa-trophy bronze"></i> 12</p></span>
     </div>
   </div>
-  <div class="profile-main" pull-refresh="profile.refresh()" list="profile.images" template="'partials/thumbnail.html'" distance="40" config="profile.list" fixed-height="-60"></div>
+  <div class="profile-main" pull-refresh="profile.refresh()" list="profile.images" template="'partials/thumbnail.html'" distance="40" config="profile.list" fixed-height="-40" infinite="true"></div>
   <div class="tabs profile-tabs">
     <div class="tab toggle-order" ng-click="toggleOrder(profile.list)">
       <i class="fa" ng-class="{'fa-clock-o': profile.list.order == 'bumps', 'fa-trophy': profile.list.order == 'added'}"></i>
