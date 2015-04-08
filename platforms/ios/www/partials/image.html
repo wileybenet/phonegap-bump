@@ -16,8 +16,11 @@
     <div class="bumps">
       <small ng-bind="focusedImage.bumps | commas"></small> <small class="subdue">bump{{focusedImage.bumps == 1 ? '' : 's'}}</small>
     </div>
-    <div class="bump btn" ng-click="!focusedImage.bumped && bump(focusedImage)" ng-class="{checked: focusedImage.bumped}">
+    <div class="bump btn" ng-click="$root.bump(focusedImage)" ng-class="{checked: focusedImage.bumped}" ng-show="$root.bumpable(focusedImage)">
       <small><i class="fa fa-angle-double-up"></i> Bump</small><small ng-show="focusedImage.bumped">ed</small>
+    </div>
+    <div class="bump small">
+      <span class="subdue" ng-hide="$root.bumpable(focusedImage)">Mine</span>
     </div>
     <div class="clear"></div>
   </div>

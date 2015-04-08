@@ -68,6 +68,7 @@ body {
 	text-align: left;
   -webkit-transform: translateZ(2);
 	z-index: 2;
+	margin-bottom: -1px;
 }
 
 .loading span, .infinite span {

@@ -2,7 +2,7 @@
   <div class="close" ng-click="closePreview()">
     &times;
   </div>
-  <div class="title">
+  <div class="title-2">
     Photo Upload
   </div>
   <div class="cat-dropdown btn" ng-click="selectUploadCategory()">
@@ -10,11 +10,18 @@
   </div>
   <div class="image upload">
     <img ng-src="{{pendingUploadImage}}" width="100%" />
-  </div>
+    <div class="btn tiny" ng-show="pendingUploadImage != $rootScope.defaultImage" ng-click="openCamera()">
+      <i class="fa fa-angle-left"></i> Change
+    </div>
+  </div>  
   <div class="inputs">
     <div>
-      <textarea ng-model="uploadParams.caption" placeholder="Add a caption"></textarea>
+      <textarea ng-model="uploadParams.caption" placeholder="Add a caption" maxlength="100"></textarea>
     </div>
+    <div class="subdue tiny right padded">{{uploadParams.caption.length || 0}}/100</div>
+  </div>
+  <div class="btn btn-md btn-block" ng-click="postToFb()">
+    <i class="fa fa-facebook-official"></i> Post to Facebook
   </div>
   <div class="btn footer-btn" ng-click="readyToUpload() && uploadPhotoToServer()" ng-class="{ disabled: !readyToUpload() }">
     Upload

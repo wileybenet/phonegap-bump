@@ -8,12 +8,16 @@
   <div class="profile-pic">
     <img width="100" ng-src="http://graph.facebook.com/{{profile.fb_id}}/picture?width=240&height=240" />
     <div class="profile-info">
-      <p class="big">{{profile.username}}</p>
-      <p>{{profile.bumps | commas}} bump<span ng-if="profile.bumps != 1">s</span></p>
+      <p class="big" ng-bind="profile.username"></p>
+      <p><span ng-bind="profile.bumps | commas"></span> bump<span ng-if="profile.bumps != 1">s</span></p>
       <p>
-        <span class="trophy"><i class="fa fa-trophy gold"></i> 2</span>
-        <span class="trophy"><i class="fa fa-trophy silver"></i> 5</span>
-        <span class="trophy"><i class="fa fa-trophy bronze"></i> 12</p></span>
+        <span class="trophy"><i class="fa fa-trophy gold"></i> {{profile.gold || 0}}</span>
+        <span class="trophy"><i class="fa fa-trophy silver"></i> {{profile.silver || 0}}</span>
+        <span class="trophy"><i class="fa fa-trophy bronze"></i> {{profile.bronze || 0}}</span>
+        <span class="btn pushed" ng-click="$root.openHelp('trophy')">
+          <i class="fa fa-question"></i>
+        </span>
+      </p>
     </div>
   </div>
   <div class="profile-main" pull-refresh="profile.refresh()" list="profile.images" template="'partials/thumbnail.html'" distance="40" config="profile.list" fixed-height="-40" infinite="true"></div>

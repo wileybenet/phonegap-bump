@@ -9,6 +9,7 @@
     <div class="btn left" ng-bind="image.username" ng-click="$root.openProfile(image.uid)"></div>
     <div class="right">
       <span ng-bind="image.bumps | commas"></span> <small class="subdue">bump{{image.bumps == 1 ? '' : 's'}}</small>
+      <i class="fa fa-angle-double-up btn" ng-click="$root.bump(image)" ng-show="$root.bumpable(image)"></i>
     </div>
     <div class="clear"></div>
   </div>

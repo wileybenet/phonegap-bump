@@ -102,7 +102,7 @@ angular.module('directives', [])
           if (!loadingInfinite) {
             loadingInfinite = true;
             console.log('loading!');
-            scope.config.count += scope.config._count;
+            scope.config.count += scope.config._increment;
             scope.refresh().then(function() {
               loadingInfinite = false;
             });
@@ -170,9 +170,9 @@ angular.module('directives', [])
           $wrapper.removeClass('ptr-refresh');
           $wrapper.addClass('ptr-collapse');
 
-          h.on('dragstart', _dragStart);
-          h.on('dragdown', _dragDown);
-          h.on('dragend', _dragEnd);
+          h.on('dragstart', dragStart);
+          h.on('dragdown', dragDown);
+          h.on('dragend', dragEnd);
         }
 
         h.on('dragstart', dragStart);

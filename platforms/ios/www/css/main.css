@@ -122,7 +122,7 @@ html, body {
 }
 
 .main {
-  height: calc(100% - 56px);
+  max-height: calc(100% - 56px);
   top: 0;
   left: 0;
   color: #fff;
@@ -199,10 +199,17 @@ img {
   position: relative;
 }
 
+.no-results {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
 .preview-wrapper {
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1000;
@@ -250,6 +257,11 @@ img {
     font-size: 38px;
     text-align: center;
   }
+  .preview .title-2 {
+    margin-top: 24px;
+    font-size: 26px;
+    text-align: center;
+  }
   .preview .sub-title {
     margin-top: 48px;
     margin-bottom: 10px;
@@ -269,6 +281,26 @@ img {
   .preview .tabs .tab.selected {
     color: #030303;
     background: #49E2B4;
+  }
+  .preview .notif-wrapper {
+    width: 100%;
+    margin-left: 0;
+    -webkit-transition:all ease-out 0.2s;
+    transition:all ease-out 0.2s;
+  }
+  .preview .notif-wrapper.slide-left {
+    margin-left: -100%;
+  }
+  .preview .notification {
+    margin: 1px;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .preview .notification .close {
+    color: #AAA;
+    top: 3px;
+    font-size: 20px;
   }
   .preview .notification-tabs {
     margin-top: 54px;
@@ -330,7 +362,8 @@ img {
   .preview .cat-dropdown {
     text-align: center;
     font-size: 14px;
-    margin-top: 6px;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
   .preview p {
     font-size: 16px;
@@ -338,8 +371,17 @@ img {
   .preview .image.upload {
     margin-top: 8px;
     width: 100%;
+    max-height: 30%;
     overflow: hidden;
     max-height: 50%;
+    position: relative;
+  }
+  .preview .image.upload .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 6px;
+    background: rgba(63, 63, 63, 0.7);
   }
   .preview .inputs textarea, .preview input {
     background: transparent;
@@ -354,9 +396,10 @@ img {
   }
   .preview .inputs textarea {
     width: calc(100% - 20px);
-    padding: 5px;
+    padding: 10px;
     margin-left: 0px;
     height: 50px;
+    background: #323232;
   }
 
   ::-webkit-input-placeholder {
@@ -464,6 +507,10 @@ img {
   clear: both;
 }
 
+.padded {
+  margin: 2px 10px;
+}
+
 .gold {
   color: #DFC12B;
 }
@@ -499,6 +546,9 @@ img {
 .btn {
   color: #49E2B4;
 }
+.btn.btn-md {
+  font-size: 14px;
+}
 .btn.warn {
   color: #9E9962;
 }
@@ -507,6 +557,16 @@ img {
 }
 .btn.disabled {
   color: #999;
+}
+.btn.btn-block {
+  margin: 2px 10px;
+}
+.btn.pushed {
+  margin-left: 10px;
+}
+
+.tiny {
+  font-size: 12px;
 }
 
 small {
@@ -546,24 +606,3 @@ p {
   background-color: rgba(0,0,0,0.9);
 }
 
-
-.preview-wrapper.ng-move,
-.preview-wrapper.ng-enter,
-.preview-wrapper.ng-leave {
-  -webkit-transition:all ease-out 0.25s;
-  transition:all ease-out 0.25s;
-}
-
-.preview-wrapper.ng-leave.ng-leave-active,
-.preview-wrapper.ng-move,
-.preview-wrapper.ng-enter {
-  opacity: 0;
-  top: 100%;
-}
-
-.preview-wrapper.ng-leave,
-.preview-wrapper.ng-move.ng-move-active,
-.preview-wrapper.ng-enter.ng-enter-active {
-  opacity: 1;
-  top: 0;
-}

@@ -1,8 +1,14 @@
-<div class="notification" ng-repeat="item in list | orderBy:'bumped':true">
+<div class="notification" ng-repeat="item in list | orderBy:'bumped':true | filter:{ new: 1 } as activeNotifications">
   <img ng-src="{{$root.ENDPOINT}}/64_{{item.key}}" width="64" />
   <div class="notification-info">
     <span class="btn" ng-click="$root.openProfile(item.uid)" ng-bind="item.username"></span>
     <span>bumped your photo!</span>
-    <span class="subdue" ng-bind-html="item.bumped | timeAgo:$root.clock"></span>
+    <div class="subdue" ng-bind-html="item.bumped | timeAgo"></div>
   </div>
+  <div class="close" ng-click="$root.dismissNotification(item)">
+    &times;
+  </div>
+</div>
+<div class="subdue no-results" ng-show="activeNotifications.length === 0 && list.$resolved">
+  No new notifications
 </div>

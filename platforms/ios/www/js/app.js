@@ -25,7 +25,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       $scope.list = {
         grid: 1,
         order: 'bumps',
-        count: 3
+        count: 36,
+        _increment: 18
       };
       $scope.list._count = $scope.list.count;
 
@@ -34,11 +35,6 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       $rootScope.ENDPOINT = IMG_ENDPOINT;
       $rootScope.WW = $(window).width();
       $rootScope.WH = $(window).height();
-      // setInterval(function() {
-      //   $timeout(function() {
-      //     $rootScope.clock = new Date();
-      //   });
-      // }, 1000);
       $scope.category = 'Landscape';
 
 
@@ -104,6 +100,17 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         }
       });
 
+      var first = true;
+      $scope.$watch('list.order', function(state) {
+        if (first)
+          return first = false;
+
+        if (state == 'bumps')
+          $scope.alert = 'Order by most bumps';
+        else
+          $scope.alert = 'Order by newest';
+      });
+
       function getCategoryId() {
         if ($scope.categories.$resolved)
           return $scope.categoryIdsByName[$scope.category];
@@ -137,10 +144,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $scope.loginWithFB = function() {
-        FB.login(['email'], authFB, function(res) {
-          console.log(JSON.stringify(res)) 
-        }, function(res) {
-          console.log('login err', res);
+        FB.login([], authFB, function(res) {
+          console.log('login err', JSON.stringify(res)) 
         });
       };
 
@@ -192,7 +197,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         $scope.profile.list = {
           grid: 1,
           order: 'added',
-          count: 12,
+          count: 18,
+          _count: 18,
+          _increment: 12,
           $mine: currentUser.uid == user.uid
         };
         $scope.profile.refresh = function() {
@@ -221,12 +228,24 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         };
         $scope.notif.refresh();
       };
+      $rootScope.dismissNotification = function(notification) {
+        notification.new = 0;
+        notificationFactory.delete({ id: notification.id, uid: currentUser.uid }, function(data) {
+          notification.new = data.success ? 0 : 1;
+        });
+      };
+
+      $rootScope.openHelp = function(group) {
+
+      };
 
       $rootScope.getImageSrc = function(image) {
         return $scope.ENDPOINT + '/' + $scope.getImageSize[$scope.list.grid] + '_' + image;
       };
 
-      $scope.bump = function(image) {
+      $rootScope.bump = function(image) {
+        if (!$rootScope.bumpable())
+          return;
         if (!image.bumped) {
           image.bumps += 1;
           image.bumped = true;
@@ -236,6 +255,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
             console.log(data);
           });
       }
+      $rootScope.bumpable = function(image) {
+        return !(image.bumped || image.uid == currentUser.uid);
+      };
 
       $scope.report = function(image) {
         if (!image.reported) {
@@ -294,7 +316,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           $scope.uploadParams = {
             uid: currentUser.uid
           };
-          $scope.pendingUploadImage = null;
+          $scope.pendingUploadImage = $rootScope.defaultImage = 'images/default.png';
           $scope.pendingUploadCategory = 'Category';
         }, 500);
         navigator.camera.getPicture(loadPhoto, function(message) {
@@ -307,6 +329,11 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           destinationType: navigator.camera.DestinationType.FILE_URI,
           sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
         });
+      };
+
+      $scope.postToFb = function() {
+        console.log('fb');
+        FB.showDialog(['publish_actions'], function(res) { console.log('success', res); }, function(res) { console.log('error', res); });
       };
 
       function loadPhoto(imageURI) {
