@@ -14,16 +14,13 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
     };
   }])
 
-  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'imageFactory', 'userFactory', 'categoryFactory', 'notificationFactory', 'platform', 'IMG_ENDPOINT',
-    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, imageFactory, userFactory, categoryFactory, notificationFactory, platform, IMG_ENDPOINT) {
-      var currentUser = {};
-      var currentFbUserId; 
-
+  .controller('HomeController', ['$scope', '$rootScope', '$http', '$timeout', '$q', 'HOST', 'FB', 'currentUser', 'imageFactory', 'userFactory', 'categoryFactory', 'notificationFactory', 'platform', 'IMG_ENDPOINT',
+    function($scope, $rootScope, $http, $timeout, $q, HOST, FB, currentUser, imageFactory, userFactory, categoryFactory, notificationFactory, platform, IMG_ENDPOINT) {
       var defer = $q.defer();
       $scope.categories = categoryFactory.query();
       $scope.categoryIdsByName = {};
       $scope.list = {
-        grid: 1,
+        grid: 2,
         order: 'bumps',
         count: 36,
         _increment: 18
@@ -33,8 +30,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
       $rootScope.previews = [];
       $rootScope.ENDPOINT = IMG_ENDPOINT;
-      $rootScope.WW = $(window).width();
-      $rootScope.WH = $(window).height();
+      $rootScope.ww = function() { return $(window).width() };
       $scope.category = 'Landscape';
 
 
@@ -52,7 +48,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
             $http.post(HOST + '/login', { user: r.id, access_token: res.authResponse.accessToken })
               .success(function(data) {
                 if (data.active) {
-                  currentUser = data;
+                  currentUser.set(data);
                   $scope.authd = true;
                   defer.resolve();
                 } else {
@@ -66,18 +62,20 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
                 }
               })
               .error(function() {
-                alert('Bump server is down');
+                $scope.networkError = 'Bump server';
               }); 
-          }, function(err) { console.log('err', err) });
+          }, function(err) {
+            $scope.networkError = 'Facebook';
+          });
         } 
-
-        console.log('fb status', res);
       }
 
       function bootstrap() {
 
         FB.getLoginStatus(authFB, function(res) {
-          console.log('fb err', res); 
+          $timeout(function() {
+            $scope.networkError = 'Facebook';
+          });
         });
 
         $scope.$apply(function() {
@@ -106,9 +104,11 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           return first = false;
 
         if (state == 'bumps')
-          $scope.alert = 'Order by most bumps';
+          $scope.alert = 'Order by popularity';
         else
-          $scope.alert = 'Order by newest';
+          $scope.alert = 'Order by date';
+
+        forceLoadImages();
       });
 
       function getCategoryId() {
@@ -126,6 +126,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
           }, 300);
+        }, function(err) {
+          $scope.networkError = 'Bump server';
         });
       }
 
@@ -140,12 +142,14 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
         return imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid }, function(data) {
           $scope.picList = data;
+        }, function(err) {
+          $scope.networkError = 'Bump server';
         }).$promise;
       };
 
       $scope.loginWithFB = function() {
-        FB.login([], authFB, function(res) {
-          console.log('login err', JSON.stringify(res)) 
+        FB.login([''], authFB, function(err) {
+          $scope.networkError = 'Facebook';
         });
       };
 
@@ -183,7 +187,9 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $rootScope.openPreview = function(image) {
-        image.images = imageFactory.get({ id: image.uid, action: 'by_user', uid: currentUser.uid, count: 12, order: 'bumps' });
+        image.images = imageFactory.get({ id: image.uid, action: 'by_user', uid: currentUser.uid, count: 12, order: 'bumps' }, function() {}, function(err) {
+          $scope.networkError = 'Bump server';
+        });
         $rootScope.previews.push('image');
         $scope.focusedImage = image;
       };
@@ -205,6 +211,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         $scope.profile.refresh = function() {
           return imageFactory.get({ id: user.uid, action: 'by_user', uid: currentUser.uid, order: $scope.profile.list.order, count: $scope.profile.list.count }, function(data) {
             $scope.profile.images = data;
+          }, function(err) {
+            $scope.networkError = 'Bump server';
           }).$promise;
         };
         $scope.profile.refresh();
@@ -224,6 +232,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         $scope.notif.refresh = function() {
           return notificationFactory.query({ id: currentUser.uid, action: 'bumps' }, function(data) {
             $scope.notif.bumps = data;
+          }, function(err) {
+            $scope.networkError = 'Bump server';
           }).$promise;
         };
         $scope.notif.refresh();
@@ -232,6 +242,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         notification.new = 0;
         notificationFactory.delete({ id: notification.id, uid: currentUser.uid }, function(data) {
           notification.new = data.success ? 0 : 1;
+        }, function(err) {
+          $scope.networkError = 'Bump server';
         });
       };
 
@@ -243,32 +255,69 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         return $scope.ENDPOINT + '/' + $scope.getImageSize[$scope.list.grid] + '_' + image;
       };
 
-      $rootScope.bump = function(image) {
-        if (!$rootScope.bumpable())
-          return;
+      $rootScope.bump = function(image, upOnly) {
+        if ($rootScope.isMyImage(image) || image.$updating || (upOnly && image.bumped))
+          return console.log('not allowed');
+        image.$updating = true;
+
         if (!image.bumped) {
           image.bumps += 1;
           image.bumped = true;
+          $http.post(HOST + '/bump', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
+            .success(function(data) {
+              image.$updating = false;
+              console.log(data);
+            })
+            .error(function(err) {
+              $scope.networkError = 'Bump server';
+            });
+        } else {
+          image.bumps -= 1;
+          image.bumped = false;
+          $http.delete(HOST + '/bump/' + image.key + '?uid=' + currentUser.uid)
+            .success(function(data) {
+              image.$updating = false;
+              console.log(data);
+            })
+            .error(function(err) {
+              $scope.networkError = 'Bump server';
+            });
         }
-        $http.post(HOST + '/bump', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
-          .success(function(data) {
-            console.log(data);
-          });
       }
-      $rootScope.bumpable = function(image) {
-        return !(image.bumped || image.uid == currentUser.uid);
+      $rootScope.isMyImage = function(image) {
+        return image.uid == currentUser.uid;
       };
 
       $scope.report = function(image) {
+        if (image.$updating)
+          return;
         if (!image.reported) {
           image.reports += 1;
           image.reported = true;
+          $http.post(HOST + '/report/' + image.key, { uid: currentUser.uid, ownerUid: image.uid })
+            .success(function(data) {
+              console.log(data);
+            })
+            .error(function(err) {
+              $scope.networkError = 'Bump server';
+            });
+        } else {
+          $rootScope.cancelReport(image);
         }
-        $http.post(HOST + '/report', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
-          .success(function(data) {
-            console.log(data);
-          });
       }
+
+      $rootScope.cancelReport = function(image) {
+        if (image.$updating)
+          return;
+        $http.delete(HOST + '/report/' + image.key + '?uid=' + currentUser.uid)
+          .success(function(data) {
+            image.reported = false;
+            image.$updating = false;
+          })
+          .error(function(err) {
+            $scope.networkError = 'Bump server';
+          });
+      };
 
       $scope.wizardNext = function() {
         $scope.wizard++;
@@ -306,12 +355,16 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
               } else {
                 $scope.usernameError = ' ';
               }
+            })
+            .error(function(err) {
+              $scope.networkError = 'Bump server';
             });
           }
       };
 
       $scope.openCamera = function() {
         $timeout(function() {
+          $rootScope.previews = [];
           $rootScope.previews.push('upload');
           $scope.uploadParams = {
             uid: currentUser.uid
@@ -320,7 +373,6 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           $scope.pendingUploadCategory = 'Category';
         }, 500);
         navigator.camera.getPicture(loadPhoto, function(message) {
-          console.log('get picture cancelled'); 
           $scope.$apply(function() {
             $rootScope.previews.pop();
           });
@@ -332,12 +384,24 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $scope.postToFb = function() {
-        console.log('fb');
-        FB.showDialog(['publish_actions'], function(res) { console.log('success', res); }, function(res) { console.log('error', res); });
+        if (!currentUser.post_to_fb) {
+          FB.login(['publish_actions'], function(res) {
+            $http.post(HOST + 'user/' + currentUser.uid + '/post_to_facebook/' + currentUser.fb_id, {})
+              .success(function(res) {
+                console.log('updated user');
+              })
+              .error(function(err) {
+                $scope.networkError = 'Bump server';
+              });
+          }, function(err) {
+            $scope.networkError = 'Facebook';
+          });
+        } else {
+
+        }
       };
 
       function loadPhoto(imageURI) {
-        console.log(imageURI);
         $scope.$apply(function() {
           $scope.pendingUploadImage = imageURI;
         });
@@ -376,8 +440,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
             var imageList = JSON.parse(res.response);
             $scope.alert = 'Uploaded successfully';
           });
-        }, function(error) {
-          console.log("An error has occurred: Code = " + error.code);
+        }, function(err) {
+          $scope.networkError = 'Bump upload server';
         }, options);
       }
  
@@ -386,7 +450,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       if (platform == 'browser' || platform == 'phone-simulator') {
         $scope.loaded = true;
         $scope.authd = true;
-        currentUser = { uid: 'b3fd7d19-2117-43da-8b37-16df5e317d12' };
+        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1' };
         defer.resolve();
         // $scope.newUser = {};
         // $rootScope.previews.push('new-user');

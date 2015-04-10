@@ -11416,3 +11416,1220 @@
 2015-04-08 08:31:04.696 Bump[50475:5007013] Resetting plugins due to page load.
 2015-04-08 08:31:04.936 Bump[50475:5007013] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/5EE29DAB-C744-40D4-A1ED-582A1F82995B/Bump.app/www/index.html
 2015-04-08 08:31:04.959 Bump[50475:5007013] Graph Path = /me
+2015-04-08 08:39:42.773 Bump[50656:5010508] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/285283C0-96F0-4957-91A1-321BF79EC81D/Library/Cookies/Cookies.binarycookies
+2015-04-08 08:39:42.854 Bump[50656:5010508] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 08:39:42.854 Bump[50656:5010508] Multi-tasking -> Device: YES, App: YES
+2015-04-08 08:39:42.856 Bump[50656:5010508] Unlimited access to network resources
+2015-04-08 08:39:42.939 Bump[50656:5010508] [CDVTimer][keyboard] 0.073969ms
+2015-04-08 08:39:42.939 Bump[50656:5010508] Init FacebookConnect Session
+2015-04-08 08:39:42.944 Bump[50656:5010508] [CDVTimer][facebookconnectplugin] 4.458010ms
+2015-04-08 08:39:42.945 Bump[50656:5010508] [CDVTimer][file] 1.367986ms
+2015-04-08 08:39:42.946 Bump[50656:5010508] [CDVTimer][TotalPluginStartup] 6.468952ms
+2015-04-08 08:39:43.003 Bump[50656:5010508] Resetting plugins due to page load.
+2015-04-08 08:39:43.249 Bump[50656:5010508] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/264FCD19-946B-493D-9EF8-A78C71418B53/Bump.app/www/index.html
+2015-04-08 08:39:43.275 Bump[50656:5010508] Graph Path = /me
+2015-04-08 08:43:02.583 Bump[50798:5012582] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/F5DBD221-8A83-4589-8C48-A38F88AB7DDD/Library/Cookies/Cookies.binarycookies
+2015-04-08 08:43:02.664 Bump[50798:5012582] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 08:43:02.664 Bump[50798:5012582] Multi-tasking -> Device: YES, App: YES
+2015-04-08 08:43:02.667 Bump[50798:5012582] Unlimited access to network resources
+2015-04-08 08:43:02.747 Bump[50798:5012582] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 08:43:02.747 Bump[50798:5012582] Init FacebookConnect Session
+2015-04-08 08:43:02.751 Bump[50798:5012582] [CDVTimer][facebookconnectplugin] 3.583968ms
+2015-04-08 08:43:02.752 Bump[50798:5012582] [CDVTimer][file] 1.258969ms
+2015-04-08 08:43:02.752 Bump[50798:5012582] [CDVTimer][TotalPluginStartup] 5.302012ms
+2015-04-08 08:43:02.817 Bump[50798:5012582] Resetting plugins due to page load.
+2015-04-08 08:43:03.022 Bump[50798:5012582] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/BFC38904-9E4A-4AD3-A459-F46958E5A646/Bump.app/www/index.html
+2015-04-08 08:43:03.057 Bump[50798:5012582] Graph Path = /me
+2015-04-08 08:43:27.172 Bump[50936:5013293] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/000370F0-295A-494E-8341-80D8810AA342/Library/Cookies/Cookies.binarycookies
+2015-04-08 08:43:27.253 Bump[50936:5013293] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 08:43:27.253 Bump[50936:5013293] Multi-tasking -> Device: YES, App: YES
+2015-04-08 08:43:27.255 Bump[50936:5013293] Unlimited access to network resources
+2015-04-08 08:43:27.336 Bump[50936:5013293] [CDVTimer][keyboard] 0.055969ms
+2015-04-08 08:43:27.336 Bump[50936:5013293] Init FacebookConnect Session
+2015-04-08 08:43:27.341 Bump[50936:5013293] [CDVTimer][facebookconnectplugin] 4.647017ms
+2015-04-08 08:43:27.342 Bump[50936:5013293] [CDVTimer][file] 1.491010ms
+2015-04-08 08:43:27.343 Bump[50936:5013293] [CDVTimer][TotalPluginStartup] 6.621003ms
+2015-04-08 08:43:27.400 Bump[50936:5013293] Resetting plugins due to page load.
+2015-04-08 08:43:27.637 Bump[50936:5013293] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/6D41FCDD-FCCE-4730-A7EC-7FA8F05181D1/Bump.app/www/index.html
+2015-04-08 08:43:27.668 Bump[50936:5013293] Graph Path = /me
+2015-04-08 08:43:48.818 Bump[50936:5013293] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a282f10
+2015-04-08 08:43:48.819 Bump[50936:5013293] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a282f10
+2015-04-08 08:44:24.593 Bump[51115:5014563] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/21341BDF-0583-4F12-A51D-D9B3AC84134B/Library/Cookies/Cookies.binarycookies
+2015-04-08 08:44:24.658 Bump[51115:5014563] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 08:44:24.658 Bump[51115:5014563] Multi-tasking -> Device: YES, App: YES
+2015-04-08 08:44:24.660 Bump[51115:5014563] Unlimited access to network resources
+2015-04-08 08:44:24.718 Bump[51115:5014563] [CDVTimer][keyboard] 0.061035ms
+2015-04-08 08:44:24.718 Bump[51115:5014563] Init FacebookConnect Session
+2015-04-08 08:44:24.727 Bump[51115:5014563] [CDVTimer][facebookconnectplugin] 8.967996ms
+2015-04-08 08:44:24.729 Bump[51115:5014563] [CDVTimer][file] 1.801968ms
+2015-04-08 08:44:24.729 Bump[51115:5014563] [CDVTimer][TotalPluginStartup] 11.214018ms
+2015-04-08 08:44:24.794 Bump[51115:5014563] Resetting plugins due to page load.
+2015-04-08 08:44:24.970 Bump[51115:5014563] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/D4D7C566-668D-428E-8559-850C80E057F6/Bump.app/www/index.html
+2015-04-08 08:44:24.991 Bump[51115:5014563] Graph Path = /me
+2015-04-08 08:48:39.770 Bump[51115:5014563] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78e94980
+2015-04-08 08:48:39.771 Bump[51115:5014563] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78e94980
+2015-04-08 08:48:44.115 Bump[51115:5014563] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78e94980
+2015-04-08 08:48:44.115 Bump[51115:5014563] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78e94980
+2015-04-08 08:59:40.466 Bump[51394:5024982] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/9703DED3-0CBF-4242-86A2-6BED20471BBE/Library/Cookies/Cookies.binarycookies
+2015-04-08 08:59:40.559 Bump[51394:5024982] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 08:59:40.559 Bump[51394:5024982] Multi-tasking -> Device: YES, App: YES
+2015-04-08 08:59:40.561 Bump[51394:5024982] Unlimited access to network resources
+2015-04-08 08:59:40.622 Bump[51394:5024982] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 08:59:40.622 Bump[51394:5024982] Init FacebookConnect Session
+2015-04-08 08:59:40.626 Bump[51394:5024982] [CDVTimer][facebookconnectplugin] 3.625035ms
+2015-04-08 08:59:40.628 Bump[51394:5024982] [CDVTimer][file] 1.450956ms
+2015-04-08 08:59:40.628 Bump[51394:5024982] [CDVTimer][TotalPluginStartup] 5.510986ms
+2015-04-08 08:59:40.715 Bump[51394:5024982] Resetting plugins due to page load.
+2015-04-08 08:59:40.900 Bump[51394:5024982] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/7FA6F5D2-7403-4063-81CC-AD6743C7B6CD/Bump.app/www/index.html
+2015-04-08 08:59:40.913 Bump[51394:5024982] Graph Path = /me
+2015-04-08 09:06:00.895 Bump[51563:5029488] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/18C5DC9E-954C-46FA-A609-8CA71261A190/Library/Cookies/Cookies.binarycookies
+2015-04-08 09:06:00.967 Bump[51563:5029488] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 09:06:00.967 Bump[51563:5029488] Multi-tasking -> Device: YES, App: YES
+2015-04-08 09:06:00.970 Bump[51563:5029488] Unlimited access to network resources
+2015-04-08 09:06:01.090 Bump[51563:5029488] [CDVTimer][keyboard] 0.068963ms
+2015-04-08 09:06:01.090 Bump[51563:5029488] Init FacebookConnect Session
+2015-04-08 09:06:01.096 Bump[51563:5029488] [CDVTimer][facebookconnectplugin] 5.248010ms
+2015-04-08 09:06:01.097 Bump[51563:5029488] [CDVTimer][file] 1.273990ms
+2015-04-08 09:06:01.097 Bump[51563:5029488] [CDVTimer][TotalPluginStartup] 7.104993ms
+2015-04-08 09:06:01.189 Bump[51563:5029488] Resetting plugins due to page load.
+2015-04-08 09:06:01.393 Bump[51563:5029488] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/4A18C5FA-39B5-435C-9090-11903DCA3F96/Bump.app/www/index.html
+2015-04-08 09:06:01.414 Bump[51563:5029488] Graph Path = /me
+2015-04-08 09:11:02.411 Bump[51563:5032588] Terminating since there is no system app.
+2015-04-08 09:11:19.507 Bump[51868:5033674] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/EFDD6F08-88E2-40C9-9B36-76FB7922CC58/Library/Cookies/Cookies.binarycookies
+2015-04-08 09:11:19.586 Bump[51868:5033674] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 09:11:19.587 Bump[51868:5033674] Multi-tasking -> Device: YES, App: YES
+2015-04-08 09:11:19.588 Bump[51868:5033674] Unlimited access to network resources
+2015-04-08 09:11:19.653 Bump[51868:5033674] [CDVTimer][keyboard] 0.051022ms
+2015-04-08 09:11:19.653 Bump[51868:5033674] Init FacebookConnect Session
+2015-04-08 09:11:19.659 Bump[51868:5033674] [CDVTimer][facebookconnectplugin] 6.042957ms
+2015-04-08 09:11:19.662 Bump[51868:5033674] [CDVTimer][file] 2.795994ms
+2015-04-08 09:11:19.662 Bump[51868:5033674] [CDVTimer][TotalPluginStartup] 9.235978ms
+2015-04-08 09:11:19.878 Bump[51868:5033674] Resetting plugins due to page load.
+2015-04-08 09:11:20.067 Bump[51868:5033674] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/79831293-9896-42D5-B655-660E100A717D/Bump.app/www/index.html
+2015-04-08 09:15:13.235 Bump[52025:5036205] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/C3A2CFFE-B1FF-4F7B-A649-0F2DAF156F99/Library/Cookies/Cookies.binarycookies
+2015-04-08 09:15:13.303 Bump[52025:5036205] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 09:15:13.303 Bump[52025:5036205] Multi-tasking -> Device: YES, App: YES
+2015-04-08 09:15:13.305 Bump[52025:5036205] Unlimited access to network resources
+2015-04-08 09:15:13.384 Bump[52025:5036205] [CDVTimer][keyboard] 0.047982ms
+2015-04-08 09:15:13.384 Bump[52025:5036205] Init FacebookConnect Session
+2015-04-08 09:15:13.387 Bump[52025:5036205] [CDVTimer][facebookconnectplugin] 2.544999ms
+2015-04-08 09:15:13.388 Bump[52025:5036205] [CDVTimer][file] 1.475036ms
+2015-04-08 09:15:13.388 Bump[52025:5036205] [CDVTimer][TotalPluginStartup] 4.445970ms
+2015-04-08 09:15:13.455 Bump[52025:5036205] Resetting plugins due to page load.
+2015-04-08 09:15:13.681 Bump[52025:5036205] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/824252E5-2DB1-4D2A-915E-D749B71EE109/Bump.app/www/index.html
+2015-04-08 09:15:53.413 Bump[52201:5037249] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/28806E0D-15CA-40F6-BB37-B498A6E9BD06/Library/Cookies/Cookies.binarycookies
+2015-04-08 09:15:53.484 Bump[52201:5037249] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 09:15:53.485 Bump[52201:5037249] Multi-tasking -> Device: YES, App: YES
+2015-04-08 09:15:53.487 Bump[52201:5037249] Unlimited access to network resources
+2015-04-08 09:15:53.563 Bump[52201:5037249] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 09:15:53.563 Bump[52201:5037249] Init FacebookConnect Session
+2015-04-08 09:15:53.566 Bump[52201:5037249] [CDVTimer][facebookconnectplugin] 2.519965ms
+2015-04-08 09:15:53.567 Bump[52201:5037249] [CDVTimer][file] 1.393020ms
+2015-04-08 09:15:53.567 Bump[52201:5037249] [CDVTimer][TotalPluginStartup] 4.293025ms
+2015-04-08 09:15:53.629 Bump[52201:5037249] Resetting plugins due to page load.
+2015-04-08 09:15:53.875 Bump[52201:5037249] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/5E14DA60-821E-4876-8A69-71EAA426BDF5/Bump.app/www/index.html
+2015-04-08 09:16:03.666 Bump[52201:5037249] THREAD WARNING: ['FacebookConnectPlugin'] took '35.207031' ms. Plugin should use a background thread.
+2015-04-08 09:17:07.028 Bump[52201:5037249] Graph Path = /me
+2015-04-08 11:03:17.644 Bump[52591:5089018] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/1F323C1A-F9E0-4886-9F09-06AE60E1DEE0/Library/Cookies/Cookies.binarycookies
+2015-04-08 11:03:17.748 Bump[52591:5089018] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 11:03:17.748 Bump[52591:5089018] Multi-tasking -> Device: YES, App: YES
+2015-04-08 11:03:17.750 Bump[52591:5089018] Unlimited access to network resources
+2015-04-08 11:03:17.809 Bump[52591:5089018] [CDVTimer][keyboard] 0.052989ms
+2015-04-08 11:03:17.809 Bump[52591:5089018] Init FacebookConnect Session
+2015-04-08 11:03:17.812 Bump[52591:5089018] [CDVTimer][facebookconnectplugin] 3.589988ms
+2015-04-08 11:03:17.814 Bump[52591:5089018] [CDVTimer][file] 1.489997ms
+2015-04-08 11:03:17.814 Bump[52591:5089018] [CDVTimer][TotalPluginStartup] 5.519032ms
+2015-04-08 11:03:17.890 Bump[52591:5089018] Resetting plugins due to page load.
+2015-04-08 11:03:18.064 Bump[52591:5089018] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/A0531E39-F484-4893-B570-7C80C87990C4/Bump.app/www/index.html
+2015-04-08 11:03:18.081 Bump[52591:5089018] Graph Path = /me
+2015-04-08 11:03:37.110 Bump[52730:5089796] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/CE3FC4B0-961E-47EA-9620-0580366161DD/Library/Cookies/Cookies.binarycookies
+2015-04-08 11:03:37.182 Bump[52730:5089796] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 11:03:37.182 Bump[52730:5089796] Multi-tasking -> Device: YES, App: YES
+2015-04-08 11:03:37.184 Bump[52730:5089796] Unlimited access to network resources
+2015-04-08 11:03:37.266 Bump[52730:5089796] [CDVTimer][keyboard] 0.073969ms
+2015-04-08 11:03:37.266 Bump[52730:5089796] Init FacebookConnect Session
+2015-04-08 11:03:37.272 Bump[52730:5089796] [CDVTimer][facebookconnectplugin] 5.289018ms
+2015-04-08 11:03:37.273 Bump[52730:5089796] [CDVTimer][file] 1.064956ms
+2015-04-08 11:03:37.273 Bump[52730:5089796] [CDVTimer][TotalPluginStartup] 6.838977ms
+2015-04-08 11:03:37.331 Bump[52730:5089796] Resetting plugins due to page load.
+2015-04-08 11:03:37.576 Bump[52730:5089796] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/06D58CBC-5D53-43B3-8392-93CDBD2D2379/Bump.app/www/index.html
+2015-04-08 11:03:37.604 Bump[52730:5089796] Graph Path = /me
+2015-04-08 11:04:10.699 Bump[52730:5089833] File Transfer Finished with response code 200
+2015-04-08 13:12:30.345 Bump[52986:5128606] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D8BBDA3B-20A8-4915-89E3-BB19648ED9A1/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:12:30.413 Bump[52986:5128606] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:12:30.414 Bump[52986:5128606] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:12:30.416 Bump[52986:5128606] Unlimited access to network resources
+2015-04-08 13:12:30.486 Bump[52986:5128606] [CDVTimer][keyboard] 0.046968ms
+2015-04-08 13:12:30.486 Bump[52986:5128606] Init FacebookConnect Session
+2015-04-08 13:12:30.489 Bump[52986:5128606] [CDVTimer][facebookconnectplugin] 3.454030ms
+2015-04-08 13:12:30.490 Bump[52986:5128606] [CDVTimer][file] 0.808954ms
+2015-04-08 13:12:30.490 Bump[52986:5128606] [CDVTimer][TotalPluginStartup] 4.643977ms
+2015-04-08 13:12:30.532 Bump[52986:5128606] Resetting plugins due to page load.
+2015-04-08 13:12:30.716 Bump[52986:5128606] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/77B4BB56-E566-4EE3-A027-3672F37B237D/Bump.app/www/index.html
+2015-04-08 13:12:30.751 Bump[52986:5128606] Graph Path = /me
+2015-04-08 13:12:50.860 Bump[53126:5129297] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/714DE386-9831-49EA-A42E-CFB7D29DEC61/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:12:50.916 Bump[53126:5129297] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:12:50.916 Bump[53126:5129297] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:12:50.918 Bump[53126:5129297] Unlimited access to network resources
+2015-04-08 13:12:50.976 Bump[53126:5129297] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 13:12:50.976 Bump[53126:5129297] Init FacebookConnect Session
+2015-04-08 13:12:50.980 Bump[53126:5129297] [CDVTimer][facebookconnectplugin] 3.724992ms
+2015-04-08 13:12:50.981 Bump[53126:5129297] [CDVTimer][file] 0.889003ms
+2015-04-08 13:12:50.981 Bump[53126:5129297] [CDVTimer][TotalPluginStartup] 5.041003ms
+2015-04-08 13:12:51.018 Bump[53126:5129297] Resetting plugins due to page load.
+2015-04-08 13:12:51.188 Bump[53126:5129297] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/8278C453-D10F-4229-B762-94070B1E65F5/Bump.app/www/index.html
+2015-04-08 13:12:51.216 Bump[53126:5129297] Graph Path = /me
+2015-04-08 13:13:10.289 Bump[53126:5129297] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79b9b4c0
+2015-04-08 13:13:10.290 Bump[53126:5129297] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79b9b4c0
+2015-04-08 13:13:29.224 Bump[53268:5130240] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/E7342228-D5E0-4EEC-BA46-8CBAC6F4CBE8/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:13:29.291 Bump[53268:5130240] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:13:29.291 Bump[53268:5130240] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:13:29.293 Bump[53268:5130240] Unlimited access to network resources
+2015-04-08 13:13:29.376 Bump[53268:5130240] [CDVTimer][keyboard] 0.073016ms
+2015-04-08 13:13:29.376 Bump[53268:5130240] Init FacebookConnect Session
+2015-04-08 13:13:29.380 Bump[53268:5130240] [CDVTimer][facebookconnectplugin] 3.924012ms
+2015-04-08 13:13:29.382 Bump[53268:5130240] [CDVTimer][file] 1.317978ms
+2015-04-08 13:13:29.382 Bump[53268:5130240] [CDVTimer][TotalPluginStartup] 5.838990ms
+2015-04-08 13:13:29.445 Bump[53268:5130240] Resetting plugins due to page load.
+2015-04-08 13:13:29.650 Bump[53268:5130240] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/879F6BC0-CAE5-4318-89A7-E3A061BBBE86/Bump.app/www/index.html
+2015-04-08 13:13:29.686 Bump[53268:5130240] Graph Path = /me
+2015-04-08 13:13:43.391 Bump[53268:5130240] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a3736c0
+2015-04-08 13:13:43.392 Bump[53268:5130240] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a3736c0
+2015-04-08 13:14:36.398 Bump[53406:5131200] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D0BEFD01-4436-43CD-A67A-64B06AD62B79/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:14:36.470 Bump[53406:5131200] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:14:36.470 Bump[53406:5131200] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:14:36.472 Bump[53406:5131200] Unlimited access to network resources
+2015-04-08 13:14:36.552 Bump[53406:5131200] [CDVTimer][keyboard] 0.068009ms
+2015-04-08 13:14:36.552 Bump[53406:5131200] Init FacebookConnect Session
+2015-04-08 13:14:36.556 Bump[53406:5131200] [CDVTimer][facebookconnectplugin] 4.508972ms
+2015-04-08 13:14:36.558 Bump[53406:5131200] [CDVTimer][file] 1.356006ms
+2015-04-08 13:14:36.558 Bump[53406:5131200] [CDVTimer][TotalPluginStartup] 6.404042ms
+2015-04-08 13:14:36.627 Bump[53406:5131200] Resetting plugins due to page load.
+2015-04-08 13:14:36.852 Bump[53406:5131200] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/B7DE772A-6BC9-4DED-9C6B-31A07B728D97/Bump.app/www/index.html
+2015-04-08 13:14:36.874 Bump[53406:5131200] Graph Path = /me
+2015-04-08 13:16:21.453 Bump[53406:5131200] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b242fe0
+2015-04-08 13:16:21.453 Bump[53406:5131200] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b242fe0
+2015-04-08 13:16:56.373 Bump[53406:5131200] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b242fe0
+2015-04-08 13:16:56.373 Bump[53406:5131200] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b242fe0
+2015-04-08 13:20:24.787 Bump[53549:5133759] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/8466E1B7-562F-423B-BEF8-9D640EB1827A/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:20:24.861 Bump[53549:5133759] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:20:24.861 Bump[53549:5133759] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:20:24.863 Bump[53549:5133759] Unlimited access to network resources
+2015-04-08 13:20:24.951 Bump[53549:5133759] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 13:20:24.951 Bump[53549:5133759] Init FacebookConnect Session
+2015-04-08 13:20:24.955 Bump[53549:5133759] [CDVTimer][facebookconnectplugin] 4.106998ms
+2015-04-08 13:20:24.956 Bump[53549:5133759] [CDVTimer][file] 1.146019ms
+2015-04-08 13:20:24.956 Bump[53549:5133759] [CDVTimer][TotalPluginStartup] 5.708039ms
+2015-04-08 13:20:25.048 Bump[53549:5133759] Resetting plugins due to page load.
+2015-04-08 13:20:25.285 Bump[53549:5133759] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/84BF3262-9CFC-45A0-AAA8-D3070ACCCED9/Bump.app/www/index.html
+2015-04-08 13:20:25.305 Bump[53549:5133759] Graph Path = /me
+2015-04-08 13:21:11.004 Bump[53549:5134102] File Transfer Finished with response code 200
+2015-04-08 13:23:26.087 Bump[53711:5136661] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D8C99BF4-92D1-4E90-A71F-5A71062B8DBE/Library/Cookies/Cookies.binarycookies
+2015-04-08 13:23:26.144 Bump[53711:5136661] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 13:23:26.144 Bump[53711:5136661] Multi-tasking -> Device: YES, App: YES
+2015-04-08 13:23:26.145 Bump[53711:5136661] Unlimited access to network resources
+2015-04-08 13:23:26.203 Bump[53711:5136661] [CDVTimer][keyboard] 0.046015ms
+2015-04-08 13:23:26.204 Bump[53711:5136661] Init FacebookConnect Session
+2015-04-08 13:23:26.207 Bump[53711:5136661] [CDVTimer][facebookconnectplugin] 3.542006ms
+2015-04-08 13:23:26.209 Bump[53711:5136661] [CDVTimer][file] 1.401007ms
+2015-04-08 13:23:26.209 Bump[53711:5136661] [CDVTimer][TotalPluginStartup] 5.374968ms
+2015-04-08 13:23:26.268 Bump[53711:5136661] Resetting plugins due to page load.
+2015-04-08 13:23:26.462 Bump[53711:5136661] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/D655ED5A-C72A-47F3-942A-5C4993D47C07/Bump.app/www/index.html
+2015-04-08 13:23:26.522 Bump[53711:5136661] Graph Path = /me
+2015-04-08 15:01:11.059 Bump[53865:5141044] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/2EB60B11-AC53-4CD3-BCB5-791B4C2E8D39/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:01:11.134 Bump[53865:5141044] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:01:11.134 Bump[53865:5141044] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:01:11.136 Bump[53865:5141044] Unlimited access to network resources
+2015-04-08 15:01:11.215 Bump[53865:5141044] [CDVTimer][keyboard] 0.055015ms
+2015-04-08 15:01:11.215 Bump[53865:5141044] Init FacebookConnect Session
+2015-04-08 15:01:11.219 Bump[53865:5141044] [CDVTimer][facebookconnectplugin] 4.040003ms
+2015-04-08 15:01:11.220 Bump[53865:5141044] [CDVTimer][file] 1.326025ms
+2015-04-08 15:01:11.221 Bump[53865:5141044] [CDVTimer][TotalPluginStartup] 5.913019ms
+2015-04-08 15:01:11.297 Bump[53865:5141044] Resetting plugins due to page load.
+2015-04-08 15:01:11.632 Bump[53865:5141044] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/F98303D8-3FC1-4F98-B316-FC3D582F6F58/Bump.app/www/index.html
+2015-04-08 15:01:11.668 Bump[53865:5141044] Graph Path = /me
+2015-04-08 15:01:43.655 Bump[54005:5141928] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6F2591F4-B52E-4E2F-B20A-703C0E28DD9B/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:01:43.720 Bump[54005:5141928] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:01:43.721 Bump[54005:5141928] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:01:43.723 Bump[54005:5141928] Unlimited access to network resources
+2015-04-08 15:01:43.809 Bump[54005:5141928] [CDVTimer][keyboard] 0.069022ms
+2015-04-08 15:01:43.809 Bump[54005:5141928] Init FacebookConnect Session
+2015-04-08 15:01:43.814 Bump[54005:5141928] [CDVTimer][facebookconnectplugin] 5.006969ms
+2015-04-08 15:01:43.816 Bump[54005:5141928] [CDVTimer][file] 1.388013ms
+2015-04-08 15:01:43.816 Bump[54005:5141928] [CDVTimer][TotalPluginStartup] 7.044971ms
+2015-04-08 15:01:43.900 Bump[54005:5141928] Resetting plugins due to page load.
+2015-04-08 15:01:44.149 Bump[54005:5141928] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/11A36C68-B464-49D8-B8BF-CE2E2764EC5D/Bump.app/www/index.html
+2015-04-08 15:01:44.172 Bump[54005:5141928] Graph Path = /me
+2015-04-08 15:02:24.977 Bump[54149:5142746] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/F7947D3E-5F7F-47B7-9BC1-A1B7C51D7E9B/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:02:25.045 Bump[54149:5142746] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:02:25.046 Bump[54149:5142746] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:02:25.048 Bump[54149:5142746] Unlimited access to network resources
+2015-04-08 15:02:25.126 Bump[54149:5142746] [CDVTimer][keyboard] 0.071049ms
+2015-04-08 15:02:25.126 Bump[54149:5142746] Init FacebookConnect Session
+2015-04-08 15:02:25.131 Bump[54149:5142746] [CDVTimer][facebookconnectplugin] 4.977047ms
+2015-04-08 15:02:25.132 Bump[54149:5142746] [CDVTimer][file] 1.312971ms
+2015-04-08 15:02:25.132 Bump[54149:5142746] [CDVTimer][TotalPluginStartup] 6.871998ms
+2015-04-08 15:02:25.188 Bump[54149:5142746] Resetting plugins due to page load.
+2015-04-08 15:02:25.420 Bump[54149:5142746] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/60F8162A-83E3-4397-A7DC-51FCC35EC657/Bump.app/www/index.html
+2015-04-08 15:02:25.448 Bump[54149:5142746] Graph Path = /me
+2015-04-08 15:02:42.878 Bump[54149:5142746] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79ea8f20
+2015-04-08 15:02:42.878 Bump[54149:5142746] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79ea8f20
+2015-04-08 15:07:44.490 Bump[54296:5145231] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/671DB760-9618-4D08-8233-42D2C1634028/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:07:44.584 Bump[54296:5145231] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:07:44.584 Bump[54296:5145231] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:07:44.586 Bump[54296:5145231] Unlimited access to network resources
+2015-04-08 15:07:44.645 Bump[54296:5145231] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 15:07:44.645 Bump[54296:5145231] Init FacebookConnect Session
+2015-04-08 15:07:44.648 Bump[54296:5145231] [CDVTimer][facebookconnectplugin] 3.549039ms
+2015-04-08 15:07:44.650 Bump[54296:5145231] [CDVTimer][file] 1.363993ms
+2015-04-08 15:07:44.650 Bump[54296:5145231] [CDVTimer][TotalPluginStartup] 5.383015ms
+2015-04-08 15:07:44.741 Bump[54296:5145231] Resetting plugins due to page load.
+2015-04-08 15:07:44.853 Bump[54296:5145231] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/DD45F386-9487-4F84-9FBD-5F534265DF2C/Bump.app/www/index.html
+2015-04-08 15:07:44.955 Bump[54296:5145231] Graph Path = /me
+2015-04-08 15:11:13.462 Bump[54445:5146922] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/F9C3708B-26AC-4035-A28C-38ED42C49F68/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:11:13.540 Bump[54445:5146922] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:11:13.540 Bump[54445:5146922] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:11:13.542 Bump[54445:5146922] Unlimited access to network resources
+2015-04-08 15:11:13.628 Bump[54445:5146922] [CDVTimer][keyboard] 0.070989ms
+2015-04-08 15:11:13.628 Bump[54445:5146922] Init FacebookConnect Session
+2015-04-08 15:11:13.632 Bump[54445:5146922] [CDVTimer][facebookconnectplugin] 4.124045ms
+2015-04-08 15:11:13.634 Bump[54445:5146922] [CDVTimer][file] 1.370013ms
+2015-04-08 15:11:13.634 Bump[54445:5146922] [CDVTimer][TotalPluginStartup] 6.022990ms
+2015-04-08 15:11:13.699 Bump[54445:5146922] Resetting plugins due to page load.
+2015-04-08 15:11:13.856 Bump[54445:5146922] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/E569D258-2BD3-4AB6-9DB9-B420EF3E1B26/Bump.app/www/index.html
+2015-04-08 15:11:13.980 Bump[54445:5146922] Graph Path = /me
+2015-04-08 15:11:53.666 Bump[54584:5147811] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/64838FCC-26CE-471A-A278-D59572274684/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:11:53.734 Bump[54584:5147811] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:11:53.735 Bump[54584:5147811] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:11:53.737 Bump[54584:5147811] Unlimited access to network resources
+2015-04-08 15:11:53.826 Bump[54584:5147811] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 15:11:53.826 Bump[54584:5147811] Init FacebookConnect Session
+2015-04-08 15:11:53.830 Bump[54584:5147811] [CDVTimer][facebookconnectplugin] 4.396975ms
+2015-04-08 15:11:53.832 Bump[54584:5147811] [CDVTimer][file] 1.314044ms
+2015-04-08 15:11:53.832 Bump[54584:5147811] [CDVTimer][TotalPluginStartup] 6.226003ms
+2015-04-08 15:11:53.917 Bump[54584:5147811] Resetting plugins due to page load.
+2015-04-08 15:11:54.066 Bump[54584:5147811] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/16EF037D-E964-44B0-93E7-3E107F754B2A/Bump.app/www/index.html
+2015-04-08 15:11:54.186 Bump[54584:5147811] Graph Path = /me
+2015-04-08 15:12:13.197 Bump[54721:5148481] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/F5009B4A-F4CD-4F0B-9F6B-474F2495F615/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:12:13.278 Bump[54721:5148481] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:12:13.278 Bump[54721:5148481] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:12:13.281 Bump[54721:5148481] Unlimited access to network resources
+2015-04-08 15:12:13.366 Bump[54721:5148481] [CDVTimer][keyboard] 0.071049ms
+2015-04-08 15:12:13.366 Bump[54721:5148481] Init FacebookConnect Session
+2015-04-08 15:12:13.371 Bump[54721:5148481] [CDVTimer][facebookconnectplugin] 5.092025ms
+2015-04-08 15:12:13.373 Bump[54721:5148481] [CDVTimer][file] 1.316965ms
+2015-04-08 15:12:13.373 Bump[54721:5148481] [CDVTimer][TotalPluginStartup] 7.025003ms
+2015-04-08 15:12:13.454 Bump[54721:5148481] Resetting plugins due to page load.
+2015-04-08 15:12:13.607 Bump[54721:5148481] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/85CC8E93-B966-43F1-97D0-F8AA51816EC3/Bump.app/www/index.html
+2015-04-08 15:12:13.726 Bump[54721:5148481] Graph Path = /me
+2015-04-08 15:12:23.167 Bump[54721:5148481] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b50a850
+2015-04-08 15:12:23.167 Bump[54721:5148481] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7b50a850
+2015-04-08 15:14:00.500 Bump[54866:5149481] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/1F91FF04-D868-494C-9336-158EACD21D3E/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:14:00.565 Bump[54866:5149481] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:14:00.566 Bump[54866:5149481] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:14:00.568 Bump[54866:5149481] Unlimited access to network resources
+2015-04-08 15:14:00.648 Bump[54866:5149481] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 15:14:00.648 Bump[54866:5149481] Init FacebookConnect Session
+2015-04-08 15:14:00.652 Bump[54866:5149481] [CDVTimer][facebookconnectplugin] 4.049003ms
+2015-04-08 15:14:00.654 Bump[54866:5149481] [CDVTimer][file] 1.422048ms
+2015-04-08 15:14:00.654 Bump[54866:5149481] [CDVTimer][TotalPluginStartup] 6.030023ms
+2015-04-08 15:14:00.731 Bump[54866:5149481] Resetting plugins due to page load.
+2015-04-08 15:14:00.866 Bump[54866:5149481] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/54F2E6B7-27E1-4AD2-A12D-5507E182FEDA/Bump.app/www/index.html
+2015-04-08 15:14:00.965 Bump[54866:5149481] Graph Path = /me
+2015-04-08 15:14:58.468 Bump[55001:5150500] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/22CBD7C9-AC26-44D8-B947-4D4FA6276AEB/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:14:58.531 Bump[55001:5150500] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:14:58.532 Bump[55001:5150500] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:14:58.534 Bump[55001:5150500] Unlimited access to network resources
+2015-04-08 15:14:58.624 Bump[55001:5150500] [CDVTimer][keyboard] 0.052035ms
+2015-04-08 15:14:58.624 Bump[55001:5150500] Init FacebookConnect Session
+2015-04-08 15:14:58.627 Bump[55001:5150500] [CDVTimer][facebookconnectplugin] 3.614962ms
+2015-04-08 15:14:58.629 Bump[55001:5150500] [CDVTimer][file] 1.243949ms
+2015-04-08 15:14:58.629 Bump[55001:5150500] [CDVTimer][TotalPluginStartup] 5.349994ms
+2015-04-08 15:14:58.720 Bump[55001:5150500] Resetting plugins due to page load.
+2015-04-08 15:14:58.868 Bump[55001:5150500] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/81C3B2D6-B30A-4875-821B-BA8C4E3659C1/Bump.app/www/index.html
+2015-04-08 15:14:58.972 Bump[55001:5150500] Graph Path = /me
+2015-04-08 15:15:45.525 Bump[55140:5151348] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/68AC571A-40CD-47BB-A0D7-A12E53AE0C17/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:15:45.600 Bump[55140:5151348] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:15:45.600 Bump[55140:5151348] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:15:45.603 Bump[55140:5151348] Unlimited access to network resources
+2015-04-08 15:15:45.682 Bump[55140:5151348] [CDVTimer][keyboard] 0.068009ms
+2015-04-08 15:15:45.682 Bump[55140:5151348] Init FacebookConnect Session
+2015-04-08 15:15:45.687 Bump[55140:5151348] [CDVTimer][facebookconnectplugin] 4.891038ms
+2015-04-08 15:15:45.689 Bump[55140:5151348] [CDVTimer][file] 1.308978ms
+2015-04-08 15:15:45.689 Bump[55140:5151348] [CDVTimer][TotalPluginStartup] 6.781042ms
+2015-04-08 15:15:45.755 Bump[55140:5151348] Resetting plugins due to page load.
+2015-04-08 15:15:45.914 Bump[55140:5151348] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/C38D7239-7743-45D0-861B-EBE29FFC7505/Bump.app/www/index.html
+2015-04-08 15:15:46.016 Bump[55140:5151348] Graph Path = /me
+2015-04-08 15:16:16.440 Bump[55277:5152073] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/1B667937-E607-4FEC-BA20-2ABDF099C1CF/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:16:16.562 Bump[55277:5152073] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:16:16.563 Bump[55277:5152073] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:16:16.565 Bump[55277:5152073] Unlimited access to network resources
+2015-04-08 15:16:16.682 Bump[55277:5152073] [CDVTimer][keyboard] 0.106990ms
+2015-04-08 15:16:16.682 Bump[55277:5152073] Init FacebookConnect Session
+2015-04-08 15:16:16.688 Bump[55277:5152073] [CDVTimer][facebookconnectplugin] 5.726039ms
+2015-04-08 15:16:16.689 Bump[55277:5152073] [CDVTimer][file] 1.385033ms
+2015-04-08 15:16:16.690 Bump[55277:5152073] [CDVTimer][TotalPluginStartup] 8.028030ms
+2015-04-08 15:16:16.891 Bump[55277:5152073] Resetting plugins due to page load.
+2015-04-08 15:16:17.116 Bump[55277:5152073] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/E24A1F0A-622E-4D47-9474-CBC3B31B63D7/Bump.app/www/index.html
+2015-04-08 15:16:17.131 Bump[55277:5152073] Graph Path = /me
+2015-04-08 15:17:12.151 Bump[55415:5152997] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/B0E35FFA-8E59-442C-B5B9-A61C709FE2E7/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:17:12.255 Bump[55415:5152997] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:17:12.255 Bump[55415:5152997] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:17:12.257 Bump[55415:5152997] Unlimited access to network resources
+2015-04-08 15:17:12.355 Bump[55415:5152997] [CDVTimer][keyboard] 0.052989ms
+2015-04-08 15:17:12.355 Bump[55415:5152997] Init FacebookConnect Session
+2015-04-08 15:17:12.360 Bump[55415:5152997] [CDVTimer][facebookconnectplugin] 4.935980ms
+2015-04-08 15:17:12.365 Bump[55415:5152997] [CDVTimer][file] 4.103005ms
+2015-04-08 15:17:12.365 Bump[55415:5152997] [CDVTimer][TotalPluginStartup] 9.536982ms
+2015-04-08 15:17:12.551 Bump[55415:5152997] Resetting plugins due to page load.
+2015-04-08 15:17:12.746 Bump[55415:5152997] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/9806C704-21AF-44C3-8650-18A0F84CA255/Bump.app/www/index.html
+2015-04-08 15:17:12.764 Bump[55415:5152997] Graph Path = /me
+2015-04-08 15:17:19.008 Bump[55415:5152997] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79875720
+2015-04-08 15:17:19.008 Bump[55415:5152997] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x79875720
+2015-04-08 15:17:52.201 Bump[55556:5154090] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/3C151F53-7DA2-44A6-9AE0-9844EEBC2D25/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:17:52.293 Bump[55556:5154090] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:17:52.293 Bump[55556:5154090] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:17:52.295 Bump[55556:5154090] Unlimited access to network resources
+2015-04-08 15:17:52.379 Bump[55556:5154090] [CDVTimer][keyboard] 0.066996ms
+2015-04-08 15:17:52.379 Bump[55556:5154090] Init FacebookConnect Session
+2015-04-08 15:17:52.383 Bump[55556:5154090] [CDVTimer][facebookconnectplugin] 4.383981ms
+2015-04-08 15:17:52.385 Bump[55556:5154090] [CDVTimer][file] 1.856983ms
+2015-04-08 15:17:52.385 Bump[55556:5154090] [CDVTimer][TotalPluginStartup] 6.837964ms
+2015-04-08 15:17:52.446 Bump[55556:5154090] Resetting plugins due to page load.
+2015-04-08 15:17:52.611 Bump[55556:5154090] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/80AE8182-2970-442D-88EF-7771D9A799E4/Bump.app/www/index.html
+2015-04-08 15:17:52.716 Bump[55556:5154090] Graph Path = /me
+2015-04-08 15:19:03.258 Bump[55695:5155360] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/AAE44713-A71A-4B29-9B5A-2EA8BC463904/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:19:03.356 Bump[55695:5155360] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:19:03.357 Bump[55695:5155360] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:19:03.359 Bump[55695:5155360] Unlimited access to network resources
+2015-04-08 15:19:03.461 Bump[55695:5155360] [CDVTimer][keyboard] 0.078022ms
+2015-04-08 15:19:03.461 Bump[55695:5155360] Init FacebookConnect Session
+2015-04-08 15:19:03.466 Bump[55695:5155360] [CDVTimer][facebookconnectplugin] 5.156994ms
+2015-04-08 15:19:03.468 Bump[55695:5155360] [CDVTimer][file] 1.362026ms
+2015-04-08 15:19:03.468 Bump[55695:5155360] [CDVTimer][TotalPluginStartup] 7.141054ms
+2015-04-08 15:19:03.620 Bump[55695:5155360] Resetting plugins due to page load.
+2015-04-08 15:19:03.796 Bump[55695:5155360] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/459BB0AB-7548-4489-A8D0-5176033CAEBE/Bump.app/www/index.html
+2015-04-08 15:19:03.831 Bump[55695:5155360] Graph Path = /me
+2015-04-08 15:19:38.970 Bump[55834:5156118] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/04BFE40F-7262-46A8-8051-FCEFB0BACC08/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:19:39.040 Bump[55834:5156118] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:19:39.040 Bump[55834:5156118] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:19:39.043 Bump[55834:5156118] Unlimited access to network resources
+2015-04-08 15:19:39.126 Bump[55834:5156118] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 15:19:39.126 Bump[55834:5156118] Init FacebookConnect Session
+2015-04-08 15:19:39.130 Bump[55834:5156118] [CDVTimer][facebookconnectplugin] 4.767001ms
+2015-04-08 15:19:39.132 Bump[55834:5156118] [CDVTimer][file] 1.313984ms
+2015-04-08 15:19:39.132 Bump[55834:5156118] [CDVTimer][TotalPluginStartup] 6.567001ms
+2015-04-08 15:19:39.210 Bump[55834:5156118] Resetting plugins due to page load.
+2015-04-08 15:19:39.371 Bump[55834:5156118] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/21243F01-F989-49EC-A2A8-F1A7E80DB9F3/Bump.app/www/index.html
+2015-04-08 15:19:39.472 Bump[55834:5156118] Graph Path = /me
+2015-04-08 15:20:06.511 Bump[55975:5156822] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/DD3F0ACE-C420-4F57-AC20-C3693374C256/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:20:06.583 Bump[55975:5156822] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:20:06.583 Bump[55975:5156822] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:20:06.586 Bump[55975:5156822] Unlimited access to network resources
+2015-04-08 15:20:06.663 Bump[55975:5156822] [CDVTimer][keyboard] 0.050962ms
+2015-04-08 15:20:06.663 Bump[55975:5156822] Init FacebookConnect Session
+2015-04-08 15:20:06.668 Bump[55975:5156822] [CDVTimer][facebookconnectplugin] 4.499972ms
+2015-04-08 15:20:06.669 Bump[55975:5156822] [CDVTimer][file] 1.391947ms
+2015-04-08 15:20:06.670 Bump[55975:5156822] [CDVTimer][TotalPluginStartup] 6.358027ms
+2015-04-08 15:20:06.721 Bump[55975:5156822] Resetting plugins due to page load.
+2015-04-08 15:20:06.915 Bump[55975:5156822] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/3A0803D3-A73B-482A-A16D-5647F272973C/Bump.app/www/index.html
+2015-04-08 15:20:06.961 Bump[55975:5156822] Graph Path = /me
+2015-04-08 15:20:25.067 Bump[55975:5156822] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a07ffc0
+2015-04-08 15:20:25.067 Bump[55975:5156822] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7a07ffc0
+2015-04-08 15:22:29.666 Bump[56112:5158266] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/7FCA006F-8EF6-45FD-AA86-A8E5F7D279B5/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:22:29.750 Bump[56112:5158266] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:22:29.751 Bump[56112:5158266] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:22:29.753 Bump[56112:5158266] Unlimited access to network resources
+2015-04-08 15:22:29.835 Bump[56112:5158266] [CDVTimer][keyboard] 0.052035ms
+2015-04-08 15:22:29.835 Bump[56112:5158266] Init FacebookConnect Session
+2015-04-08 15:22:29.839 Bump[56112:5158266] [CDVTimer][facebookconnectplugin] 3.763020ms
+2015-04-08 15:22:29.840 Bump[56112:5158266] [CDVTimer][file] 1.303971ms
+2015-04-08 15:22:29.841 Bump[56112:5158266] [CDVTimer][TotalPluginStartup] 5.578995ms
+2015-04-08 15:22:29.910 Bump[56112:5158266] Resetting plugins due to page load.
+2015-04-08 15:22:30.120 Bump[56112:5158266] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/18D08241-15F4-4EB2-8E2A-D576D0F99793/Bump.app/www/index.html
+2015-04-08 15:22:30.155 Bump[56112:5158266] Graph Path = /me
+2015-04-08 15:24:56.514 Bump[56259:5159596] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/91B5DA12-7754-4065-A5CB-DFA89AA2B768/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:24:56.588 Bump[56259:5159596] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:24:56.588 Bump[56259:5159596] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:24:56.590 Bump[56259:5159596] Unlimited access to network resources
+2015-04-08 15:24:56.671 Bump[56259:5159596] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:24:56.671 Bump[56259:5159596] Init FacebookConnect Session
+2015-04-08 15:24:56.675 Bump[56259:5159596] [CDVTimer][facebookconnectplugin] 3.634036ms
+2015-04-08 15:24:56.676 Bump[56259:5159596] [CDVTimer][file] 1.323998ms
+2015-04-08 15:24:56.677 Bump[56259:5159596] [CDVTimer][TotalPluginStartup] 5.475998ms
+2015-04-08 15:24:56.746 Bump[56259:5159596] Resetting plugins due to page load.
+2015-04-08 15:24:56.913 Bump[56259:5159596] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/4E690E3D-537F-4996-BA46-7A1298272EEF/Bump.app/www/index.html
+2015-04-08 15:24:57.002 Bump[56259:5159596] Graph Path = /me
+2015-04-08 15:25:39.171 Bump[56399:5160472] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6A60D31D-8328-45D5-8BD2-01E2C3365959/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:25:39.238 Bump[56399:5160472] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:25:39.238 Bump[56399:5160472] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:25:39.240 Bump[56399:5160472] Unlimited access to network resources
+2015-04-08 15:25:39.326 Bump[56399:5160472] [CDVTimer][keyboard] 0.048041ms
+2015-04-08 15:25:39.326 Bump[56399:5160472] Init FacebookConnect Session
+2015-04-08 15:25:39.330 Bump[56399:5160472] [CDVTimer][facebookconnectplugin] 4.382014ms
+2015-04-08 15:25:39.332 Bump[56399:5160472] [CDVTimer][file] 1.300991ms
+2015-04-08 15:25:39.332 Bump[56399:5160472] [CDVTimer][TotalPluginStartup] 6.213009ms
+2015-04-08 15:25:39.420 Bump[56399:5160472] Resetting plugins due to page load.
+2015-04-08 15:25:39.573 Bump[56399:5160472] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/4EEDE317-BE44-49D9-B635-411B86A4F109/Bump.app/www/index.html
+2015-04-08 15:25:39.691 Bump[56399:5160472] Graph Path = /me
+2015-04-08 15:26:32.989 Bump[56544:5161565] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/3ED95981-4DCA-4825-B99F-3BB9964B87C3/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:26:33.059 Bump[56544:5161565] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:26:33.059 Bump[56544:5161565] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:26:33.061 Bump[56544:5161565] Unlimited access to network resources
+2015-04-08 15:26:33.139 Bump[56544:5161565] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:26:33.139 Bump[56544:5161565] Init FacebookConnect Session
+2015-04-08 15:26:33.144 Bump[56544:5161565] [CDVTimer][facebookconnectplugin] 4.644990ms
+2015-04-08 15:26:33.145 Bump[56544:5161565] [CDVTimer][file] 1.321018ms
+2015-04-08 15:26:33.145 Bump[56544:5161565] [CDVTimer][TotalPluginStartup] 6.524026ms
+2015-04-08 15:26:33.195 Bump[56544:5161565] Resetting plugins due to page load.
+2015-04-08 15:26:33.381 Bump[56544:5161565] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/94D47BCE-DE07-429E-9BB1-98B0DAF627C4/Bump.app/www/index.html
+2015-04-08 15:26:33.412 Bump[56544:5161565] Graph Path = /me
+2015-04-08 15:27:00.798 Bump[56684:5162451] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/7342C7BD-96A5-4022-9C1F-54BE32B1424C/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:27:00.866 Bump[56684:5162451] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:27:00.866 Bump[56684:5162451] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:27:00.869 Bump[56684:5162451] Unlimited access to network resources
+2015-04-08 15:27:00.947 Bump[56684:5162451] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:27:00.947 Bump[56684:5162451] Init FacebookConnect Session
+2015-04-08 15:27:00.952 Bump[56684:5162451] [CDVTimer][facebookconnectplugin] 4.869998ms
+2015-04-08 15:27:00.954 Bump[56684:5162451] [CDVTimer][file] 1.407027ms
+2015-04-08 15:27:00.954 Bump[56684:5162451] [CDVTimer][TotalPluginStartup] 6.787002ms
+2015-04-08 15:27:01.016 Bump[56684:5162451] Resetting plugins due to page load.
+2015-04-08 15:27:01.209 Bump[56684:5162451] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/ED057518-01CE-489F-8611-48210684EF35/Bump.app/www/index.html
+2015-04-08 15:27:01.273 Bump[56684:5162451] Graph Path = /me
+2015-04-08 15:27:12.593 Bump[56818:5163022] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D5AA6FFB-F88B-4523-B4AA-3696F331183B/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:27:12.663 Bump[56818:5163022] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:27:12.664 Bump[56818:5163022] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:27:12.666 Bump[56818:5163022] Unlimited access to network resources
+2015-04-08 15:27:12.766 Bump[56818:5163022] [CDVTimer][keyboard] 0.069976ms
+2015-04-08 15:27:12.766 Bump[56818:5163022] Init FacebookConnect Session
+2015-04-08 15:27:12.771 Bump[56818:5163022] [CDVTimer][facebookconnectplugin] 5.226016ms
+2015-04-08 15:27:12.772 Bump[56818:5163022] [CDVTimer][file] 1.310050ms
+2015-04-08 15:27:12.773 Bump[56818:5163022] [CDVTimer][TotalPluginStartup] 7.164001ms
+2015-04-08 15:27:12.866 Bump[56818:5163022] Resetting plugins due to page load.
+2015-04-08 15:27:13.011 Bump[56818:5163022] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/579D30F4-FE76-4957-9401-1BA5B8AA4DCE/Bump.app/www/index.html
+2015-04-08 15:27:13.116 Bump[56818:5163022] Graph Path = /me
+2015-04-08 15:29:43.732 Bump[56961:5164949] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/32DA85FE-2739-44A7-A5A6-BED23F970BDA/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:29:43.800 Bump[56961:5164949] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:29:43.801 Bump[56961:5164949] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:29:43.803 Bump[56961:5164949] Unlimited access to network resources
+2015-04-08 15:29:43.882 Bump[56961:5164949] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:29:43.882 Bump[56961:5164949] Init FacebookConnect Session
+2015-04-08 15:29:43.886 Bump[56961:5164949] [CDVTimer][facebookconnectplugin] 4.055977ms
+2015-04-08 15:29:43.887 Bump[56961:5164949] [CDVTimer][file] 1.320004ms
+2015-04-08 15:29:43.888 Bump[56961:5164949] [CDVTimer][TotalPluginStartup] 5.822957ms
+2015-04-08 15:29:43.965 Bump[56961:5164949] Resetting plugins due to page load.
+2015-04-08 15:29:44.102 Bump[56961:5164949] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/F363237F-9741-4EDB-BA5C-3FAB797740D3/Bump.app/www/index.html
+2015-04-08 15:29:44.177 Bump[56961:5164949] Graph Path = /me
+2015-04-08 15:30:18.920 Bump[57101:5165707] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/E537D89E-F478-4184-9FE9-B9DEDD8D729B/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:30:19.058 Bump[57101:5165707] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:30:19.059 Bump[57101:5165707] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:30:19.061 Bump[57101:5165707] Unlimited access to network resources
+2015-04-08 15:30:19.152 Bump[57101:5165707] [CDVTimer][keyboard] 0.050962ms
+2015-04-08 15:30:19.153 Bump[57101:5165707] Init FacebookConnect Session
+2015-04-08 15:30:19.157 Bump[57101:5165707] [CDVTimer][facebookconnectplugin] 4.301965ms
+2015-04-08 15:30:19.159 Bump[57101:5165707] [CDVTimer][file] 1.592994ms
+2015-04-08 15:30:19.159 Bump[57101:5165707] [CDVTimer][TotalPluginStartup] 6.447971ms
+2015-04-08 15:30:19.277 Bump[57101:5165707] Resetting plugins due to page load.
+2015-04-08 15:30:19.387 Bump[57101:5165707] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/5AF76090-1693-4BB7-8788-20842BB92AFF/Bump.app/www/index.html
+2015-04-08 15:30:19.476 Bump[57101:5165707] Graph Path = /me
+2015-04-08 15:33:08.346 Bump[57248:5167504] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/DB272D20-42B0-4D4C-A3F0-A3CAC18291A0/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:33:08.425 Bump[57248:5167504] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:33:08.426 Bump[57248:5167504] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:33:08.428 Bump[57248:5167504] Unlimited access to network resources
+2015-04-08 15:33:08.520 Bump[57248:5167504] [CDVTimer][keyboard] 0.047028ms
+2015-04-08 15:33:08.520 Bump[57248:5167504] Init FacebookConnect Session
+2015-04-08 15:33:08.525 Bump[57248:5167504] [CDVTimer][facebookconnectplugin] 4.527986ms
+2015-04-08 15:33:08.527 Bump[57248:5167504] [CDVTimer][file] 1.694977ms
+2015-04-08 15:33:08.527 Bump[57248:5167504] [CDVTimer][TotalPluginStartup] 6.677032ms
+2015-04-08 15:33:08.659 Bump[57248:5167504] Resetting plugins due to page load.
+2015-04-08 15:33:08.788 Bump[57248:5167504] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/D7BA89D9-1F00-4D66-8247-01B3782517E2/Bump.app/www/index.html
+2015-04-08 15:33:08.884 Bump[57248:5167504] Graph Path = /me
+2015-04-08 15:33:48.851 Bump[57383:5168368] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6B17BBC9-640D-4B31-BA4A-C7C9D88D2241/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:33:48.919 Bump[57383:5168368] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:33:48.919 Bump[57383:5168368] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:33:48.921 Bump[57383:5168368] Unlimited access to network resources
+2015-04-08 15:33:49.004 Bump[57383:5168368] [CDVTimer][keyboard] 0.051975ms
+2015-04-08 15:33:49.004 Bump[57383:5168368] Init FacebookConnect Session
+2015-04-08 15:33:49.008 Bump[57383:5168368] [CDVTimer][facebookconnectplugin] 3.637016ms
+2015-04-08 15:33:49.009 Bump[57383:5168368] [CDVTimer][file] 1.339972ms
+2015-04-08 15:33:49.010 Bump[57383:5168368] [CDVTimer][TotalPluginStartup] 5.510986ms
+2015-04-08 15:33:49.076 Bump[57383:5168368] Resetting plugins due to page load.
+2015-04-08 15:33:49.237 Bump[57383:5168368] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/617BF7D3-5C9A-435E-9635-F63B41545FE7/Bump.app/www/index.html
+2015-04-08 15:33:49.361 Bump[57383:5168368] Graph Path = /me
+2015-04-08 15:34:15.150 Bump[57383:5168368] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7c814a40
+2015-04-08 15:34:15.151 Bump[57383:5168368] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7c814a40
+2015-04-08 15:34:47.006 Bump[57521:5169144] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/BA696611-60A5-40F2-BCD7-93D687FE4AB3/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:34:47.083 Bump[57521:5169144] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:34:47.084 Bump[57521:5169144] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:34:47.086 Bump[57521:5169144] Unlimited access to network resources
+2015-04-08 15:34:47.175 Bump[57521:5169144] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:34:47.175 Bump[57521:5169144] Init FacebookConnect Session
+2015-04-08 15:34:47.179 Bump[57521:5169144] [CDVTimer][facebookconnectplugin] 3.858984ms
+2015-04-08 15:34:47.180 Bump[57521:5169144] [CDVTimer][file] 1.348019ms
+2015-04-08 15:34:47.181 Bump[57521:5169144] [CDVTimer][TotalPluginStartup] 5.728006ms
+2015-04-08 15:34:47.278 Bump[57521:5169144] Resetting plugins due to page load.
+2015-04-08 15:34:47.433 Bump[57521:5169144] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/11E4ED2F-C796-4A9A-96FB-1B42CA3C608A/Bump.app/www/index.html
+2015-04-08 15:34:47.548 Bump[57521:5169144] Graph Path = /me
+2015-04-08 15:39:36.014 Bump[57675:5171722] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/C3AB2771-8CEE-423A-9CE2-4F2FA0427E43/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:39:36.089 Bump[57675:5171722] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:39:36.089 Bump[57675:5171722] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:39:36.091 Bump[57675:5171722] Unlimited access to network resources
+2015-04-08 15:39:36.174 Bump[57675:5171722] [CDVTimer][keyboard] 0.081956ms
+2015-04-08 15:39:36.174 Bump[57675:5171722] Init FacebookConnect Session
+2015-04-08 15:39:36.178 Bump[57675:5171722] [CDVTimer][facebookconnectplugin] 4.454017ms
+2015-04-08 15:39:36.180 Bump[57675:5171722] [CDVTimer][file] 1.250029ms
+2015-04-08 15:39:36.180 Bump[57675:5171722] [CDVTimer][TotalPluginStartup] 6.267965ms
+2015-04-08 15:39:36.248 Bump[57675:5171722] Resetting plugins due to page load.
+2015-04-08 15:39:36.414 Bump[57675:5171722] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/FB19190F-787E-4A40-92E0-9262C835C9DB/Bump.app/www/index.html
+2015-04-08 15:39:36.498 Bump[57675:5171722] Graph Path = /me
+2015-04-08 15:39:43.680 Bump[57831:5172264] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D5D46790-215E-4285-BC13-DF410C649CE9/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:39:43.752 Bump[57831:5172264] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:39:43.753 Bump[57831:5172264] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:39:43.755 Bump[57831:5172264] Unlimited access to network resources
+2015-04-08 15:39:43.843 Bump[57831:5172264] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 15:39:43.843 Bump[57831:5172264] Init FacebookConnect Session
+2015-04-08 15:39:43.847 Bump[57831:5172264] [CDVTimer][facebookconnectplugin] 4.222035ms
+2015-04-08 15:39:43.848 Bump[57831:5172264] [CDVTimer][file] 1.024008ms
+2015-04-08 15:39:43.849 Bump[57831:5172264] [CDVTimer][TotalPluginStartup] 5.631983ms
+2015-04-08 15:39:43.935 Bump[57831:5172264] Resetting plugins due to page load.
+2015-04-08 15:39:44.160 Bump[57831:5172264] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/C6A98AE1-5E6F-4832-A9E0-B804AA4A2F5C/Bump.app/www/index.html
+2015-04-08 15:39:44.356 Bump[57831:5172264] Graph Path = /me
+2015-04-08 15:40:44.986 Bump[58036:5173768] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/F86F0AC3-B6DF-4EE2-B634-7EC8332906B4/Library/Cookies/Cookies.binarycookies
+2015-04-08 15:40:45.062 Bump[58036:5173768] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 15:40:45.062 Bump[58036:5173768] Multi-tasking -> Device: YES, App: YES
+2015-04-08 15:40:45.064 Bump[58036:5173768] Unlimited access to network resources
+2015-04-08 15:40:45.156 Bump[58036:5173768] [CDVTimer][keyboard] 0.046968ms
+2015-04-08 15:40:45.156 Bump[58036:5173768] Init FacebookConnect Session
+2015-04-08 15:40:45.160 Bump[58036:5173768] [CDVTimer][facebookconnectplugin] 3.817976ms
+2015-04-08 15:40:45.161 Bump[58036:5173768] [CDVTimer][file] 0.946999ms
+2015-04-08 15:40:45.161 Bump[58036:5173768] [CDVTimer][TotalPluginStartup] 5.226970ms
+2015-04-08 15:40:45.253 Bump[58036:5173768] Resetting plugins due to page load.
+2015-04-08 15:40:45.403 Bump[58036:5173768] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/5D278DB5-86D4-4C8A-BED2-D3CC963622A9/Bump.app/www/index.html
+2015-04-08 15:40:45.521 Bump[58036:5173768] Graph Path = /me
+2015-04-08 16:09:16.981 Bump[58254:5187136] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/12B31F8B-C02D-45E2-88AE-5BB0D7D5B841/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:09:17.050 Bump[58254:5187136] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:09:17.051 Bump[58254:5187136] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:09:17.053 Bump[58254:5187136] Unlimited access to network resources
+2015-04-08 16:09:17.126 Bump[58254:5187136] [CDVTimer][keyboard] 0.054002ms
+2015-04-08 16:09:17.126 Bump[58254:5187136] Init FacebookConnect Session
+2015-04-08 16:09:17.130 Bump[58254:5187136] [CDVTimer][facebookconnectplugin] 3.883958ms
+2015-04-08 16:09:17.134 Bump[58254:5187136] [CDVTimer][file] 3.585994ms
+2015-04-08 16:09:17.134 Bump[58254:5187136] [CDVTimer][TotalPluginStartup] 7.952034ms
+2015-04-08 16:09:17.237 Bump[58254:5187136] Resetting plugins due to page load.
+2015-04-08 16:09:17.409 Bump[58254:5187136] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/38133B26-16C7-42A8-8297-44601DE4675E/Bump.app/www/index.html
+2015-04-08 16:09:17.427 Bump[58254:5187136] Graph Path = /me
+2015-04-08 16:11:06.464 Bump[58390:5188382] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/9E7BA050-27DC-4774-AB97-1DE4EB1CC5F7/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:11:06.526 Bump[58390:5188382] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:11:06.527 Bump[58390:5188382] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:11:06.528 Bump[58390:5188382] Unlimited access to network resources
+2015-04-08 16:11:06.593 Bump[58390:5188382] [CDVTimer][keyboard] 0.074983ms
+2015-04-08 16:11:06.594 Bump[58390:5188382] Init FacebookConnect Session
+2015-04-08 16:11:06.597 Bump[58390:5188382] [CDVTimer][facebookconnectplugin] 3.509998ms
+2015-04-08 16:11:06.598 Bump[58390:5188382] [CDVTimer][file] 0.869989ms
+2015-04-08 16:11:06.598 Bump[58390:5188382] [CDVTimer][TotalPluginStartup] 4.830003ms
+2015-04-08 16:11:06.639 Bump[58390:5188382] Resetting plugins due to page load.
+2015-04-08 16:11:06.801 Bump[58390:5188382] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/A90CAB09-4DAF-4487-BF01-C9FE8B1DCDDF/Bump.app/www/index.html
+2015-04-08 16:11:06.829 Bump[58390:5188382] Graph Path = /me
+2015-04-08 16:12:15.373 Bump[58532:5189524] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/E1EAC3D1-AF85-4E6D-A035-5A72513FF173/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:12:15.447 Bump[58532:5189524] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:12:15.448 Bump[58532:5189524] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:12:15.450 Bump[58532:5189524] Unlimited access to network resources
+2015-04-08 16:12:15.548 Bump[58532:5189524] [CDVTimer][keyboard] 0.070989ms
+2015-04-08 16:12:15.548 Bump[58532:5189524] Init FacebookConnect Session
+2015-04-08 16:12:15.553 Bump[58532:5189524] [CDVTimer][facebookconnectplugin] 4.970014ms
+2015-04-08 16:12:15.554 Bump[58532:5189524] [CDVTimer][file] 1.188993ms
+2015-04-08 16:12:15.555 Bump[58532:5189524] [CDVTimer][TotalPluginStartup] 6.793976ms
+2015-04-08 16:12:15.645 Bump[58532:5189524] Resetting plugins due to page load.
+2015-04-08 16:12:15.810 Bump[58532:5189524] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/9301F2E4-76A9-4B24-B4BA-845860F95E82/Bump.app/www/index.html
+2015-04-08 16:12:15.932 Bump[58532:5189524] Graph Path = /me
+2015-04-08 16:13:59.040 Bump[58683:5190702] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/F0BDF776-6356-4D8C-B7F5-81E243C5E4A9/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:13:59.144 Bump[58683:5190702] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:13:59.145 Bump[58683:5190702] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:13:59.148 Bump[58683:5190702] Unlimited access to network resources
+2015-04-08 16:13:59.251 Bump[58683:5190702] [CDVTimer][keyboard] 0.082016ms
+2015-04-08 16:13:59.251 Bump[58683:5190702] Init FacebookConnect Session
+2015-04-08 16:13:59.256 Bump[58683:5190702] [CDVTimer][facebookconnectplugin] 5.096972ms
+2015-04-08 16:13:59.258 Bump[58683:5190702] [CDVTimer][file] 1.644015ms
+2015-04-08 16:13:59.258 Bump[58683:5190702] [CDVTimer][TotalPluginStartup] 7.400036ms
+2015-04-08 16:13:59.486 Bump[58683:5190702] Resetting plugins due to page load.
+2015-04-08 16:13:59.725 Bump[58683:5190702] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/B26FF9AD-4B67-4ACC-93AB-D811304F9BA3/Bump.app/www/index.html
+2015-04-08 16:13:59.751 Bump[58683:5190702] Graph Path = /me
+2015-04-08 16:19:12.940 Bump[58835:5193540] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/699376C8-E473-40A1-A839-D2C7BABCE96A/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:19:13.002 Bump[58835:5193540] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:19:13.003 Bump[58835:5193540] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:19:13.004 Bump[58835:5193540] Unlimited access to network resources
+2015-04-08 16:19:13.071 Bump[58835:5193540] [CDVTimer][keyboard] 0.060022ms
+2015-04-08 16:19:13.071 Bump[58835:5193540] Init FacebookConnect Session
+2015-04-08 16:19:13.075 Bump[58835:5193540] [CDVTimer][facebookconnectplugin] 3.894985ms
+2015-04-08 16:19:13.076 Bump[58835:5193540] [CDVTimer][file] 0.819027ms
+2015-04-08 16:19:13.076 Bump[58835:5193540] [CDVTimer][TotalPluginStartup] 5.160987ms
+2015-04-08 16:19:13.119 Bump[58835:5193540] Resetting plugins due to page load.
+2015-04-08 16:19:13.287 Bump[58835:5193540] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/E139D234-B8AB-4847-B8FF-5ED17FDD5DEB/Bump.app/www/index.html
+2015-04-08 16:19:13.316 Bump[58835:5193540] Graph Path = /me
+2015-04-08 16:21:04.513 Bump[58980:5195009] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/733236E2-FAA5-4661-933E-6E558E554EA9/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:21:04.588 Bump[58980:5195009] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:21:04.588 Bump[58980:5195009] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:21:04.591 Bump[58980:5195009] Unlimited access to network resources
+2015-04-08 16:21:04.690 Bump[58980:5195009] [CDVTimer][keyboard] 0.052989ms
+2015-04-08 16:21:04.690 Bump[58980:5195009] Init FacebookConnect Session
+2015-04-08 16:21:04.696 Bump[58980:5195009] [CDVTimer][facebookconnectplugin] 5.852997ms
+2015-04-08 16:21:04.699 Bump[58980:5195009] [CDVTimer][file] 3.087044ms
+2015-04-08 16:21:04.700 Bump[58980:5195009] [CDVTimer][TotalPluginStartup] 9.716034ms
+2015-04-08 16:21:04.798 Bump[58980:5195009] Resetting plugins due to page load.
+2015-04-08 16:21:04.964 Bump[58980:5195009] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/8D70FA98-0026-4A8E-8AA0-164F08D8A442/Bump.app/www/index.html
+2015-04-08 16:21:05.077 Bump[58980:5195009] Graph Path = /me
+2015-04-08 16:28:28.517 Bump[59127:5197919] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6C0B4E1B-7A22-4EF8-9DD7-997B5EF47A20/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:28:28.583 Bump[59127:5197919] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:28:28.584 Bump[59127:5197919] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:28:28.585 Bump[59127:5197919] Unlimited access to network resources
+2015-04-08 16:28:28.679 Bump[59127:5197919] [CDVTimer][keyboard] 0.079989ms
+2015-04-08 16:28:28.679 Bump[59127:5197919] Init FacebookConnect Session
+2015-04-08 16:28:28.685 Bump[59127:5197919] [CDVTimer][facebookconnectplugin] 5.680978ms
+2015-04-08 16:28:28.687 Bump[59127:5197919] [CDVTimer][file] 1.408994ms
+2015-04-08 16:28:28.687 Bump[59127:5197919] [CDVTimer][TotalPluginStartup] 7.746994ms
+2015-04-08 16:28:28.752 Bump[59127:5197919] Resetting plugins due to page load.
+2015-04-08 16:28:28.924 Bump[59127:5197919] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/EEFD6539-B037-4DD6-ACBC-4E62D6C5DD65/Bump.app/www/index.html
+2015-04-08 16:28:29.107 Bump[59127:5197919] Graph Path = /me
+2015-04-08 16:28:36.088 Bump[59127:5197919] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b41f80
+2015-04-08 16:28:36.088 Bump[59127:5197919] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b41f80
+2015-04-08 16:28:42.888 Bump[59127:5197919] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b41f80
+2015-04-08 16:28:42.888 Bump[59127:5197919] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b41f80
+2015-04-08 16:31:09.860 Bump[59273:5199572] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/5FBE06F3-C713-4C41-A190-E97D2394DD14/Library/Cookies/Cookies.binarycookies
+2015-04-08 16:31:09.963 Bump[59273:5199572] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 16:31:09.963 Bump[59273:5199572] Multi-tasking -> Device: YES, App: YES
+2015-04-08 16:31:09.965 Bump[59273:5199572] Unlimited access to network resources
+2015-04-08 16:31:10.073 Bump[59273:5199572] [CDVTimer][keyboard] 0.096023ms
+2015-04-08 16:31:10.073 Bump[59273:5199572] Init FacebookConnect Session
+2015-04-08 16:31:10.078 Bump[59273:5199572] [CDVTimer][facebookconnectplugin] 5.542040ms
+2015-04-08 16:31:10.080 Bump[59273:5199572] [CDVTimer][file] 1.421034ms
+2015-04-08 16:31:10.080 Bump[59273:5199572] [CDVTimer][TotalPluginStartup] 7.779956ms
+2015-04-08 16:31:10.265 Bump[59273:5199572] Resetting plugins due to page load.
+2015-04-08 16:31:10.397 Bump[59273:5199572] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/C560A9DE-1B6F-4A1B-8C1A-4339245FEB18/Bump.app/www/index.html
+2015-04-08 16:31:10.495 Bump[59273:5199572] Graph Path = /me
+2015-04-08 17:09:29.459 Bump[59457:5207389] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/DC30D1FF-FD43-4850-9E76-6C6209FC62D4/Library/Cookies/Cookies.binarycookies
+2015-04-08 17:09:29.532 Bump[59457:5207389] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 17:09:29.533 Bump[59457:5207389] Multi-tasking -> Device: YES, App: YES
+2015-04-08 17:09:29.535 Bump[59457:5207389] Unlimited access to network resources
+2015-04-08 17:09:29.619 Bump[59457:5207389] [CDVTimer][keyboard] 0.048995ms
+2015-04-08 17:09:29.620 Bump[59457:5207389] Init FacebookConnect Session
+2015-04-08 17:09:29.623 Bump[59457:5207389] [CDVTimer][facebookconnectplugin] 3.486037ms
+2015-04-08 17:09:29.624 Bump[59457:5207389] [CDVTimer][file] 0.854015ms
+2015-04-08 17:09:29.624 Bump[59457:5207389] [CDVTimer][TotalPluginStartup] 4.721999ms
+2015-04-08 17:09:29.718 Bump[59457:5207389] Resetting plugins due to page load.
+2015-04-08 17:09:29.872 Bump[59457:5207389] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/6AB63AAB-242D-4863-AB30-D45819D45911/Bump.app/www/index.html
+2015-04-08 17:09:29.998 Bump[59457:5207389] Graph Path = /me
+2015-04-08 17:24:42.902 Bump[59624:5217714] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/5529A0E6-5895-4122-BD14-5B0314051D26/Library/Cookies/Cookies.binarycookies
+2015-04-08 17:24:42.953 Bump[59624:5217714] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-08 17:24:42.954 Bump[59624:5217714] Multi-tasking -> Device: YES, App: YES
+2015-04-08 17:24:42.956 Bump[59624:5217714] Unlimited access to network resources
+2015-04-08 17:24:43.015 Bump[59624:5217714] [CDVTimer][keyboard] 0.050008ms
+2015-04-08 17:24:43.015 Bump[59624:5217714] Init FacebookConnect Session
+2015-04-08 17:24:43.019 Bump[59624:5217714] [CDVTimer][facebookconnectplugin] 3.854036ms
+2015-04-08 17:24:43.020 Bump[59624:5217714] [CDVTimer][file] 1.323998ms
+2015-04-08 17:24:43.020 Bump[59624:5217714] [CDVTimer][TotalPluginStartup] 5.631030ms
+2015-04-08 17:24:43.076 Bump[59624:5217714] Resetting plugins due to page load.
+2015-04-08 17:24:43.189 Bump[59624:5217714] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/4862055C-A502-431D-B12E-1B0D94529F3E/Bump.app/www/index.html
+2015-04-08 17:24:43.286 Bump[59624:5217714] Graph Path = /me
+2015-04-09 01:41:05.272 Bump[60137:5248392] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/24BAFAFF-BC30-4BE4-A479-A5CDB92B8B19/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:41:05.515 Bump[60137:5248392] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:41:05.516 Bump[60137:5248392] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:41:05.532 Bump[60137:5248392] Unlimited access to network resources
+2015-04-09 01:41:05.911 Bump[60137:5248392] [CDVTimer][keyboard] 0.078022ms
+2015-04-09 01:41:05.911 Bump[60137:5248392] Init FacebookConnect Session
+2015-04-09 01:41:05.953 Bump[60137:5248392] [CDVTimer][facebookconnectplugin] 42.181015ms
+2015-04-09 01:41:05.961 Bump[60137:5248392] [CDVTimer][file] 7.881999ms
+2015-04-09 01:41:05.961 Bump[60137:5248392] [CDVTimer][TotalPluginStartup] 50.586998ms
+2015-04-09 01:41:06.158 Bump[60137:5248392] Resetting plugins due to page load.
+2015-04-09 01:41:06.350 Bump[60137:5248392] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/C6131F85-D9D8-4C74-B1C5-C84B082F68A1/Bump.app/www/index.html
+2015-04-09 01:41:06.457 Bump[60137:5248392] Graph Path = /me
+2015-04-09 01:42:02.873 Bump[60281:5249253] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/59633DD9-D777-4ED4-AD9A-41FFCF07E2F0/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:42:02.934 Bump[60281:5249253] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:42:02.934 Bump[60281:5249253] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:42:02.936 Bump[60281:5249253] Unlimited access to network resources
+2015-04-09 01:42:03.015 Bump[60281:5249253] [CDVTimer][keyboard] 0.068963ms
+2015-04-09 01:42:03.016 Bump[60281:5249253] Init FacebookConnect Session
+2015-04-09 01:42:03.020 Bump[60281:5249253] [CDVTimer][facebookconnectplugin] 4.570961ms
+2015-04-09 01:42:03.023 Bump[60281:5249253] [CDVTimer][file] 2.095997ms
+2015-04-09 01:42:03.023 Bump[60281:5249253] [CDVTimer][TotalPluginStartup] 7.301033ms
+2015-04-09 01:42:03.109 Bump[60281:5249253] Resetting plugins due to page load.
+2015-04-09 01:42:03.266 Bump[60281:5249253] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/E03021F1-314E-44E7-AEAF-0AD018FF27A9/Bump.app/www/index.html
+2015-04-09 01:42:03.375 Bump[60281:5249253] Graph Path = /me
+2015-04-09 01:42:39.902 Bump[60421:5250024] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6F69608F-7424-4AE8-AEAD-E06F204B6CAA/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:42:39.970 Bump[60421:5250024] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:42:39.970 Bump[60421:5250024] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:42:39.972 Bump[60421:5250024] Unlimited access to network resources
+2015-04-09 01:42:40.053 Bump[60421:5250024] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 01:42:40.053 Bump[60421:5250024] Init FacebookConnect Session
+2015-04-09 01:42:40.057 Bump[60421:5250024] [CDVTimer][facebookconnectplugin] 3.508031ms
+2015-04-09 01:42:40.058 Bump[60421:5250024] [CDVTimer][file] 0.999033ms
+2015-04-09 01:42:40.058 Bump[60421:5250024] [CDVTimer][TotalPluginStartup] 4.956007ms
+2015-04-09 01:42:40.128 Bump[60421:5250024] Resetting plugins due to page load.
+2015-04-09 01:42:40.284 Bump[60421:5250024] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/17914F5F-9135-4EC5-AA0F-46B87EF22C9B/Bump.app/www/index.html
+2015-04-09 01:42:40.410 Bump[60421:5250024] Graph Path = /me
+2015-04-09 01:42:53.532 Bump[60559:5250526] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/BBC3C3E1-4265-4EF5-8361-099144D68A53/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:42:53.596 Bump[60559:5250526] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:42:53.596 Bump[60559:5250526] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:42:53.598 Bump[60559:5250526] Unlimited access to network resources
+2015-04-09 01:42:53.676 Bump[60559:5250526] [CDVTimer][keyboard] 0.068963ms
+2015-04-09 01:42:53.676 Bump[60559:5250526] Init FacebookConnect Session
+2015-04-09 01:42:53.681 Bump[60559:5250526] [CDVTimer][facebookconnectplugin] 5.051017ms
+2015-04-09 01:42:53.683 Bump[60559:5250526] [CDVTimer][file] 1.338005ms
+2015-04-09 01:42:53.683 Bump[60559:5250526] [CDVTimer][TotalPluginStartup] 7.039011ms
+2015-04-09 01:42:53.783 Bump[60559:5250526] Resetting plugins due to page load.
+2015-04-09 01:42:53.945 Bump[60559:5250526] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/8027840C-D5E4-4A9F-8C6E-C84AC4F8E326/Bump.app/www/index.html
+2015-04-09 01:42:54.056 Bump[60559:5250526] Graph Path = /me
+2015-04-09 01:43:10.090 Bump[60698:5251172] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/19FA622B-0146-446D-BE27-25B1AFE1480A/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:43:10.158 Bump[60698:5251172] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:43:10.159 Bump[60698:5251172] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:43:10.161 Bump[60698:5251172] Unlimited access to network resources
+2015-04-09 01:43:10.239 Bump[60698:5251172] [CDVTimer][keyboard] 0.047028ms
+2015-04-09 01:43:10.239 Bump[60698:5251172] Init FacebookConnect Session
+2015-04-09 01:43:10.242 Bump[60698:5251172] [CDVTimer][facebookconnectplugin] 3.443003ms
+2015-04-09 01:43:10.243 Bump[60698:5251172] [CDVTimer][file] 1.139998ms
+2015-04-09 01:43:10.243 Bump[60698:5251172] [CDVTimer][TotalPluginStartup] 5.022049ms
+2015-04-09 01:43:10.336 Bump[60698:5251172] Resetting plugins due to page load.
+2015-04-09 01:43:10.505 Bump[60698:5251172] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/590D061B-8CAC-4550-9F37-5B3437DA485A/Bump.app/www/index.html
+2015-04-09 01:43:10.611 Bump[60698:5251172] Graph Path = /me
+2015-04-09 01:43:39.502 Bump[60839:5251895] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/D1939E6B-13EE-4970-9911-7BB2BF38AC99/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:43:39.570 Bump[60839:5251895] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:43:39.570 Bump[60839:5251895] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:43:39.572 Bump[60839:5251895] Unlimited access to network resources
+2015-04-09 01:43:39.648 Bump[60839:5251895] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 01:43:39.648 Bump[60839:5251895] Init FacebookConnect Session
+2015-04-09 01:43:39.653 Bump[60839:5251895] [CDVTimer][facebookconnectplugin] 4.652023ms
+2015-04-09 01:43:39.655 Bump[60839:5251895] [CDVTimer][file] 1.352012ms
+2015-04-09 01:43:39.655 Bump[60839:5251895] [CDVTimer][TotalPluginStartup] 6.542981ms
+2015-04-09 01:43:39.736 Bump[60839:5251895] Resetting plugins due to page load.
+2015-04-09 01:43:39.891 Bump[60839:5251895] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/BABEEEA2-577F-4B0C-8377-D2EA69C8C4F3/Bump.app/www/index.html
+2015-04-09 01:43:39.999 Bump[60839:5251895] Graph Path = /me
+2015-04-09 01:43:59.934 Bump[60977:5252535] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/E07A9816-49AC-4EB9-AE98-8495647D4E19/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:43:59.992 Bump[60977:5252535] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:43:59.993 Bump[60977:5252535] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:43:59.995 Bump[60977:5252535] Unlimited access to network resources
+2015-04-09 01:44:00.086 Bump[60977:5252535] [CDVTimer][keyboard] 0.066996ms
+2015-04-09 01:44:00.086 Bump[60977:5252535] Init FacebookConnect Session
+2015-04-09 01:44:00.091 Bump[60977:5252535] [CDVTimer][facebookconnectplugin] 4.155993ms
+2015-04-09 01:44:00.092 Bump[60977:5252535] [CDVTimer][file] 1.298010ms
+2015-04-09 01:44:00.092 Bump[60977:5252535] [CDVTimer][TotalPluginStartup] 6.062031ms
+2015-04-09 01:44:00.204 Bump[60977:5252535] Resetting plugins due to page load.
+2015-04-09 01:44:00.386 Bump[60977:5252535] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/BFD78DF9-0FE9-46A7-B25B-77F828889324/Bump.app/www/index.html
+2015-04-09 01:44:00.433 Bump[60977:5252535] Graph Path = /me
+2015-04-09 01:44:31.993 Bump[61122:5253160] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/8A688A8D-7CCC-44AC-BB1E-9F22899C2688/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:44:32.067 Bump[61122:5253160] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:44:32.068 Bump[61122:5253160] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:44:32.070 Bump[61122:5253160] Unlimited access to network resources
+2015-04-09 01:44:32.150 Bump[61122:5253160] [CDVTimer][keyboard] 0.054002ms
+2015-04-09 01:44:32.150 Bump[61122:5253160] Init FacebookConnect Session
+2015-04-09 01:44:32.154 Bump[61122:5253160] [CDVTimer][facebookconnectplugin] 3.540039ms
+2015-04-09 01:44:32.155 Bump[61122:5253160] [CDVTimer][file] 1.093984ms
+2015-04-09 01:44:32.155 Bump[61122:5253160] [CDVTimer][TotalPluginStartup] 5.046010ms
+2015-04-09 01:44:32.216 Bump[61122:5253160] Resetting plugins due to page load.
+2015-04-09 01:44:32.375 Bump[61122:5253160] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/17439EAB-06B2-436F-A747-D752E2AF02EC/Bump.app/www/index.html
+2015-04-09 01:44:32.478 Bump[61122:5253160] Graph Path = /me
+2015-04-09 01:44:58.270 Bump[61257:5253849] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/2A12327F-ABE7-4917-8A12-2222D4C4B392/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:44:58.334 Bump[61257:5253849] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:44:58.334 Bump[61257:5253849] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:44:58.337 Bump[61257:5253849] Unlimited access to network resources
+2015-04-09 01:44:58.420 Bump[61257:5253849] [CDVTimer][keyboard] 0.066996ms
+2015-04-09 01:44:58.420 Bump[61257:5253849] Init FacebookConnect Session
+2015-04-09 01:44:58.424 Bump[61257:5253849] [CDVTimer][facebookconnectplugin] 4.294991ms
+2015-04-09 01:44:58.426 Bump[61257:5253849] [CDVTimer][file] 1.743972ms
+2015-04-09 01:44:58.426 Bump[61257:5253849] [CDVTimer][TotalPluginStartup] 6.639957ms
+2015-04-09 01:44:58.518 Bump[61257:5253849] Resetting plugins due to page load.
+2015-04-09 01:44:58.659 Bump[61257:5253849] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/D6FF17B5-27DF-460D-970A-3896FFD2848F/Bump.app/www/index.html
+2015-04-09 01:44:58.769 Bump[61257:5253849] Graph Path = /me
+2015-04-09 01:45:31.321 Bump[61404:5254597] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/1C3BFF04-8DCB-4187-8E1B-48F7CC1ADD2A/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:45:31.381 Bump[61404:5254597] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:45:31.382 Bump[61404:5254597] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:45:31.383 Bump[61404:5254597] Unlimited access to network resources
+2015-04-09 01:45:31.464 Bump[61404:5254597] [CDVTimer][keyboard] 0.074029ms
+2015-04-09 01:45:31.464 Bump[61404:5254597] Init FacebookConnect Session
+2015-04-09 01:45:31.469 Bump[61404:5254597] [CDVTimer][facebookconnectplugin] 4.803002ms
+2015-04-09 01:45:31.471 Bump[61404:5254597] [CDVTimer][file] 1.293004ms
+2015-04-09 01:45:31.471 Bump[61404:5254597] [CDVTimer][TotalPluginStartup] 6.720006ms
+2015-04-09 01:45:31.553 Bump[61404:5254597] Resetting plugins due to page load.
+2015-04-09 01:45:31.772 Bump[61404:5254597] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/DA6E57B9-A580-48B3-9650-D6F64E215732/Bump.app/www/index.html
+2015-04-09 01:45:31.801 Bump[61404:5254597] Graph Path = /me
+2015-04-09 01:47:34.314 Bump[61563:5256015] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/0A303EE3-9F4E-427B-A580-AEE158B36290/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:47:34.385 Bump[61563:5256015] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:47:34.385 Bump[61563:5256015] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:47:34.388 Bump[61563:5256015] Unlimited access to network resources
+2015-04-09 01:47:34.476 Bump[61563:5256015] [CDVTimer][keyboard] 0.047028ms
+2015-04-09 01:47:34.476 Bump[61563:5256015] Init FacebookConnect Session
+2015-04-09 01:47:34.480 Bump[61563:5256015] [CDVTimer][facebookconnectplugin] 3.911018ms
+2015-04-09 01:47:34.481 Bump[61563:5256015] [CDVTimer][file] 1.546979ms
+2015-04-09 01:47:34.481 Bump[61563:5256015] [CDVTimer][TotalPluginStartup] 5.976021ms
+2015-04-09 01:47:34.590 Bump[61563:5256015] Resetting plugins due to page load.
+2015-04-09 01:47:34.729 Bump[61563:5256015] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/0F89848C-8D5F-4C72-98FD-B3D451063B5E/Bump.app/www/index.html
+2015-04-09 01:47:34.834 Bump[61563:5256015] Graph Path = /me
+2015-04-09 01:48:03.198 Bump[61709:5256761] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Data/Application/6780578D-C1B6-492D-A8BD-A43EE0C639E7/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:48:03.279 Bump[61709:5256761] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:48:03.280 Bump[61709:5256761] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:48:03.282 Bump[61709:5256761] Unlimited access to network resources
+2015-04-09 01:48:03.360 Bump[61709:5256761] [CDVTimer][keyboard] 0.047982ms
+2015-04-09 01:48:03.360 Bump[61709:5256761] Init FacebookConnect Session
+2015-04-09 01:48:03.364 Bump[61709:5256761] [CDVTimer][facebookconnectplugin] 3.787994ms
+2015-04-09 01:48:03.365 Bump[61709:5256761] [CDVTimer][file] 1.266003ms
+2015-04-09 01:48:03.365 Bump[61709:5256761] [CDVTimer][TotalPluginStartup] 5.613029ms
+2015-04-09 01:48:03.429 Bump[61709:5256761] Resetting plugins due to page load.
+2015-04-09 01:48:03.638 Bump[61709:5256761] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/5B30D667-EEFD-4F47-83F4-F193EDB4F508/data/Containers/Bundle/Application/6DE75E23-C8CB-4BCD-90C0-83C401A182D5/Bump.app/www/index.html
+2015-04-09 01:48:03.677 Bump[61709:5256761] Graph Path = /me
+2015-04-09 01:48:29.289 Bump[61709:5257441] Terminating since there is no system app.
+2015-04-09 01:48:33.716 Bump[61895:5257826] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/1A802C9A-379C-4201-A7A3-1CEC8B811AEA/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:48:33.776 Bump[61895:5257826] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:48:33.777 Bump[61895:5257826] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:48:33.778 Bump[61895:5257826] Unlimited access to network resources
+2015-04-09 01:48:33.840 Bump[61895:5257826] [CDVTimer][keyboard] 0.046015ms
+2015-04-09 01:48:33.840 Bump[61895:5257826] Init FacebookConnect Session
+2015-04-09 01:48:33.849 Bump[61895:5257826] [CDVTimer][facebookconnectplugin] 9.032011ms
+2015-04-09 01:48:33.851 Bump[61895:5257826] [CDVTimer][file] 1.765966ms
+2015-04-09 01:48:33.851 Bump[61895:5257826] [CDVTimer][TotalPluginStartup] 11.179984ms
+2015-04-09 01:48:33.910 Bump[61895:5257826] Resetting plugins due to page load.
+2015-04-09 01:48:34.024 Bump[61895:5257826] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/27F2D1CD-FA1A-48BF-B992-F4987338AB8A/Bump.app/www/index.html
+2015-04-09 01:48:34.117 Bump[61895:5257826] Graph Path = /me
+2015-04-09 01:49:35.210 Bump[62040:5258712] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/DE047A91-B080-4D67-86D8-9724AB031570/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:49:35.299 Bump[62040:5258712] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:49:35.299 Bump[62040:5258712] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:49:35.301 Bump[62040:5258712] Unlimited access to network resources
+2015-04-09 01:49:35.385 Bump[62040:5258712] [CDVTimer][keyboard] 0.067055ms
+2015-04-09 01:49:35.385 Bump[62040:5258712] Init FacebookConnect Session
+2015-04-09 01:49:35.390 Bump[62040:5258712] [CDVTimer][facebookconnectplugin] 5.025029ms
+2015-04-09 01:49:35.393 Bump[62040:5258712] [CDVTimer][file] 2.380013ms
+2015-04-09 01:49:35.393 Bump[62040:5258712] [CDVTimer][TotalPluginStartup] 7.984996ms
+2015-04-09 01:49:35.451 Bump[62040:5258712] Resetting plugins due to page load.
+2015-04-09 01:49:35.602 Bump[62040:5258712] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/4C5EA7FD-E8E6-4046-A87D-706D93A5F2C6/Bump.app/www/index.html
+2015-04-09 01:49:35.702 Bump[62040:5258712] Graph Path = /me
+2015-04-09 01:49:55.589 Bump[62183:5259358] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/79DF98E9-AE65-4A42-A457-ECE379E478A9/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:49:55.653 Bump[62183:5259358] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:49:55.653 Bump[62183:5259358] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:49:55.655 Bump[62183:5259358] Unlimited access to network resources
+2015-04-09 01:49:55.725 Bump[62183:5259358] [CDVTimer][keyboard] 0.047028ms
+2015-04-09 01:49:55.725 Bump[62183:5259358] Init FacebookConnect Session
+2015-04-09 01:49:55.730 Bump[62183:5259358] [CDVTimer][facebookconnectplugin] 5.044997ms
+2015-04-09 01:49:55.732 Bump[62183:5259358] [CDVTimer][file] 1.297951ms
+2015-04-09 01:49:55.732 Bump[62183:5259358] [CDVTimer][TotalPluginStartup] 6.787956ms
+2015-04-09 01:49:55.788 Bump[62183:5259358] Resetting plugins due to page load.
+2015-04-09 01:49:55.979 Bump[62183:5259358] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/C0445EF1-891B-478C-A26B-4700FDC9A803/Bump.app/www/index.html
+2015-04-09 01:49:56.014 Bump[62183:5259358] Graph Path = /me
+2015-04-09 01:51:00.563 Bump[62325:5260234] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/5D6EC331-928C-4E0B-B50C-03348573DC43/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:51:00.644 Bump[62325:5260234] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:51:00.645 Bump[62325:5260234] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:51:00.647 Bump[62325:5260234] Unlimited access to network resources
+2015-04-09 01:51:00.724 Bump[62325:5260234] [CDVTimer][keyboard] 0.046015ms
+2015-04-09 01:51:00.725 Bump[62325:5260234] Init FacebookConnect Session
+2015-04-09 01:51:00.729 Bump[62325:5260234] [CDVTimer][facebookconnectplugin] 4.126012ms
+2015-04-09 01:51:00.730 Bump[62325:5260234] [CDVTimer][file] 1.344979ms
+2015-04-09 01:51:00.730 Bump[62325:5260234] [CDVTimer][TotalPluginStartup] 5.964994ms
+2015-04-09 01:51:00.788 Bump[62325:5260234] Resetting plugins due to page load.
+2015-04-09 01:51:00.960 Bump[62325:5260234] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/DB1C60A4-9CE1-40FB-ADF6-71613BB016EB/Bump.app/www/index.html
+2015-04-09 01:51:01.050 Bump[62325:5260234] Graph Path = /me
+2015-04-09 01:52:07.394 Bump[62468:5261153] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/BCDF9D9D-7BCB-4443-B0A7-55E96E3EB7ED/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:52:07.484 Bump[62468:5261153] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:52:07.484 Bump[62468:5261153] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:52:07.487 Bump[62468:5261153] Unlimited access to network resources
+2015-04-09 01:52:07.563 Bump[62468:5261153] [CDVTimer][keyboard] 0.049949ms
+2015-04-09 01:52:07.563 Bump[62468:5261153] Init FacebookConnect Session
+2015-04-09 01:52:07.567 Bump[62468:5261153] [CDVTimer][facebookconnectplugin] 3.621995ms
+2015-04-09 01:52:07.568 Bump[62468:5261153] [CDVTimer][file] 1.297951ms
+2015-04-09 01:52:07.568 Bump[62468:5261153] [CDVTimer][TotalPluginStartup] 5.419016ms
+2015-04-09 01:52:07.624 Bump[62468:5261153] Resetting plugins due to page load.
+2015-04-09 01:52:07.850 Bump[62468:5261153] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/8136E851-E599-49C8-BACF-C694B6302225/Bump.app/www/index.html
+2015-04-09 01:52:07.874 Bump[62468:5261153] Graph Path = /me
+2015-04-09 01:57:37.437 Bump[62654:5265817] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/F6C73AD2-BDFF-4E77-ABDA-441DFBBBEC60/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:57:37.517 Bump[62654:5265817] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:57:37.518 Bump[62654:5265817] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:57:37.520 Bump[62654:5265817] Unlimited access to network resources
+2015-04-09 01:57:37.599 Bump[62654:5265817] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 01:57:37.599 Bump[62654:5265817] Init FacebookConnect Session
+2015-04-09 01:57:37.602 Bump[62654:5265817] [CDVTimer][facebookconnectplugin] 3.833950ms
+2015-04-09 01:57:37.604 Bump[62654:5265817] [CDVTimer][file] 1.284003ms
+2015-04-09 01:57:37.604 Bump[62654:5265817] [CDVTimer][TotalPluginStartup] 5.609989ms
+2015-04-09 01:57:37.657 Bump[62654:5265817] Resetting plugins due to page load.
+2015-04-09 01:57:37.822 Bump[62654:5265817] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/5F03C96B-B473-46C7-958C-078C2FA52726/Bump.app/www/index.html
+2015-04-09 01:57:37.914 Bump[62654:5265817] Graph Path = /me
+2015-04-09 01:57:59.840 Bump[62789:5266475] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/8152B50E-3BAB-4D84-9342-D2FAF92DA26A/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:57:59.903 Bump[62789:5266475] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:57:59.903 Bump[62789:5266475] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:57:59.905 Bump[62789:5266475] Unlimited access to network resources
+2015-04-09 01:57:59.988 Bump[62789:5266475] [CDVTimer][keyboard] 0.069976ms
+2015-04-09 01:57:59.988 Bump[62789:5266475] Init FacebookConnect Session
+2015-04-09 01:57:59.993 Bump[62789:5266475] [CDVTimer][facebookconnectplugin] 4.783034ms
+2015-04-09 01:57:59.995 Bump[62789:5266475] [CDVTimer][file] 1.312017ms
+2015-04-09 01:57:59.995 Bump[62789:5266475] [CDVTimer][TotalPluginStartup] 6.719947ms
+2015-04-09 01:58:00.102 Bump[62789:5266475] Resetting plugins due to page load.
+2015-04-09 01:58:00.278 Bump[62789:5266475] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/013550F0-31FC-4068-A05C-8B8AB4F9ED5C/Bump.app/www/index.html
+2015-04-09 01:58:00.305 Bump[62789:5266475] Graph Path = /me
+2015-04-09 01:58:30.605 Bump[62930:5267197] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/2AF46186-76D9-4A03-8A94-8DBF5D9CCFDD/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:58:30.673 Bump[62930:5267197] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:58:30.673 Bump[62930:5267197] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:58:30.676 Bump[62930:5267197] Unlimited access to network resources
+2015-04-09 01:58:30.754 Bump[62930:5267197] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 01:58:30.754 Bump[62930:5267197] Init FacebookConnect Session
+2015-04-09 01:58:30.757 Bump[62930:5267197] [CDVTimer][facebookconnectplugin] 3.508031ms
+2015-04-09 01:58:30.759 Bump[62930:5267197] [CDVTimer][file] 1.375973ms
+2015-04-09 01:58:30.759 Bump[62930:5267197] [CDVTimer][TotalPluginStartup] 5.411029ms
+2015-04-09 01:58:30.824 Bump[62930:5267197] Resetting plugins due to page load.
+2015-04-09 01:58:30.994 Bump[62930:5267197] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/6609FD50-8E63-4712-9F4F-E9A1E16C50D7/Bump.app/www/index.html
+2015-04-09 01:58:31.077 Bump[62930:5267197] Graph Path = /me
+2015-04-09 02:00:06.568 Bump[63077:5268240] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/70E9188F-7094-4177-B5AA-7A9F80166308/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:00:06.652 Bump[63077:5268240] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:00:06.652 Bump[63077:5268240] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:00:06.654 Bump[63077:5268240] Unlimited access to network resources
+2015-04-09 02:00:06.738 Bump[63077:5268240] [CDVTimer][keyboard] 0.048041ms
+2015-04-09 02:00:06.738 Bump[63077:5268240] Init FacebookConnect Session
+2015-04-09 02:00:06.742 Bump[63077:5268240] [CDVTimer][facebookconnectplugin] 3.600001ms
+2015-04-09 02:00:06.743 Bump[63077:5268240] [CDVTimer][file] 1.324952ms
+2015-04-09 02:00:06.743 Bump[63077:5268240] [CDVTimer][TotalPluginStartup] 5.423963ms
+2015-04-09 02:00:06.805 Bump[63077:5268240] Resetting plugins due to page load.
+2015-04-09 02:00:06.962 Bump[63077:5268240] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/80FCB295-CAA3-4E20-8965-EB140C95065E/Bump.app/www/index.html
+2015-04-09 02:00:07.048 Bump[63077:5268240] Graph Path = /me
+2015-04-09 02:01:38.733 Bump[63222:5269398] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/28E51FBD-03B4-453E-8A95-391FBC0DD9A5/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:01:38.803 Bump[63222:5269398] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:01:38.804 Bump[63222:5269398] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:01:38.806 Bump[63222:5269398] Unlimited access to network resources
+2015-04-09 02:01:38.879 Bump[63222:5269398] [CDVTimer][keyboard] 0.046968ms
+2015-04-09 02:01:38.879 Bump[63222:5269398] Init FacebookConnect Session
+2015-04-09 02:01:38.884 Bump[63222:5269398] [CDVTimer][facebookconnectplugin] 4.437983ms
+2015-04-09 02:01:38.885 Bump[63222:5269398] [CDVTimer][file] 1.304030ms
+2015-04-09 02:01:38.885 Bump[63222:5269398] [CDVTimer][TotalPluginStartup] 6.236017ms
+2015-04-09 02:01:38.929 Bump[63222:5269398] Resetting plugins due to page load.
+2015-04-09 02:01:39.095 Bump[63222:5269398] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/D2DD9473-9F06-4ED9-9072-171C06F662FB/Bump.app/www/index.html
+2015-04-09 02:01:39.200 Bump[63222:5269398] Graph Path = /me
+2015-04-09 02:03:32.106 Bump[63375:5270477] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/E0F8E2AC-716C-4CCE-9F05-D279450BE68B/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:03:32.177 Bump[63375:5270477] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:03:32.178 Bump[63375:5270477] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:03:32.180 Bump[63375:5270477] Unlimited access to network resources
+2015-04-09 02:03:32.262 Bump[63375:5270477] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 02:03:32.262 Bump[63375:5270477] Init FacebookConnect Session
+2015-04-09 02:03:32.266 Bump[63375:5270477] [CDVTimer][facebookconnectplugin] 3.597975ms
+2015-04-09 02:03:32.267 Bump[63375:5270477] [CDVTimer][file] 1.120031ms
+2015-04-09 02:03:32.267 Bump[63375:5270477] [CDVTimer][TotalPluginStartup] 5.205989ms
+2015-04-09 02:03:32.331 Bump[63375:5270477] Resetting plugins due to page load.
+2015-04-09 02:03:32.537 Bump[63375:5270477] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/06C050D8-D858-48CA-BDF7-29C7804E9FCF/Bump.app/www/index.html
+2015-04-09 02:03:32.562 Bump[63375:5270477] Graph Path = /me
+2015-04-09 02:04:36.384 Bump[63524:5271399] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/7B1AA8AC-99D1-479E-8ACB-13BD981C0562/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:04:36.464 Bump[63524:5271399] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:04:36.464 Bump[63524:5271399] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:04:36.466 Bump[63524:5271399] Unlimited access to network resources
+2015-04-09 02:04:36.542 Bump[63524:5271399] [CDVTimer][keyboard] 0.047982ms
+2015-04-09 02:04:36.542 Bump[63524:5271399] Init FacebookConnect Session
+2015-04-09 02:04:36.546 Bump[63524:5271399] [CDVTimer][facebookconnectplugin] 3.701031ms
+2015-04-09 02:04:36.548 Bump[63524:5271399] [CDVTimer][file] 1.412988ms
+2015-04-09 02:04:36.548 Bump[63524:5271399] [CDVTimer][TotalPluginStartup] 5.640984ms
+2015-04-09 02:04:36.611 Bump[63524:5271399] Resetting plugins due to page load.
+2015-04-09 02:04:36.772 Bump[63524:5271399] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/FE4B571B-2AD3-432D-A7A1-3A9F7F81DB7B/Bump.app/www/index.html
+2015-04-09 02:04:36.861 Bump[63524:5271399] Graph Path = /me
+2015-04-09 02:04:56.614 Bump[63659:5271997] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/17AFD102-E3D6-473E-9E80-F44317000C1F/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:04:56.709 Bump[63659:5271997] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:04:56.710 Bump[63659:5271997] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:04:56.711 Bump[63659:5271997] Unlimited access to network resources
+2015-04-09 02:04:56.796 Bump[63659:5271997] [CDVTimer][keyboard] 0.049949ms
+2015-04-09 02:04:56.796 Bump[63659:5271997] Init FacebookConnect Session
+2015-04-09 02:04:56.799 Bump[63659:5271997] [CDVTimer][facebookconnectplugin] 3.647029ms
+2015-04-09 02:04:56.801 Bump[63659:5271997] [CDVTimer][file] 1.313031ms
+2015-04-09 02:04:56.801 Bump[63659:5271997] [CDVTimer][TotalPluginStartup] 5.456984ms
+2015-04-09 02:04:56.866 Bump[63659:5271997] Resetting plugins due to page load.
+2015-04-09 02:04:57.023 Bump[63659:5271997] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/3B48E513-661B-4C05-A335-FCA3713F5933/Bump.app/www/index.html
+2015-04-09 02:04:57.111 Bump[63659:5271997] Graph Path = /me
+2015-04-09 02:05:37.277 Bump[63805:5272827] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/9981375A-154C-41FB-92D3-FBB2105A78A5/Library/Cookies/Cookies.binarycookies
+2015-04-09 02:05:37.362 Bump[63805:5272827] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 02:05:37.362 Bump[63805:5272827] Multi-tasking -> Device: YES, App: YES
+2015-04-09 02:05:37.364 Bump[63805:5272827] Unlimited access to network resources
+2015-04-09 02:05:37.445 Bump[63805:5272827] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 02:05:37.445 Bump[63805:5272827] Init FacebookConnect Session
+2015-04-09 02:05:37.449 Bump[63805:5272827] [CDVTimer][facebookconnectplugin] 3.665984ms
+2015-04-09 02:05:37.450 Bump[63805:5272827] [CDVTimer][file] 1.290023ms
+2015-04-09 02:05:37.450 Bump[63805:5272827] [CDVTimer][TotalPluginStartup] 5.461037ms
+2015-04-09 02:05:37.509 Bump[63805:5272827] Resetting plugins due to page load.
+2015-04-09 02:05:37.678 Bump[63805:5272827] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/614CA3D6-8493-476D-B270-457770DD33AB/Bump.app/www/index.html
+2015-04-09 02:05:37.767 Bump[63805:5272827] Graph Path = /me
+2015-04-09 02:05:46.743 Bump[63805:5272827] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:05:46.747 Bump[63805:5272827] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:05:55.318 Bump[63805:5272827] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:05:55.318 Bump[63805:5272827] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:05:55.493 Bump[63805:5272827] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:05:55.493 Bump[63805:5272827] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:07:35.383 Bump[63805:5272827] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 02:07:35.384 Bump[63805:5272827] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78b9bf20
+2015-04-09 01:31:52.594 Bump[64357:5300968] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/75B84276-CB57-435A-A6DA-C80BCF980110/Library/Cookies/Cookies.binarycookies
+2015-04-09 01:31:52.674 Bump[64357:5300968] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 01:31:52.674 Bump[64357:5300968] Multi-tasking -> Device: YES, App: YES
+2015-04-09 01:31:52.689 Bump[64357:5300968] Unlimited access to network resources
+2015-04-09 01:31:52.956 Bump[64357:5300968] [CDVTimer][keyboard] 0.050008ms
+2015-04-09 01:31:52.956 Bump[64357:5300968] Init FacebookConnect Session
+2015-04-09 01:31:52.965 Bump[64357:5300968] [CDVTimer][facebookconnectplugin] 9.382010ms
+2015-04-09 01:31:52.967 Bump[64357:5300968] [CDVTimer][file] 1.581967ms
+2015-04-09 01:31:52.967 Bump[64357:5300968] [CDVTimer][TotalPluginStartup] 11.383057ms
+2015-04-09 01:31:53.070 Bump[64357:5300968] Resetting plugins due to page load.
+2015-04-09 01:31:53.256 Bump[64357:5300968] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/E35D31E3-2E0A-4AC3-916B-78DB36B72041/Bump.app/www/index.html
+2015-04-09 01:31:53.358 Bump[64357:5300968] Graph Path = /me
+2015-04-09 22:06:23.904 Bump[65107:5348644] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/1E373812-1E09-4A47-BBE3-00C9FD593C0D/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:06:23.986 Bump[65107:5348644] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:06:23.986 Bump[65107:5348644] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:06:24.001 Bump[65107:5348644] Unlimited access to network resources
+2015-04-09 22:06:24.294 Bump[65107:5348644] [CDVTimer][keyboard] 0.072956ms
+2015-04-09 22:06:24.295 Bump[65107:5348644] Init FacebookConnect Session
+2015-04-09 22:06:24.305 Bump[65107:5348644] [CDVTimer][facebookconnectplugin] 10.556996ms
+2015-04-09 22:06:24.307 Bump[65107:5348644] [CDVTimer][file] 1.794994ms
+2015-04-09 22:06:24.307 Bump[65107:5348644] [CDVTimer][TotalPluginStartup] 12.893021ms
+2015-04-09 22:06:24.424 Bump[65107:5348644] Resetting plugins due to page load.
+2015-04-09 22:06:24.655 Bump[65107:5348644] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/C813DDD5-44C1-4B43-85A4-7EB6FA724363/Bump.app/www/index.html
+2015-04-09 22:06:24.689 Bump[65107:5348644] Graph Path = /me
+2015-04-09 22:06:33.852 Bump[65245:5349090] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/5268DCB5-33CA-4922-88E1-3438F20EFABA/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:06:33.910 Bump[65245:5349090] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:06:33.911 Bump[65245:5349090] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:06:33.912 Bump[65245:5349090] Unlimited access to network resources
+2015-04-09 22:06:33.976 Bump[65245:5349090] [CDVTimer][keyboard] 0.047982ms
+2015-04-09 22:06:33.976 Bump[65245:5349090] Init FacebookConnect Session
+2015-04-09 22:06:33.980 Bump[65245:5349090] [CDVTimer][facebookconnectplugin] 3.748000ms
+2015-04-09 22:06:33.981 Bump[65245:5349090] [CDVTimer][file] 0.801980ms
+2015-04-09 22:06:33.981 Bump[65245:5349090] [CDVTimer][TotalPluginStartup] 5.320013ms
+2015-04-09 22:06:34.016 Bump[65245:5349090] Resetting plugins due to page load.
+2015-04-09 22:06:34.171 Bump[65245:5349090] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/B10973DD-B0B3-40F4-A909-D66F763D8043/Bump.app/www/index.html
+2015-04-09 22:06:34.193 Bump[65245:5349090] Graph Path = /me
+2015-04-09 22:08:07.364 Bump[65399:5350745] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/FCAD0E1C-C56E-4BFA-AC0C-9B320291F5EF/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:08:07.450 Bump[65399:5350745] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:08:07.450 Bump[65399:5350745] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:08:07.453 Bump[65399:5350745] Unlimited access to network resources
+2015-04-09 22:08:07.555 Bump[65399:5350745] [CDVTimer][keyboard] 0.053048ms
+2015-04-09 22:08:07.555 Bump[65399:5350745] Init FacebookConnect Session
+2015-04-09 22:08:07.560 Bump[65399:5350745] [CDVTimer][facebookconnectplugin] 4.779994ms
+2015-04-09 22:08:07.562 Bump[65399:5350745] [CDVTimer][file] 1.292944ms
+2015-04-09 22:08:07.562 Bump[65399:5350745] [CDVTimer][TotalPluginStartup] 6.635010ms
+2015-04-09 22:08:07.634 Bump[65399:5350745] Resetting plugins due to page load.
+2015-04-09 22:08:07.808 Bump[65399:5350745] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/B43D38D1-732F-46A7-9849-C88F7FD83B11/Bump.app/www/index.html
+2015-04-09 22:08:07.911 Bump[65399:5350745] Graph Path = /me
+2015-04-09 22:10:15.665 Bump[65561:5352573] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/2C43E054-5E3E-40F2-8CE4-75ADDAEE69C9/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:10:15.745 Bump[65561:5352573] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:10:15.745 Bump[65561:5352573] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:10:15.748 Bump[65561:5352573] Unlimited access to network resources
+2015-04-09 22:10:15.832 Bump[65561:5352573] [CDVTimer][keyboard] 0.069022ms
+2015-04-09 22:10:15.832 Bump[65561:5352573] Init FacebookConnect Session
+2015-04-09 22:10:15.837 Bump[65561:5352573] [CDVTimer][facebookconnectplugin] 4.252017ms
+2015-04-09 22:10:15.838 Bump[65561:5352573] [CDVTimer][file] 1.281977ms
+2015-04-09 22:10:15.838 Bump[65561:5352573] [CDVTimer][TotalPluginStartup] 6.121993ms
+2015-04-09 22:10:15.899 Bump[65561:5352573] Resetting plugins due to page load.
+2015-04-09 22:10:16.103 Bump[65561:5352573] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/11922861-A996-4DBD-94CA-CBF326EC186F/Bump.app/www/index.html
+2015-04-09 22:10:16.122 Bump[65561:5352573] Graph Path = /me
+2015-04-09 22:11:48.803 Bump[65704:5353590] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/5F49BDCB-62BE-4CF3-8BF7-24BE3E567581/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:11:48.879 Bump[65704:5353590] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:11:48.880 Bump[65704:5353590] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:11:48.882 Bump[65704:5353590] Unlimited access to network resources
+2015-04-09 22:11:48.976 Bump[65704:5353590] [CDVTimer][keyboard] 0.073969ms
+2015-04-09 22:11:48.976 Bump[65704:5353590] Init FacebookConnect Session
+2015-04-09 22:11:48.984 Bump[65704:5353590] [CDVTimer][facebookconnectplugin] 7.588029ms
+2015-04-09 22:11:48.986 Bump[65704:5353590] [CDVTimer][file] 1.541018ms
+2015-04-09 22:11:48.986 Bump[65704:5353590] [CDVTimer][TotalPluginStartup] 9.918988ms
+2015-04-09 22:11:49.094 Bump[65704:5353590] Resetting plugins due to page load.
+2015-04-09 22:11:49.328 Bump[65704:5353590] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/B6C6AF9A-213F-48CE-9B5D-15AB69015FB0/Bump.app/www/index.html
+2015-04-09 22:11:49.340 Bump[65704:5353590] Graph Path = /me
+2015-04-09 22:13:10.886 Bump[65852:5355160] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/396F3F08-9B8E-48FA-B8A8-68F233836622/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:13:10.980 Bump[65852:5355160] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:13:10.980 Bump[65852:5355160] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:13:10.982 Bump[65852:5355160] Unlimited access to network resources
+2015-04-09 22:13:11.088 Bump[65852:5355160] [CDVTimer][keyboard] 0.071049ms
+2015-04-09 22:13:11.088 Bump[65852:5355160] Init FacebookConnect Session
+2015-04-09 22:13:11.093 Bump[65852:5355160] [CDVTimer][facebookconnectplugin] 5.271018ms
+2015-04-09 22:13:11.095 Bump[65852:5355160] [CDVTimer][file] 1.317024ms
+2015-04-09 22:13:11.095 Bump[65852:5355160] [CDVTimer][TotalPluginStartup] 7.153988ms
+2015-04-09 22:13:11.182 Bump[65852:5355160] Resetting plugins due to page load.
+2015-04-09 22:13:11.326 Bump[65852:5355160] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/26E3B1E8-5C88-4125-9435-D0F1EF02CBCE/Bump.app/www/index.html
+2015-04-09 22:13:11.415 Bump[65852:5355160] Graph Path = /me
+2015-04-09 22:21:44.833 Bump[65852:5355160] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78f687a0
+2015-04-09 22:21:44.836 Bump[65852:5355160] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78f687a0
+2015-04-09 22:24:16.159 Bump[66042:5360694] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/1790BE1A-E436-4747-A160-0F82C3CD8673/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:24:16.246 Bump[66042:5360694] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:24:16.246 Bump[66042:5360694] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:24:16.248 Bump[66042:5360694] Unlimited access to network resources
+2015-04-09 22:24:16.335 Bump[66042:5360694] [CDVTimer][keyboard] 0.051022ms
+2015-04-09 22:24:16.335 Bump[66042:5360694] Init FacebookConnect Session
+2015-04-09 22:24:16.343 Bump[66042:5360694] [CDVTimer][facebookconnectplugin] 8.736014ms
+2015-04-09 22:24:16.345 Bump[66042:5360694] [CDVTimer][file] 1.114011ms
+2015-04-09 22:24:16.345 Bump[66042:5360694] [CDVTimer][TotalPluginStartup] 10.333002ms
+2015-04-09 22:24:16.416 Bump[66042:5360694] Resetting plugins due to page load.
+2015-04-09 22:24:16.716 Bump[66042:5360694] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/E129B423-F92B-4215-833D-E981B5F79B97/Bump.app/www/index.html
+2015-04-09 22:24:16.824 Bump[66042:5360694] Graph Path = /me
+2015-04-09 22:27:21.799 Bump[66207:5363348] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/D63B97B6-FB50-4F32-A305-EFF294548633/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:27:21.882 Bump[66207:5363348] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:27:21.883 Bump[66207:5363348] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:27:21.885 Bump[66207:5363348] Unlimited access to network resources
+2015-04-09 22:27:21.967 Bump[66207:5363348] [CDVTimer][keyboard] 0.074029ms
+2015-04-09 22:27:21.968 Bump[66207:5363348] Init FacebookConnect Session
+2015-04-09 22:27:21.973 Bump[66207:5363348] [CDVTimer][facebookconnectplugin] 5.043983ms
+2015-04-09 22:27:21.974 Bump[66207:5363348] [CDVTimer][file] 1.350999ms
+2015-04-09 22:27:21.974 Bump[66207:5363348] [CDVTimer][TotalPluginStartup] 7.007003ms
+2015-04-09 22:27:22.024 Bump[66207:5363348] Resetting plugins due to page load.
+2015-04-09 22:27:22.171 Bump[66207:5363348] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/62E6ED21-1B48-4B99-940C-5D3B92309963/Bump.app/www/index.html
+2015-04-09 22:27:22.266 Bump[66207:5363348] Graph Path = /me
+2015-04-09 22:27:38.550 Bump[66342:5363913] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/0C7ADB37-EF08-4593-8F5B-770C8DE7613B/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:27:38.632 Bump[66342:5363913] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:27:38.633 Bump[66342:5363913] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:27:38.635 Bump[66342:5363913] Unlimited access to network resources
+2015-04-09 22:27:38.728 Bump[66342:5363913] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 22:27:38.729 Bump[66342:5363913] Init FacebookConnect Session
+2015-04-09 22:27:38.733 Bump[66342:5363913] [CDVTimer][facebookconnectplugin] 4.581034ms
+2015-04-09 22:27:38.735 Bump[66342:5363913] [CDVTimer][file] 1.284003ms
+2015-04-09 22:27:38.735 Bump[66342:5363913] [CDVTimer][TotalPluginStartup] 6.357014ms
+2015-04-09 22:27:38.804 Bump[66342:5363913] Resetting plugins due to page load.
+2015-04-09 22:27:38.998 Bump[66342:5363913] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/764C5401-141F-4B23-BEBA-E96162599A62/Bump.app/www/index.html
+2015-04-09 22:27:39.100 Bump[66342:5363913] Graph Path = /me
+2015-04-09 22:32:10.557 Bump[66533:5366189] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/598B5B39-A016-4F10-B977-905B04384994/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:32:10.645 Bump[66533:5366189] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:32:10.645 Bump[66533:5366189] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:32:10.647 Bump[66533:5366189] Unlimited access to network resources
+2015-04-09 22:32:10.732 Bump[66533:5366189] [CDVTimer][keyboard] 0.066996ms
+2015-04-09 22:32:10.733 Bump[66533:5366189] Init FacebookConnect Session
+2015-04-09 22:32:10.737 Bump[66533:5366189] [CDVTimer][facebookconnectplugin] 4.921973ms
+2015-04-09 22:32:10.739 Bump[66533:5366189] [CDVTimer][file] 1.304984ms
+2015-04-09 22:32:10.739 Bump[66533:5366189] [CDVTimer][TotalPluginStartup] 6.811976ms
+2015-04-09 22:32:10.802 Bump[66533:5366189] Resetting plugins due to page load.
+2015-04-09 22:32:10.958 Bump[66533:5366189] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/B2FD0A10-355A-4F3D-B5DB-576461306B64/Bump.app/www/index.html
+2015-04-09 22:32:11.041 Bump[66533:5366189] Graph Path = /me
+2015-04-09 22:33:27.011 Bump[66683:5367584] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/F34770C9-1981-4B55-B5AA-CBBE02F1EFE8/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:33:27.089 Bump[66683:5367584] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:33:27.089 Bump[66683:5367584] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:33:27.091 Bump[66683:5367584] Unlimited access to network resources
+2015-04-09 22:33:27.176 Bump[66683:5367584] [CDVTimer][keyboard] 0.047982ms
+2015-04-09 22:33:27.176 Bump[66683:5367584] Init FacebookConnect Session
+2015-04-09 22:33:27.181 Bump[66683:5367584] [CDVTimer][facebookconnectplugin] 5.053997ms
+2015-04-09 22:33:27.183 Bump[66683:5367584] [CDVTimer][file] 1.176000ms
+2015-04-09 22:33:27.183 Bump[66683:5367584] [CDVTimer][TotalPluginStartup] 6.682992ms
+2015-04-09 22:33:27.252 Bump[66683:5367584] Resetting plugins due to page load.
+2015-04-09 22:33:27.406 Bump[66683:5367584] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/8A813196-57E1-4AF6-B536-8C5043B2E512/Bump.app/www/index.html
+2015-04-09 22:33:27.500 Bump[66683:5367584] Graph Path = /me
+2015-04-09 22:34:10.989 Bump[66826:5368463] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/94A49CD6-D9AA-4894-9C2F-32F5599BC527/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:34:11.074 Bump[66826:5368463] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:34:11.074 Bump[66826:5368463] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:34:11.076 Bump[66826:5368463] Unlimited access to network resources
+2015-04-09 22:34:11.165 Bump[66826:5368463] [CDVTimer][keyboard] 0.048995ms
+2015-04-09 22:34:11.165 Bump[66826:5368463] Init FacebookConnect Session
+2015-04-09 22:34:11.170 Bump[66826:5368463] [CDVTimer][facebookconnectplugin] 4.519045ms
+2015-04-09 22:34:11.171 Bump[66826:5368463] [CDVTimer][file] 1.038969ms
+2015-04-09 22:34:11.171 Bump[66826:5368463] [CDVTimer][TotalPluginStartup] 6.021023ms
+2015-04-09 22:34:11.243 Bump[66826:5368463] Resetting plugins due to page load.
+2015-04-09 22:34:11.408 Bump[66826:5368463] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/88EB5D88-7110-495E-9524-90F1BA3DB8C6/Bump.app/www/index.html
+2015-04-09 22:34:11.477 Bump[66826:5368463] Graph Path = /me
+2015-04-09 22:35:07.966 Bump[66969:5369315] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/D1FC114B-49A4-4DCB-8D05-6BBAFDE8868C/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:35:08.046 Bump[66969:5369315] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:35:08.046 Bump[66969:5369315] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:35:08.048 Bump[66969:5369315] Unlimited access to network resources
+2015-04-09 22:35:08.132 Bump[66969:5369315] [CDVTimer][keyboard] 0.048041ms
+2015-04-09 22:35:08.132 Bump[66969:5369315] Init FacebookConnect Session
+2015-04-09 22:35:08.136 Bump[66969:5369315] [CDVTimer][facebookconnectplugin] 4.239023ms
+2015-04-09 22:35:08.138 Bump[66969:5369315] [CDVTimer][file] 1.714051ms
+2015-04-09 22:35:08.138 Bump[66969:5369315] [CDVTimer][TotalPluginStartup] 6.401956ms
+2015-04-09 22:35:08.190 Bump[66969:5369315] Resetting plugins due to page load.
+2015-04-09 22:35:08.314 Bump[66969:5369315] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/B99D8C13-08E5-4C32-B3F4-9B7C36971439/Bump.app/www/index.html
+2015-04-09 22:35:08.417 Bump[66969:5369315] Graph Path = /me
+2015-04-09 22:37:15.310 Bump[67120:5370553] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Data/Application/D3550E9F-CBD8-43D0-857D-2753DD00A460/Library/Cookies/Cookies.binarycookies
+2015-04-09 22:37:15.406 Bump[67120:5370553] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-09 22:37:15.406 Bump[67120:5370553] Multi-tasking -> Device: YES, App: YES
+2015-04-09 22:37:15.408 Bump[67120:5370553] Unlimited access to network resources
+2015-04-09 22:37:15.494 Bump[67120:5370553] [CDVTimer][keyboard] 0.071049ms
+2015-04-09 22:37:15.494 Bump[67120:5370553] Init FacebookConnect Session
+2015-04-09 22:37:15.499 Bump[67120:5370553] [CDVTimer][facebookconnectplugin] 4.669011ms
+2015-04-09 22:37:15.500 Bump[67120:5370553] [CDVTimer][file] 1.293957ms
+2015-04-09 22:37:15.500 Bump[67120:5370553] [CDVTimer][TotalPluginStartup] 6.505013ms
+2015-04-09 22:37:15.561 Bump[67120:5370553] Resetting plugins due to page load.
+2015-04-09 22:37:15.767 Bump[67120:5370553] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/B104A0DF-B5C7-488D-B38A-407D2ADF4043/data/Containers/Bundle/Application/C1C465C1-451A-49DF-AC9F-4DFD0C2CE403/Bump.app/www/index.html
+2015-04-09 22:37:15.799 Bump[67120:5370553] Graph Path = /me

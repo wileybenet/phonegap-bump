@@ -1,13 +1,14 @@
 angular.module('directives', [])
 
-  .directive('animate', ['$rootScope', function($rootScope) {
+  .directive('imageLoad', [function() {
     return {
+      scope: {
+        className: '=imageLoad'
+      },
       link: function(scope, element, attrs) {
-        // var h = $(window).height();
-        // $rootScope.$watch('preview', function(state) {
-        //   element.css({ 'margin-top': h + 'px' })
-        //     .animate({ 'margin-top': '0' }, 300)
-        // });
+        element.on('load', function() {
+          element.addClass(scope.className);
+        });
       }
     };
   }])

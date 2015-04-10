@@ -3,31 +3,32 @@
     &times;
   </div>
   <div class="owner" ng-click="$root.openProfile(focusedImage.uid)">
-    <img ng-src="http://graph.facebook.com/{{focusedImage.fb_id}}/picture" />
+    <img class="image-preload" ng-src="http://graph.facebook.com/{{focusedImage.fb_id}}/picture" image-load="'image-loaded'" />
     <span class="btn" ng-bind="focusedImage.username"></span>
   </div>
   <div class="owner-reel">
-    <img ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: (WW / 15) + 'px' }" ng-repeat="img in focusedImage.images | limitTo:10" />
+    <img class="image-preload" ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: ($root.ww() / 12) + 'px', height: ($root.ww() / 12) + 'px' }" ng-repeat="img in focusedImage.images.items | limitTo:10" image-load="'image-loaded'" />
   </div>
   <div class="image">
-    <img ng-src="{{ENDPOINT}}/720_{{focusedImage.key}}" width="100%" />
+    <img class="image-preload" ng-src="{{ENDPOINT}}/720_{{focusedImage.key}}" width="100%" ng-style="{ height: ww() + 'px' }" image-load="'image-loaded'" />
+    <div class="img-screen" ng-show="focusedImage.reported">
+      <i class="fa fa-exclamation-circle"></i> Reported <br />
+      <div class="btn danger tiny" ng-click="$root.cancelReport(focusedImage)"><i class="fa fa-undo"></i> Undo Report</div>
+    </div>
   </div>
   <div class="actions">
     <div class="bumps">
       <small ng-bind="focusedImage.bumps | commas"></small> <small class="subdue">bump{{focusedImage.bumps == 1 ? '' : 's'}}</small>
     </div>
-    <div class="bump btn" ng-click="$root.bump(focusedImage)" ng-class="{checked: focusedImage.bumped}" ng-show="$root.bumpable(focusedImage)">
-      <small><i class="fa fa-angle-double-up"></i> Bump</small><small ng-show="focusedImage.bumped">ed</small>
-    </div>
-    <div class="bump small">
-      <span class="subdue" ng-hide="$root.bumpable(focusedImage)">Mine</span>
+    <div class="bump btn" ng-click="$root.bump(focusedImage)" ng-class="{'disabled': $root.isMyImage(focusedImage) }">
+      <small><i class="fa" ng-class="{ 'fa-check': focusedImage.bumped, 'fa-angle-double-up': !focusedImage.bumped }"></i> Bump</small><small ng-show="focusedImage.bumped">ed</small>
     </div>
     <div class="clear"></div>
   </div>
   <div class="caption">
     <span ng-bind="focusedImage.caption"></span>
   </div>
-  <div class="report btn warn" ng-click="report(focusedImage)">
-    <i class="fa fa-exclamation-circle"></i> <small>Report image</small>
+  <div class="report btn warn" ng-click="report(focusedImage)" ng-class="{ disabled: $root.isMyImage(focusedImage) }">
+    <i class="fa" ng-class="{ 'fa-exclamation-circle': !focusedImage.reported, 'fa-check': focusedImage.reported }"></i> <small>Report image</small>
   </div>
 </div>

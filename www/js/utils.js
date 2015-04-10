@@ -1,12 +1,17 @@
 angular.module('utils', [])
 
-  .factory('user', [function() {
+  .factory('currentUser', [function() {
     return {
-      set: function() {
-        
+      set: function(data) {
+        for (var key in data) {
+          this[key] = data[key];
+        }
+        this.active = parseInt(data.active);
+        this.post_to_fb = parseInt(data.post_to_fb);
+        return this;
       },
       get: function() {
-        
+        return this;
       }
     };
   }])
@@ -67,11 +72,11 @@ angular.module('utils', [])
         hour = Math.floor(diff / 3600000),
         day = Math.floor(diff / 86400000);
 
-      sec = sec ? (sec < 30 ? '<small>Just now</small>' : (sec + ' <small>Secs</small> ')) : 0;
-      min = min ? (min + ' <small>Min</small> ') : 0;
-      hour = hour ? (hour + ' <small>Hrs</small> ') : 0;
-      day = day ? (day + ' <small>Days</small> ') : 0;
-      return $sce.trustAsHtml(day || hour || min || sec || '');
+      sec = sec ? (sec < 30 ? '<small>now</small>' : (sec + 's')) : 0;
+      min = min ? (min + 'm') : 0;
+      hour = hour ? (hour + 'h') : 0;
+      day = day ? (day + 'd') : 0;
+      return $sce.trustAsHtml('<i class="fa fa-clock"></i>' + (day || hour || min || sec || ''));
     };
   }])
 

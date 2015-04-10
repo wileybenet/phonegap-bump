@@ -1,15 +1,18 @@
-<div class="thumbnail" ng-class="image.more ? 'w1' : 'w' + config.grid" ng-repeat="image in list.items | orderBy:config.order:true track by image.key" ng-style="{ 'z-index': 1 / ($index + 1) }">
+<div class="thumbnail" ng-class="image.more ? 'w1' : 'w' + config.grid" ng-repeat="image in list.items | orderBy:config.order:true track by image.key" ng-style="{ 'z-index': 1 / ($index + 1), 'height': $root.ww() / config.grid + 'px' }">
   <div class="infinite" ng-show="image.more">
     <span class="l1"></span>
     <span class="l2"></span>
     <span class="l3"></span>
   </div>
-  <img ng-src="{{$root.ENDPOINT}}/{{$root.getImageSize[config.grid]}}_{{image.key}}" width="100%" ng-click="$root.openPreview(image)" ng-hide="image.more" />
+  <img class="image-preload" ng-src="{{$root.ENDPOINT}}/{{$root.getImageSize[config.grid]}}_{{image.key}}" width="100%" ng-click="$root.openPreview(image)" ng-hide="image.more" image-load="'image-loaded'" />
   <div class="grid-details" ng-if="config.grid == 1" ng-hide="image.more">
-    <div class="btn left" ng-bind="image.username" ng-click="$root.openProfile(image.uid)"></div>
+    <div class="left" ng-click="$root.openProfile(image.uid)">
+      <span class="btn" ng-bind="image.username"></span>
+      <span class="tiny subdue" ng-bind-html="image.added | timeAgo"></span>
+    </div>
     <div class="right">
       <span ng-bind="image.bumps | commas"></span> <small class="subdue">bump{{image.bumps == 1 ? '' : 's'}}</small>
-      <i class="fa fa-angle-double-up btn" ng-click="$root.bump(image)" ng-show="$root.bumpable(image)"></i>
+      <i class="fa btn" ng-click="$root.bump(image)" ng-class="{'fa-check': image.bumped, 'fa-angle-double-up': !image.bumped, 'disabled': $root.isMyImage(image) }"></i>
     </div>
     <div class="clear"></div>
   </div>
@@ -17,5 +20,8 @@
     <div class="right">
       <span ng-bind="image.bumps | round"></span> <small class="subdue"><i class="fa fa-angle-double-up"></i></small>
     </div>
+  </div>
+  <div class="img-screen tiny" ng-show="image.reported" ng-click="$root.openPreview(image)">
+    <i class="fa fa-check-circle"></i> Reported
   </div>
 </div>
