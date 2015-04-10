@@ -121,7 +121,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (!$scope.authd)
           return false;
         $rootScope.loading = true;
-        $scope.picList = imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid }, function(data) {
+        $scope.picList = imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
           $rootScope.loaded = true;
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
@@ -140,7 +140,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (reset)
           $scope.list.count = $scope.list._count;
 
-        return imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid }, function(data) {
+        return imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
           $scope.picList = data;
         }, function(err) {
           $scope.networkError = 'Bump server';
@@ -187,7 +187,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $rootScope.openPreview = function(image) {
-        image.images = imageFactory.get({ id: image.uid, action: 'by_user', uid: currentUser.uid, count: 12, order: 'bumps' }, function() {}, function(err) {
+        image.images = imageFactory.get({ id: image.uid, action: 'by_user', uid: currentUser.uid, count: 12, order: 'bumps', api_token: currentUser.api_token }, function() {}, function(err) {
           $scope.networkError = 'Bump server';
         });
         $rootScope.previews.push('image');
@@ -209,7 +209,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           $mine: currentUser.uid == user.uid
         };
         $scope.profile.refresh = function() {
-          return imageFactory.get({ id: user.uid, action: 'by_user', uid: currentUser.uid, order: $scope.profile.list.order, count: $scope.profile.list.count }, function(data) {
+          return imageFactory.get({ id: user.uid, action: 'by_user', uid: currentUser.uid, order: $scope.profile.list.order, count: $scope.profile.list.count, api_token: currentUser.api_token }, function(data) {
             $scope.profile.images = data;
           }, function(err) {
             $scope.networkError = 'Bump server';
@@ -230,7 +230,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           tab: 'bumps'
         };
         $scope.notif.refresh = function() {
-          return notificationFactory.query({ id: currentUser.uid, action: 'bumps' }, function(data) {
+          return notificationFactory.query({ id: currentUser.uid, action: 'bumps', api_token: currentUser.api_token }, function(data) {
             $scope.notif.bumps = data;
           }, function(err) {
             $scope.networkError = 'Bump server';
@@ -240,7 +240,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
       $rootScope.dismissNotification = function(notification) {
         notification.new = 0;
-        notificationFactory.delete({ id: notification.id, uid: currentUser.uid }, function(data) {
+        notificationFactory.delete({ id: notification.id, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
           notification.new = data.success ? 0 : 1;
         }, function(err) {
           $scope.networkError = 'Bump server';
@@ -263,7 +263,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (!image.bumped) {
           image.bumps += 1;
           image.bumped = true;
-          $http.post(HOST + '/bump', { image: image.key, uid: currentUser.uid, ownerUid: image.uid })
+          $http.post(HOST + '/bump', { image: image.key, uid: currentUser.uid, ownerUid: image.uid, api_token: currentUser.api_token })
             .success(function(data) {
               image.$updating = false;
               console.log(data);
@@ -274,7 +274,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         } else {
           image.bumps -= 1;
           image.bumped = false;
-          $http.delete(HOST + '/bump/' + image.key + '?uid=' + currentUser.uid)
+          $http.delete(HOST + '/bump/' + image.key + '?uid=' + currentUser.uid + '&api_token=' + currentUser.api_token)
             .success(function(data) {
               image.$updating = false;
               console.log(data);
@@ -294,7 +294,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (!image.reported) {
           image.reports += 1;
           image.reported = true;
-          $http.post(HOST + '/report/' + image.key, { uid: currentUser.uid, ownerUid: image.uid })
+          $http.post(HOST + '/report/' + image.key + '?uid=' + currentUser.uid + '&api_token=' + currentUser.api_token, { ownerUid: image.uid })
             .success(function(data) {
               console.log(data);
             })
@@ -309,7 +309,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       $rootScope.cancelReport = function(image) {
         if (image.$updating)
           return;
-        $http.delete(HOST + '/report/' + image.key + '?uid=' + currentUser.uid)
+        $http.delete(HOST + '/report/' + image.key + '?uid=' + currentUser.uid + '&api_token=' + currentUser.api_token)
           .success(function(data) {
             image.reported = false;
             image.$updating = false;
@@ -339,7 +339,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
                 $scope.wizardLoading = true;
                 $scope.pickedUsername = username;
                 setTimeout(function() {
-                  $http.post(HOST + '/username/', { uid: $scope.newUser.uid, username: username })
+                  $http.post(HOST + '/username/', { uid: $scope.newUser.uid, username: username, api_token: currentUser.api_token })
                     .success(function(data) {
                       if (data.available === false) {
                         $scope.usernameError = username;
@@ -367,7 +367,8 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           $rootScope.previews = [];
           $rootScope.previews.push('upload');
           $scope.uploadParams = {
-            uid: currentUser.uid
+            uid: currentUser.uid,
+            api_token: currentUser.api_token
           };
           $scope.pendingUploadImage = $rootScope.defaultImage = 'images/default.png';
           $scope.pendingUploadCategory = 'Category';
