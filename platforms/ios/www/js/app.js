@@ -266,15 +266,17 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
       $scope.retryConnection = function() {
         $scope.retrying = true;
-        $http.get(HOST.open + '/status')
-          .success(function() {
-            $scope.retrying = false;
-            $scope.networkError = null;
-          })
-          .error(function() {
-            $scope.retrying = false;
-            $scope.networkError = 'The Bump server';
-          });
+        $timeout(function() {
+          $http.get(HOST.open + '/status')
+            .success(function() {
+              $scope.retrying = false;
+              $scope.networkError = null;
+            })
+            .error(function() {
+              $scope.retrying = false;
+              $scope.networkError = 'The Bump server';
+            });
+        }, 500);
       };
 
       $rootScope.getImageSrc = function(image) {

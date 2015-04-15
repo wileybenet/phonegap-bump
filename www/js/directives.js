@@ -71,17 +71,24 @@ angular.module('directives', [])
         var $parent = element.parents('.load-visible-item');
 
         function isVisible() {
-          if ($parent.offset().top - $wrapper.scrollTop() - $wrapper.height() <= 0) {
+          if ($parent.offset().top - $wrapper.scrollTop() - $wrapper.height() <= 50) {
             element.attr('src', scope.src);
-            element.on('load', function() {
-              element.addClass('image-loaded');
-            });
           }
         }
+
+        function load() {
+          element.addClass('image-loaded');
+        }
+
+        element.on('load', load);
 
         $wrapper.on('scroll', isVisible);
 
         scope.$watch('src', isVisible);
+
+        scope.$on('$destroy', function() {
+          element.off('load');
+        });
       }
     };
   }])

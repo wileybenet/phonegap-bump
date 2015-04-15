@@ -261,20 +261,22 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $rootScope.openHelp = function(group) {
-        // TODO
+        $rootScope.previews.push('help/' + group);
       };
 
       $scope.retryConnection = function() {
         $scope.retrying = true;
-        $http.get(HOST.open + '/status')
-          .success(function() {
-            $scope.retrying = false;
-            $scope.networkError = null;
-          })
-          .error(function() {
-            $scope.retrying = false;
-            $scope.networkError = 'The Bump server';
-          });
+        $timeout(function() {
+          $http.get(HOST.open + '/status')
+            .success(function() {
+              $scope.retrying = false;
+              $scope.networkError = null;
+            })
+            .error(function() {
+              $scope.retrying = false;
+              $scope.networkError = 'The Bump server';
+            });
+        }, 500);
       };
 
       $rootScope.getImageSrc = function(image) {
@@ -495,7 +497,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       if (platform == 'browser' || platform == 'phone-simulator') {
         $scope.loaded = true;
         $scope.authd = true;
-        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: 'e7488675-d945-4acc-95e7-de525e3dcb97' };
+        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: 'acd0936c-8e1f-444c-803e-7a01a7f27a92' };
         defer.resolve();
         // $scope.newUser = {};
         // $rootScope.previews.push('new-user');
