@@ -61,6 +61,31 @@ angular.module('directives', [])
     };
   }])
 
+  .directive('loadWhenVisible', [function() {
+    return {
+      scope: {
+        src: '=loadWhenVisible'
+      },
+      link: function(scope, element, attrs) {
+        var $wrapper = element.parents('.ptr-wrapper');
+        var $parent = element.parents('.load-visible-item');
+
+        function isVisible() {
+          if ($parent.offset().top - $wrapper.scrollTop() - $wrapper.height() <= 0) {
+            element.attr('src', scope.src);
+            element.on('load', function() {
+              element.addClass('image-loaded');
+            });
+          }
+        }
+
+        $wrapper.on('scroll', isVisible);
+
+        scope.$watch('src', isVisible);
+      }
+    };
+  }])
+
   .directive('pullRefresh', [function() {
     return {
       templateUrl: 'partials/ptr.html',

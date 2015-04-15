@@ -9,7 +9,7 @@
     <i class="fa fa-angle-down"></i> <span ng-bind="pendingUploadCategory"></span>
   </div>
   <div class="image upload">
-    <img ng-src="{{pendingUploadImage}}" width="100%" />
+    <img class="image-preload" ng-src="{{pendingUploadImage}}" width="100%" image-load="'image-loaded'" />
     <div class="btn tiny" ng-show="pendingUploadImage != $rootScope.defaultImage" ng-click="openCamera()">
       <i class="fa fa-angle-left"></i> Change
     </div>
@@ -20,8 +20,16 @@
     </div>
     <div class="subdue tiny right padded">{{uploadParams.caption.length || 0}}/100</div>
   </div>
-  <div class="btn btn-md btn-block" ng-click="postToFb()">
-    <i class="fa fa-facebook-official"></i> Post to Facebook
+  <p class="margin">
+    <small class="subdue">Post to:</small>
+  </p>
+  <div class="btn btn-md btn-block" ng-click="authPostToFb()" ng-if="!$root.post_to_fb">
+    <i class="fa fa-facebook-official"></i> Facebook
+  </div>
+  <div class="btn btn-md btn-block" ng-click="postToFb()" ng-if="$root.post_to_fb">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-check" ng-show="uploadParams.postToFb"></i>
+    <i class="fa fa-square-o" ng-show="!uploadParams.postToFb"></i>
   </div>
   <div class="btn footer-btn" ng-click="readyToUpload() && uploadPhotoToServer()" ng-class="{ disabled: !readyToUpload() }">
     Upload

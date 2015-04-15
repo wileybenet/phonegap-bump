@@ -40,8 +40,8 @@
     <div class="disable-screen" ng-if="networkError">
       <h4>{{networkError}} is currently unavailable</h4>
       <small>Please check your network connection</small><br />
-      <div class="bottom-btn">
-        <small class="btn btn-filled"><i class="fa fa-refresh"></i> Retry</small>
+      <div class="bottom-btn" ng-click="retryConnection()">
+        <small class="btn btn-filled"><i class="fa fa-refresh" ng-class="{ 'fa-spin': retrying }"></i> Retry</small>
       </div>
     </div>
   </body>

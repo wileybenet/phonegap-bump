@@ -32,30 +32,36 @@ angular.module('utils', [])
     return platform;
   }])
 
-  .factory('HOST', ['platform', function(platform) {
+  .factory('HOST', ['platform', 'API_VERSION', function(platform, API_VERSION) {
+    var host;
     if (platform == 'desktop-simulator' || platform == 'browser' || platform == 'phone-simulator')
-      return 'http://localhost:8081/api/v1.0';
+      host = 'http://localhost:8081/';
     else
-      return 'http://app.pikbump.com/api/v1.0';
+      host = 'http://app.pikbump.com/';
+
+    return {
+      open: host + 'open/v' + API_VERSION,
+      api: host + 'api/v' + API_VERSION
+    };
   }])
 
   .factory('imageFactory', ['$resource', 'HOST', function($resource, HOST) {
-    var image = $resource(HOST + '/image/:category/:id/:action', {}, {});
+    var image = $resource(HOST.api+ '/image/:category/:id/:action', {}, {});
     return image;
   }])
 
   .factory('userFactory', ['$resource', 'HOST', function($resource, HOST) {
-    var user = $resource(HOST + '/user/:id/:action', {}, {});
+    var user = $resource(HOST.api+ '/user/:id/:action', {}, {});
     return user;
   }])
 
   .factory('notificationFactory', ['$resource', 'HOST', function($resource, HOST) {
-    var user = $resource(HOST + '/notification/:id/:action', {}, {});
+    var user = $resource(HOST.api+ '/notification/:id/:action', {}, {});
     return user;
   }])
 
   .factory('categoryFactory', ['$resource', 'HOST', function($resource, HOST) {
-    var category = $resource(HOST + '/category', {}, {});
+    var category = $resource(HOST.open + '/category', {}, {});
     return category;
   }])
 

@@ -203,7 +203,7 @@ html, body {
   font-size: 16px;
   padding: 6px 10px;
   text-transform: none;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.7);
   width: 100%;
   box-sizing: border-box;
   color: #FFF;
@@ -492,7 +492,7 @@ img {
   width: 100%;
   text-align: center;
   position: fixed;
-  bottom: 40px;
+  bottom: 30px;
   font-size: 18px;
 }
 
@@ -576,8 +576,8 @@ img {
   overflow: hidden;
 }
 
-.big {
-  font-size: 2em;
+.margin {
+  margin-left: 10px;
 }
 
 .selected {
@@ -592,7 +592,7 @@ img {
   color: #49E2B4;
 }
 .btn.btn-md {
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn.warn {
   color: #9E9962;
@@ -624,6 +624,10 @@ img {
 
 small {
   font-size: 14px;
+}
+
+.big {
+  font-size: 2em;
 }
 
 p {
