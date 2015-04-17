@@ -7,7 +7,7 @@
     <span class="btn" ng-bind="focusedImage.username"></span>
   </div>
   <div class="owner-reel">
-    <img class="image-preload" ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: ($root.ww() / 12) + 'px', height: ($root.ww() / 12) + 'px' }" ng-repeat="img in focusedImage.images.items | limitTo:10" image-load="'image-loaded'" />
+    <img class="image-preload" ng-src="{{ENDPOINT}}/64_{{img.key}}" ng-style="{width: ($root.ww() / 15) + 'px', height: ($root.ww() / 15) + 'px' }" ng-repeat="img in focusedImage.images.items | limitTo:10" image-load="'image-loaded'" />
   </div>
   <div class="image">
     <img class="image-preload" ng-src="{{ENDPOINT}}/720_{{focusedImage.key}}" width="100%" ng-style="{ height: ww() + 'px' }" image-load="'image-loaded'" />

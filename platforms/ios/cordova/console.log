@@ -14037,3 +14037,38 @@
 2015-04-16 19:57:58.211 Bump[93399:6357957] File Transfer Finished with response code 200
 2015-04-16 19:58:42.675 Bump[93399:6357703] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78cae500
 2015-04-16 19:58:42.678 Bump[93399:6357703] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x78cae500
+2015-04-16 20:47:25.746 Bump[94408:6381110] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-16 20:47:25.747 Bump[94408:6381110] Multi-tasking -> Device: YES, App: YES
+2015-04-16 20:47:25.750 Bump[94408:6381110] Unlimited access to network resources
+2015-04-16 20:47:25.838 Bump[94408:6381110] [CDVTimer][keyboard] 0.083983ms
+2015-04-16 20:47:25.839 Bump[94408:6381110] Init FacebookConnect Session
+2015-04-16 20:47:25.844 Bump[94408:6381110] [CDVTimer][facebookconnectplugin] 5.419016ms
+2015-04-16 20:47:25.846 Bump[94408:6381110] [CDVTimer][file] 1.414001ms
+2015-04-16 20:47:25.846 Bump[94408:6381110] [CDVTimer][TotalPluginStartup] 7.511020ms
+2015-04-16 20:47:25.985 Bump[94408:6381110] Resetting plugins due to page load.
+2015-04-16 20:47:26.195 Bump[94408:6381110] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/21ED477F-2C0D-47B9-B418-A429E10A2913/data/Containers/Bundle/Application/8922A22B-B9BD-4BCF-AA87-92FFFE543A8C/Bump.app/www/index.html
+2015-04-16 20:47:26.218 Bump[94408:6381110] Graph Path = /me
+2015-04-16 20:47:41.572 Bump[94613:6382058] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-16 20:47:41.573 Bump[94613:6382058] Multi-tasking -> Device: YES, App: YES
+2015-04-16 20:47:41.574 Bump[94613:6382058] Unlimited access to network resources
+2015-04-16 20:47:41.634 Bump[94613:6382058] [CDVTimer][keyboard] 0.055015ms
+2015-04-16 20:47:41.634 Bump[94613:6382058] Init FacebookConnect Session
+2015-04-16 20:47:41.641 Bump[94613:6382058] [CDVTimer][facebookconnectplugin] 7.209003ms
+2015-04-16 20:47:41.643 Bump[94613:6382058] [CDVTimer][file] 1.612008ms
+2015-04-16 20:47:41.643 Bump[94613:6382058] [CDVTimer][TotalPluginStartup] 9.649038ms
+2015-04-16 20:47:41.720 Bump[94613:6382058] Resetting plugins due to page load.
+2015-04-16 20:47:41.838 Bump[94613:6382058] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/8AB3DACB-B2DA-42F6-AC4C-048763DABF51/data/Containers/Bundle/Application/8BFAB619-60B8-4B15-A8FE-A9D00847FD6B/Bump.app/www/index.html
+2015-04-16 20:47:41.945 Bump[94613:6382058] Graph Path = /me
+2015-04-16 20:49:06.070 Bump[94985:6384158] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-16 20:49:06.071 Bump[94985:6384158] Multi-tasking -> Device: YES, App: YES
+2015-04-16 20:49:06.072 Bump[94985:6384158] Unlimited access to network resources
+2015-04-16 20:49:06.132 Bump[94985:6384158] [CDVTimer][keyboard] 0.051022ms
+2015-04-16 20:49:06.132 Bump[94985:6384158] Init FacebookConnect Session
+2015-04-16 20:49:06.136 Bump[94985:6384158] [CDVTimer][facebookconnectplugin] 4.013002ms
+2015-04-16 20:49:06.137 Bump[94985:6384158] [CDVTimer][file] 0.930011ms
+2015-04-16 20:49:06.138 Bump[94985:6384158] [CDVTimer][TotalPluginStartup] 5.405009ms
+2015-04-16 20:49:06.197 Bump[94985:6384158] Resetting plugins due to page load.
+2015-04-16 20:49:06.332 Bump[94985:6384158] Finished load of: file:///Users/wjb/Library/Developer/CoreSimulator/Devices/21ED477F-2C0D-47B9-B418-A429E10A2913/data/Containers/Bundle/Application/0CEED407-5399-4736-BDD6-049EF4810296/Bump.app/www/index.html
+2015-04-16 20:49:06.460 Bump[94985:6384158] Graph Path = /me
+2015-04-16 20:51:58.698 Bump[94985:6384158] -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7984cbc0
+2015-04-16 20:51:58.698 Bump[94985:6384158] *** WebKit discarded an uncaught exception in the webView:willRemoveScrollingLayer:withContentsLayer:forNode: delegate: <NSInvalidArgumentException> -[WebActionDisablingCALayerDelegate setBeingRemoved:]: unrecognized selector sent to instance 0x7984cbc0

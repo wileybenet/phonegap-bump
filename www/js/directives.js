@@ -64,16 +64,19 @@ angular.module('directives', [])
   .directive('loadWhenVisible', [function() {
     return {
       scope: {
-        src: '=loadWhenVisible'
+        src: '=loadWhenVisible',
+        pos: '='
       },
       link: function(scope, element, attrs) {
         var $wrapper = element.parents('.ptr-wrapper');
         var $parent = element.parents('.load-visible-item');
 
         function isVisible() {
+          console.log(scope.pos, $parent.offset().top - $wrapper.scrollTop() - $wrapper.height());
           if ($parent.offset().top - $wrapper.scrollTop() - $wrapper.height() <= 50) {
             element.attr('src', scope.src);
           }
+          document.body.removeEventListener( 'transitionend', isVisible, false );
         }
 
         function load() {
@@ -89,6 +92,11 @@ angular.module('directives', [])
         scope.$on('$destroy', function() {
           element.off('load');
         });
+
+        if (scope.pos === 0) 
+          $wrapper.scrollTop(0);
+
+        document.body.addEventListener( 'transitionend', isVisible, false );
       }
     };
   }])

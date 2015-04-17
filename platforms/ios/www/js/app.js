@@ -150,7 +150,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (!$scope.authd || !currentUser.api_token)
           return false;
         $rootScope.loading = true;
-        $scope.picList = imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
+        $scope.picList = imageFactory.get({ category: getCategoryId(), action: 'by_category', order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
           $rootScope.loaded = true;
           $timeout(function() {
             $rootScope.loading = $rootScope.loaded = false;
@@ -169,7 +169,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (reset)
           $scope.list.count = $scope.list._count;
 
-        return imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
+        return imageFactory.get({ category: getCategoryId(), action: 'by_category', order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
           $scope.picList = data;
         }, function(err) {
           $scope.networkError = 'The Bump server';
@@ -225,6 +225,12 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
       $scope.closePreview = function() {
         $rootScope.previews.pop();
+      };
+
+      $rootScope.getImage = function(imageKey) {
+        imageFactory.get({ id: imageKey, uid: currentUser.uid, api_token: currentUser.api_token }, function(image) {
+          $rootScope.openPreview(image);
+        });
       };
 
       function setUser(user) {
@@ -525,7 +531,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       if (platform == 'browser') {
         $scope.loaded = true;
         $scope.authd = true;
-        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: '7edf23fa-5baa-4780-a50d-863ba0d22eac' };
+        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: '4031b48b-3508-4ede-9475-79d5af7ca4c0' };
         defer.resolve();
         // $scope.newUser = {};
         // $rootScope.previews.push('new-user');
