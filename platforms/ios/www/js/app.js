@@ -35,6 +35,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
 
       $rootScope.previews = [];
+      $rootScope.popups = [];
       $rootScope.ENDPOINT = IMG_ENDPOINT;
       $rootScope.ww = function() { return $(window).width() };
       $scope.category = 'Landscape';
@@ -107,7 +108,22 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         if (state && !~state.indexOf('...')) {
           $timeout(function() {
             $scope.alert = false;
-          }, 2500);
+          }, 2200);
+        }
+      });
+
+      function revertState(property) {
+        return function remover() {
+          $timeout(function() {
+            $scope[property] = false;
+          });
+          document.body.removeEventListener( 'transitionend', remover, false );
+        };
+      }
+      $scope.$watch('invalidUploadForm', function(state) {
+        if (state) {
+          var reverter = revertState('invalidUploadForm');
+          document.body.addEventListener( 'transitionend', reverter, false );
         }
       });
 
@@ -131,7 +147,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       }
 
       function forceLoadImages() {
-        if (!$scope.authd)
+        if (!$scope.authd || !currentUser.api_token)
           return false;
         $rootScope.loading = true;
         $scope.picList = imageFactory.get({ category: getCategoryId(), order: $scope.list.order, count: $scope.list.count, uid: currentUser.uid, api_token: currentUser.api_token }, function(data) {
@@ -261,7 +277,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $rootScope.openHelp = function(group) {
-        // TODO
+        $rootScope.previews.push('help/' + group);
       };
 
       $scope.retryConnection = function() {
@@ -391,6 +407,11 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
           }
       };
 
+      $scope.enterBump = function() {
+        $rootScope.previews = [];
+        $rootScope.popups.push('hello');
+      };
+
       $scope.openCamera = function() {
         $timeout(function() {
           $rootScope.post_to_fb = currentUser.post_to_fb;
@@ -405,7 +426,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
         }, 500);
         navigator.camera.getPicture(loadPhoto, function(message) {
           $scope.$apply(function() {
-            $rootScope.previews.pop();
+            $rootScope.previews = [];
           });
         },{
           quality: 50, 
@@ -437,6 +458,7 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
 
       function loadPhoto(imageURI) {
         $scope.$apply(function() {
+          $('#upload-preview').removeClass('image-loaded');
           $scope.pendingUploadImage = imageURI;
         });
       }
@@ -456,6 +478,12 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
       };
 
       $scope.uploadPhotoToServer = function() {
+        if (!$scope.readyToUpload()) {
+          return $scope.invalidUploadForm = true;
+        } else {
+          $scope.invalidUploadForm = false;
+        }
+
         var imageURI = $scope.pendingUploadImage;
         var ft = new FileTransfer();
         var options = {};
@@ -494,10 +522,10 @@ angular.module('bump', ['ngResource', 'ngAnimate', 'ngSanitize', 'directives', '
  
 
 
-      if (platform == 'browser' || platform == 'phone-simulator') {
+      if (platform == 'browser') {
         $scope.loaded = true;
         $scope.authd = true;
-        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: 'e7488675-d945-4acc-95e7-de525e3dcb97' };
+        currentUser = { uid: '040544ce-1b6f-4060-8129-38844a681bd1', api_token: '7edf23fa-5baa-4780-a50d-863ba0d22eac' };
         defer.resolve();
         // $scope.newUser = {};
         // $rootScope.previews.push('new-user');

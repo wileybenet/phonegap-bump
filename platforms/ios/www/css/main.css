@@ -563,7 +563,7 @@ img {
   color: #A9A998;
 }
 .bronze {
-  color: #7E6013;
+  color: #B8870A;
 }
 
 
@@ -608,6 +608,15 @@ img {
 }
 .btn.btn-block {
   margin: 2px 10px;
+}
+.btn.required {
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+.btn.invalid {
+  -webkit-transform: scale(1.5, 1.6);
+  transform: scale(1.5, 1.6);
+  color: #E8623A;
 }
 .btn.btn-filled {
   background: #333;

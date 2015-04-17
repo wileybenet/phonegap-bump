@@ -5,11 +5,11 @@
   <div class="title-2">
     Photo Upload
   </div>
-  <div class="cat-dropdown btn" ng-click="selectUploadCategory()">
+  <div class="cat-dropdown btn required" ng-click="selectUploadCategory()" ng-class="{ 'invalid': invalidUploadForm }">
     <i class="fa fa-angle-down"></i> <span ng-bind="pendingUploadCategory"></span>
   </div>
   <div class="image upload">
-    <img class="image-preload" ng-src="{{pendingUploadImage}}" width="100%" image-load="'image-loaded'" />
+    <img id="upload-preview" class="image-preload" ng-src="{{pendingUploadImage}}" width="100%" image-load="'image-loaded'" />
     <div class="btn tiny" ng-show="pendingUploadImage != $rootScope.defaultImage" ng-click="openCamera()">
       <i class="fa fa-angle-left"></i> Change
     </div>
@@ -31,7 +31,7 @@
     <i class="fa fa-check" ng-show="uploadParams.postToFb"></i>
     <i class="fa fa-square-o" ng-show="!uploadParams.postToFb"></i>
   </div>
-  <div class="btn footer-btn" ng-click="readyToUpload() && uploadPhotoToServer()" ng-class="{ disabled: !readyToUpload() }">
+  <div class="btn footer-btn" ng-click="uploadPhotoToServer()" ng-class="{ disabled: !readyToUpload() }">
     Upload
   </div>
 </div>
